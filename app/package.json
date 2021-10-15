@@ -27,6 +27,7 @@
     "@types/jest": "^26.0.24",
     "jest": "^27.2.5",
     "jest-cli": "^27.2.5",
-    "puppeteer": "^10.0.0"
+    "puppeteer": "^10.0.0",
+    "workbox-build": "^6.3.0"
   }
 }
