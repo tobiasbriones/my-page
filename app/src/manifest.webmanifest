@@ -1,8 +1,10 @@
 {
   "name": "Stencil Starter",
   "short_name": "Stencil",
+  "description": "App description",
   "start_url": "/",
   "display": "standalone",
+  "orientation": "any",
   "theme_color": "#16161d",
   "background_color": "#16161d",
   "icons": [
@@ -11,5 +13,6 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ]
+  ],
+  "screenshots" : []
 }
