@@ -1,14 +1,25 @@
 {
-  "name": "app",
+  "name": "brief-and-colorful-personal-landing-page",
+  "description": "Minimalistic and small landing page for a nice and colorful personal index or portfolio.",
+  "license": "MIT",
+  "version": "0.1.0",
+  "author": "Tobias Briones <tobiasbriones.dev@gmail.com>",
+  "homepage": "https://github.com/tobiasbriones/brief-and-colorful-personal-landing-page#readme",
+  "bugs": {
+    "url": "https://github.com/tobiasbriones/brief-and-colorful-personal-landing-page/issues"
+  },
+  "keywords": [
+    "landing-page",
+    "portfolio",
+    "spa",
+    "index"
+  ],
   "private": true,
-  "version": "0.0.1",
-  "description": "Stencil App Starter",
   "scripts": {
     "build": "stencil build",
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
-    "test.watch": "stencil test --spec --e2e --watchAll",
-    "generate": "stencil generate"
+    "test.watch": "stencil test --spec --e2e --watchAll"
   },
   "devDependencies": {
     "@stencil/core": "^2.7.0",
@@ -17,6 +28,5 @@
     "jest": "^26.6.3",
     "jest-cli": "^26.6.3",
     "puppeteer": "^10.0.0"
-  },
-  "license": "MIT"
+  }
 }
