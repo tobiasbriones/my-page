@@ -1,3 +1,12 @@
 Brief And Colorful Personal Landing Page
 Copyright (c) 2021 Tobias Briones. All rights reserved.
 Licensed under the MIT License.
+
+--------------------------------------------------------------------------------
+This project contains images provided by Pixabay (https://pixabay.com/),
+available under the Pixabay License (https://pixabay.com/service/license/). The
+complete list of images is listed next:
+
+- ./src/assets/bg.svg (originally watercolor-4117017.ai)
+  from: https://pixabay.com/vectors/watercolor-pink-violet-purple-4117017/
+  by  : https://pixabay.com/users/stux-12364/
