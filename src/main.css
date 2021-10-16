@@ -27,3 +27,19 @@ body {
   font-family: 'Poppins', sans-serif;
   background: url('/assets/bg.svg') center;
 }
+
+@media (min-width: 1440px) {
+  body {
+    padding: 5% 15%;
+  }
+}
+
+/* ---------------------------  GLOBAL APP THEME  --------------------------- */
+
+nav li {
+  list-style: none;
+}
+
+.selected {
+  background-color: #969696;
+}
