@@ -10,6 +10,20 @@
  * https://opensource.org/licenses/MIT.
  */
 
+:root {
+  --primary-background: #FAFAFA;
+}
+
+* {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.89);
+  user-select: none;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
+  background: url('/assets/bg.svg') center;
 }
