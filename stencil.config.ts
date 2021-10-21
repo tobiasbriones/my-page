@@ -18,6 +18,9 @@ export const config: Config = {
       copy: [
         {
           src: 'manifest.webmanifest'
+        },
+        {
+          src: 'data.json'
         }
       ]
     }
