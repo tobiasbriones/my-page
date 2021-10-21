@@ -2,9 +2,9 @@
   "profile": {
     "name": "",
     "photo": "",
-    "studies": "",
+    "studies": [],
     "experience": "",
-    "tools": "",
+    "tools": [],
     "language": {
       "first_class": [],
       "second_class": [],
@@ -13,7 +13,7 @@
     }
   },
   "internships": [],
-  "courser": [],
+  "courses": [],
   "honors": [],
   "interests": []
 }
