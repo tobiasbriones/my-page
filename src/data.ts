@@ -10,3 +10,26 @@
  * https://opensource.org/licenses/MIT.
  */
 
+export interface Data {
+  profile: Profile
+  internships: [];
+  courses: [];
+  honors: [];
+  interests: [];
+}
+
+export interface Profile {
+  name: string;
+  photo: string;
+  studies: [];
+  experience: string;
+  tools: [];
+  language: Language;
+}
+
+export interface Language {
+  firstClass: [];
+  secondClass: [];
+  others: [];
+  naturalLanguages: [];
+}
