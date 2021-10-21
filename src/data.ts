@@ -53,3 +53,14 @@ export interface Language {
   others: string[];
   naturalLanguages: string[];
 }
+
+export class AppDataRepository {
+  private static readonly FILE_NAME = 'data.json';
+
+  constructor() {}
+
+  async get(): Promise<Data> {
+    const res = await fetch(AppDataRepository.FILE_NAME);
+    return await res.json();
+  }
+}
