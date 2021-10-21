@@ -12,24 +12,24 @@
 
 export interface Data {
   profile: Profile
-  internships: [];
-  courses: [];
-  honors: [];
-  interests: [];
+  internships: string[];
+  courses: string[];
+  honors: string[];
+  interests: string[];
 }
 
 export interface Profile {
   name: string;
   photo: string;
-  studies: [];
+  studies: string[];
   experience: string;
-  tools: [];
+  tools: string[];
   language: Language;
 }
 
 export interface Language {
-  firstClass: [];
-  secondClass: [];
-  others: [];
-  naturalLanguages: [];
+  firstClass: string[];
+  secondClass: string[];
+  others: string[];
+  naturalLanguages: string[];
 }
