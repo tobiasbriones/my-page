@@ -1,3 +1,19 @@
 {
-
+  "profile": {
+    "name": "",
+    "photo": "",
+    "studies": "",
+    "experience": "",
+    "tools": "",
+    "language": {
+      "first_class": [],
+      "second_class": [],
+      "others": [],
+      "natural_languages": []
+    }
+  },
+  "internships": [],
+  "courser": [],
+  "honors": [],
+  "interests": []
 }
