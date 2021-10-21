@@ -22,7 +22,8 @@ export class AppRoot {
     return (
       <div>
         <header>
-          <h1>Stencil App Starter</h1>
+          <img src="../../assets/icon/icon.png" alt="Icon" />
+          <h1>My Page</h1>
         </header>
 
         <main>
