@@ -1,7 +1,7 @@
 {
-  "name": "Stencil Starter",
-  "short_name": "Stencil",
-  "description": "App description",
+  "name": "Brief Personal Landing Page",
+  "short_name": "My Page",
+  "description": "Minimalistic and small landing page for a nice and colorful personal index or portfolio.",
   "start_url": "/",
   "display": "standalone",
   "orientation": "any",

@@ -1,12 +1,12 @@
 {
-  "name": "brief-and-colorful-personal-landing-page",
+  "name": "brief-personal-landing-page",
   "description": "Minimalistic and small landing page for a nice and colorful personal index or portfolio.",
   "license": "MIT",
   "version": "0.1.0",
   "author": "Tobias Briones <tobiasbriones.dev@gmail.com>",
-  "homepage": "https://github.com/tobiasbriones/brief-and-colorful-personal-landing-page#readme",
+  "homepage": "https://github.com/tobiasbriones/brief-personal-landing-page#readme",
   "bugs": {
-    "url": "https://github.com/tobiasbriones/brief-and-colorful-personal-landing-page/issues"
+    "url": "https://github.com/tobiasbriones/brief-personal-landing-page/issues"
   },
   "keywords": [
     "landing-page",

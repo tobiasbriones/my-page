@@ -1,4 +1,4 @@
-# Brief And Colorful Personal Landing Page
+# Brief Personal Landing Page
 
 [![GitHub Repository](https://raw.githubusercontent.com/tobiasbriones/general-images/main/example-projects/badges/ep-gh-repo-badge.svg)](https://github.com/tobiasbriones/brief-and-colorful-personal-landing-page)
 
@@ -9,14 +9,14 @@ Minimalistic and small landing page for a nice and colorful personal index or po
 
 ## Contact
 
-This project: [Docs](https://tobiasbriones.github.io/brief-and-colorful-personal-landing-page),
-[Repository](https://github.com/tobiasbriones/brief-and-colorful-personal-landing-page)
+This project: [Docs](https://tobiasbriones.github.io/brief-personal-landing-page),
+[Repository](https://github.com/tobiasbriones/brief-personal-landing-page)
 
 Tobias Briones: [GitHub](https://github.com/tobiasbriones)
 
 ## About
 
-**Brief And Colorful Personal Landing Page**
+**Brief Personal Landing Page**
 
 Minimalistic and small landing page for a nice and colorful personal index or portfolio.
 
