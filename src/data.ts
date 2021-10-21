@@ -10,6 +10,26 @@
  * https://opensource.org/licenses/MIT.
  */
 
+export const emptyData: Data = {
+  profile: {
+    name: '',
+    photo: '',
+    studies: [],
+    experience: '',
+    tools: [],
+    language: {
+      firstClass: [],
+      secondClass: [],
+      others: [],
+      naturalLanguages: []
+    }
+  },
+  courses: [],
+  honors: [],
+  interests: [],
+  internships: []
+};
+
 export interface Data {
   profile: Profile
   internships: string[];
