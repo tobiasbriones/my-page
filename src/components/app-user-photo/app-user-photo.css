@@ -11,5 +11,14 @@
  */
 
 :host {
-  display: block;
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+:host > img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
 }

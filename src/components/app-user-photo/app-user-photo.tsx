@@ -10,7 +10,7 @@
  * https://opensource.org/licenses/MIT.
  */
 
-import { Component, Host, h } from '@stencil/core';
+import { Component, Host, h, Prop } from '@stencil/core';
 
 @Component({
   tag: 'app-user-photo',
@@ -18,13 +18,18 @@ import { Component, Host, h } from '@stencil/core';
   shadow: true,
 })
 export class AppUserPhoto {
+  @Prop()
+  photo: string;
+
+  constructor() {
+    this.photo = '';
+  }
 
   render() {
     return (
       <Host>
-        <slot></slot>
+        <img src={ this.photo } alt="User photo" />
       </Host>
     );
   }
-
 }

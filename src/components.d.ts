@@ -27,6 +27,7 @@ export namespace Components {
         "items": string[];
     }
     interface AppUserPhoto {
+        "photo": string;
     }
     interface AppUserProfile {
     }
@@ -120,6 +121,7 @@ declare namespace LocalJSX {
         "items"?: string[];
     }
     interface AppUserPhoto {
+        "photo"?: string;
     }
     interface AppUserProfile {
     }
