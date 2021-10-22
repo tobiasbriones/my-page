@@ -10,3 +10,10 @@
  * https://opensource.org/licenses/MIT.
  */
 
+export const NAV_ITEMS = [
+  'Profile',
+  'Internships',
+  'Courses',
+  'Honors',
+  'Interests'
+];

@@ -12,14 +12,7 @@
 
 import { Component, h, Host, Prop, State } from '@stencil/core';
 import { Data, emptyData } from '../../../../data';
-
-const NAV_ITEMS = [
-  'Profile',
-  'Internships',
-  'Courses',
-  'Honors',
-  'Interests'
-];
+import { NAV_ITEMS } from './user-nav';
 
 @Component({
   tag: 'app-user-nav',
