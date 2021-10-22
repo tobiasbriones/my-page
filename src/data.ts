@@ -45,20 +45,22 @@ export class AppDataRepository {
   }
 }
 
+export const emptyProfile: Profile = {
+  name: '',
+  photo: '',
+  studies: [],
+  experience: '',
+  tools: [],
+  language: {
+    firstClass: [],
+    secondClass: [],
+    others: [],
+    naturalLanguages: []
+  }
+};
+
 export const emptyData: Data = {
-  profile: {
-    name: '',
-    photo: '',
-    studies: [],
-    experience: '',
-    tools: [],
-    language: {
-      firstClass: [],
-      secondClass: [],
-      others: [],
-      naturalLanguages: []
-    }
-  },
+  profile: emptyProfile,
   courses: [],
   honors: [],
   interests: [],
