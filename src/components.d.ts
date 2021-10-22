@@ -11,6 +11,8 @@ export namespace Components {
     interface AppIam {
         "name": string;
     }
+    interface AppNav {
+    }
     interface AppRoot {
     }
 }
@@ -27,6 +29,12 @@ declare global {
         prototype: HTMLAppIamElement;
         new (): HTMLAppIamElement;
     };
+    interface HTMLAppNavElement extends Components.AppNav, HTMLStencilElement {
+    }
+    var HTMLAppNavElement: {
+        prototype: HTMLAppNavElement;
+        new (): HTMLAppNavElement;
+    };
     interface HTMLAppRootElement extends Components.AppRoot, HTMLStencilElement {
     }
     var HTMLAppRootElement: {
@@ -36,6 +44,7 @@ declare global {
     interface HTMLElementTagNameMap {
         "app-home": HTMLAppHomeElement;
         "app-iam": HTMLAppIamElement;
+        "app-nav": HTMLAppNavElement;
         "app-root": HTMLAppRootElement;
     }
 }
@@ -45,11 +54,14 @@ declare namespace LocalJSX {
     interface AppIam {
         "name"?: string;
     }
+    interface AppNav {
+    }
     interface AppRoot {
     }
     interface IntrinsicElements {
         "app-home": AppHome;
         "app-iam": AppIam;
+        "app-nav": AppNav;
         "app-root": AppRoot;
     }
 }
@@ -59,6 +71,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "app-home": LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
             "app-iam": LocalJSX.AppIam & JSXBase.HTMLAttributes<HTMLAppIamElement>;
+            "app-nav": LocalJSX.AppNav & JSXBase.HTMLAttributes<HTMLAppNavElement>;
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
         }
     }
