@@ -26,6 +26,8 @@ export namespace Components {
     interface AppUserList {
         "items": string[];
     }
+    interface AppUserNav {
+    }
     interface AppUserPhoto {
         "photo": string;
     }
@@ -75,6 +77,12 @@ declare global {
         prototype: HTMLAppUserListElement;
         new (): HTMLAppUserListElement;
     };
+    interface HTMLAppUserNavElement extends Components.AppUserNav, HTMLStencilElement {
+    }
+    var HTMLAppUserNavElement: {
+        prototype: HTMLAppUserNavElement;
+        new (): HTMLAppUserNavElement;
+    };
     interface HTMLAppUserPhotoElement extends Components.AppUserPhoto, HTMLStencilElement {
     }
     var HTMLAppUserPhotoElement: {
@@ -95,6 +103,7 @@ declare global {
         "app-user-content": HTMLAppUserContentElement;
         "app-user-header": HTMLAppUserHeaderElement;
         "app-user-list": HTMLAppUserListElement;
+        "app-user-nav": HTMLAppUserNavElement;
         "app-user-photo": HTMLAppUserPhotoElement;
         "app-user-profile": HTMLAppUserProfileElement;
     }
@@ -120,6 +129,8 @@ declare namespace LocalJSX {
     interface AppUserList {
         "items"?: string[];
     }
+    interface AppUserNav {
+    }
     interface AppUserPhoto {
         "photo"?: string;
     }
@@ -133,6 +144,7 @@ declare namespace LocalJSX {
         "app-user-content": AppUserContent;
         "app-user-header": AppUserHeader;
         "app-user-list": AppUserList;
+        "app-user-nav": AppUserNav;
         "app-user-photo": AppUserPhoto;
         "app-user-profile": AppUserProfile;
     }
@@ -148,6 +160,7 @@ declare module "@stencil/core" {
             "app-user-content": LocalJSX.AppUserContent & JSXBase.HTMLAttributes<HTMLAppUserContentElement>;
             "app-user-header": LocalJSX.AppUserHeader & JSXBase.HTMLAttributes<HTMLAppUserHeaderElement>;
             "app-user-list": LocalJSX.AppUserList & JSXBase.HTMLAttributes<HTMLAppUserListElement>;
+            "app-user-nav": LocalJSX.AppUserNav & JSXBase.HTMLAttributes<HTMLAppUserNavElement>;
             "app-user-photo": LocalJSX.AppUserPhoto & JSXBase.HTMLAttributes<HTMLAppUserPhotoElement>;
             "app-user-profile": LocalJSX.AppUserProfile & JSXBase.HTMLAttributes<HTMLAppUserProfileElement>;
         }
