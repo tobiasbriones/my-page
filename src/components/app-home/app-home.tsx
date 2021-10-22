@@ -33,9 +33,7 @@ export class AppHome {
   render() {
     return (
       <div class="app-home">
-        <div>
-          <app-iam name={ this.data.profile.name } />
-        </div>
+        <app-user-header />
       </div>
     );
   }
