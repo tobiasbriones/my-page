@@ -13,14 +13,6 @@
 import { Component, h, State } from '@stencil/core';
 import { AppDataRepository, Data, emptyData } from '../../data';
 
-const NAV_ITEMS = [
-  'Profile',
-  'Internships',
-  'Courses',
-  'Honors',
-  'Interests'
-];
-
 @Component({
   tag: 'app-home',
   styleUrl: 'app-home.css',
@@ -41,10 +33,7 @@ export class AppHome {
   render() {
     return (
       <div class="app-home">
-        <div>
-          <app-iam name={ this.data.profile.name } />
-          <app-nav items={ NAV_ITEMS } />
-        </div>
+        <app-user-header />
       </div>
     );
   }

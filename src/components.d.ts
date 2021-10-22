@@ -5,6 +5,7 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { Data } from "./data";
 export namespace Components {
     interface AppHome {
     }
@@ -17,6 +18,7 @@ export namespace Components {
     interface AppRoot {
     }
     interface AppUserHeader {
+        "data": Data;
     }
 }
 declare global {
@@ -70,6 +72,7 @@ declare namespace LocalJSX {
     interface AppRoot {
     }
     interface AppUserHeader {
+        "data"?: Data;
     }
     interface IntrinsicElements {
         "app-home": AppHome;
