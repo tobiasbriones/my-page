@@ -22,6 +22,8 @@ export namespace Components {
     interface AppUserHeader {
         "data": Data;
     }
+    interface AppUserProfile {
+    }
 }
 declare global {
     interface HTMLAppHomeElement extends Components.AppHome, HTMLStencilElement {
@@ -60,6 +62,12 @@ declare global {
         prototype: HTMLAppUserHeaderElement;
         new (): HTMLAppUserHeaderElement;
     };
+    interface HTMLAppUserProfileElement extends Components.AppUserProfile, HTMLStencilElement {
+    }
+    var HTMLAppUserProfileElement: {
+        prototype: HTMLAppUserProfileElement;
+        new (): HTMLAppUserProfileElement;
+    };
     interface HTMLElementTagNameMap {
         "app-home": HTMLAppHomeElement;
         "app-iam": HTMLAppIamElement;
@@ -67,6 +75,7 @@ declare global {
         "app-root": HTMLAppRootElement;
         "app-user-content": HTMLAppUserContentElement;
         "app-user-header": HTMLAppUserHeaderElement;
+        "app-user-profile": HTMLAppUserProfileElement;
     }
 }
 declare namespace LocalJSX {
@@ -86,6 +95,8 @@ declare namespace LocalJSX {
     interface AppUserHeader {
         "data"?: Data;
     }
+    interface AppUserProfile {
+    }
     interface IntrinsicElements {
         "app-home": AppHome;
         "app-iam": AppIam;
@@ -93,6 +104,7 @@ declare namespace LocalJSX {
         "app-root": AppRoot;
         "app-user-content": AppUserContent;
         "app-user-header": AppUserHeader;
+        "app-user-profile": AppUserProfile;
     }
 }
 export { LocalJSX as JSX };
@@ -105,6 +117,7 @@ declare module "@stencil/core" {
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
             "app-user-content": LocalJSX.AppUserContent & JSXBase.HTMLAttributes<HTMLAppUserContentElement>;
             "app-user-header": LocalJSX.AppUserHeader & JSXBase.HTMLAttributes<HTMLAppUserHeaderElement>;
+            "app-user-profile": LocalJSX.AppUserProfile & JSXBase.HTMLAttributes<HTMLAppUserProfileElement>;
         }
     }
 }
