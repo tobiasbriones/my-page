@@ -11,7 +11,7 @@
  */
 
 import { Component, h, Prop } from '@stencil/core';
-import { Data, emptyData } from '../../data';
+import { Data, emptyData } from '../../../data';
 
 const NAV_ITEMS = [
   'Profile',
