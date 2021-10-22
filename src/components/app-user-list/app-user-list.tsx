@@ -10,21 +10,29 @@
  * https://opensource.org/licenses/MIT.
  */
 
-import { Component, Host, h } from '@stencil/core';
+import { Component, h, Host, Prop } from '@stencil/core';
 
 @Component({
   tag: 'app-user-list',
   styleUrl: 'app-user-list.css',
-  shadow: true,
+  shadow: true
 })
 export class AppUserList {
+  @Prop()
+  items: string[];
+
+  constructor() {
+    this.items = [];
+  }
 
   render() {
+    const mapItem = (item: string) => <li key={ item }>{ item }</li>;
     return (
       <Host>
-        <slot></slot>
+        <ul>
+          { this.items.map(mapItem) }
+        </ul>
       </Host>
     );
   }
-
 }
