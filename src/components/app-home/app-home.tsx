@@ -10,7 +10,8 @@
  * https://opensource.org/licenses/MIT.
  */
 
-import { Component, h } from '@stencil/core';
+import { Component, h, State } from '@stencil/core';
+import { AppDataRepository, Data, emptyData } from '../../data';
 
 @Component({
   tag: 'app-home',
@@ -18,10 +19,34 @@ import { Component, h } from '@stencil/core';
   shadow: true
 })
 export class AppHome {
+  @State()
+  data: Data;
+
+  constructor() {
+    this.data = emptyData;
+  }
+
+  async componentWillLoad() {
+    await this.load();
+  }
+
   render() {
     return (
       <div class="app-home">
+        <div>
+          <app-iam name={ this.data.profile.name } />
+        </div>
       </div>
     );
+  }
+
+  async load() {
+    try {
+      const dataRepository = new AppDataRepository();
+      this.data = await dataRepository.get();
+    }
+    catch (e) {
+      console.log(e);
+    }
   }
 }

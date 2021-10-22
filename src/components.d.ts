@@ -9,6 +9,7 @@ export namespace Components {
     interface AppHome {
     }
     interface AppIam {
+        "name": string;
     }
     interface AppRoot {
     }
@@ -42,6 +43,7 @@ declare namespace LocalJSX {
     interface AppHome {
     }
     interface AppIam {
+        "name"?: string;
     }
     interface AppRoot {
     }

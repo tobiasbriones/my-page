@@ -1,18 +1,23 @@
-import { Component, Host, h } from '@stencil/core';
+import { Component, h, Host, Prop } from '@stencil/core';
 
 @Component({
   tag: 'app-iam',
   styleUrl: 'app-iam.css',
-  shadow: true,
+  shadow: true
 })
 export class AppIam {
+  @Prop()
+  name: string;
+
+  constructor() {
+    this.name = '';
+  }
 
   render() {
     return (
       <Host>
-        <slot></slot>
+        <p>My name is <strong>{ this.name }</strong></p>
       </Host>
     );
   }
-
 }
