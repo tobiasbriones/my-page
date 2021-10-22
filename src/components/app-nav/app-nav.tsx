@@ -10,7 +10,7 @@
  * https://opensource.org/licenses/MIT.
  */
 
-import { Component, h, Prop } from '@stencil/core';
+import { Component, Event, EventEmitter, h, Prop } from '@stencil/core';
 
 @Component({
   tag: 'app-nav',
@@ -21,12 +21,18 @@ export class AppNav {
   @Prop()
   items: string[];
 
+  @Event()
+  itemClick?: EventEmitter<string>;
+
   constructor() {
     this.items = [];
   }
 
   render() {
-    const mapItem = (item: string) => <li key={ item }><span>{ item }</span></li>;
+    const mapItem = (item: string) =>
+      <li key={ item } onClick={ e => this.onItemClick(e) }>
+        <span>{ item }</span>
+      </li>;
     return (
       <nav>
         <p>
@@ -38,5 +44,12 @@ export class AppNav {
         </ul>
       </nav>
     );
+  }
+
+  onItemClick(e: MouseEvent) {
+    const el = e.target as HTMLSpanElement;
+    const item = el.textContent || '';
+
+    this.itemClick?.emit(item);
   }
 }

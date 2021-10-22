@@ -68,6 +68,7 @@ declare namespace LocalJSX {
     }
     interface AppNav {
         "items"?: string[];
+        "onItemClick"?: (event: CustomEvent<string>) => void;
     }
     interface AppRoot {
     }
