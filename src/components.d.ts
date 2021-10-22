@@ -22,6 +22,8 @@ export namespace Components {
     interface AppUserHeader {
         "data": Data;
     }
+    interface AppUserList {
+    }
     interface AppUserProfile {
     }
 }
@@ -62,6 +64,12 @@ declare global {
         prototype: HTMLAppUserHeaderElement;
         new (): HTMLAppUserHeaderElement;
     };
+    interface HTMLAppUserListElement extends Components.AppUserList, HTMLStencilElement {
+    }
+    var HTMLAppUserListElement: {
+        prototype: HTMLAppUserListElement;
+        new (): HTMLAppUserListElement;
+    };
     interface HTMLAppUserProfileElement extends Components.AppUserProfile, HTMLStencilElement {
     }
     var HTMLAppUserProfileElement: {
@@ -75,6 +83,7 @@ declare global {
         "app-root": HTMLAppRootElement;
         "app-user-content": HTMLAppUserContentElement;
         "app-user-header": HTMLAppUserHeaderElement;
+        "app-user-list": HTMLAppUserListElement;
         "app-user-profile": HTMLAppUserProfileElement;
     }
 }
@@ -95,6 +104,8 @@ declare namespace LocalJSX {
     interface AppUserHeader {
         "data"?: Data;
     }
+    interface AppUserList {
+    }
     interface AppUserProfile {
     }
     interface IntrinsicElements {
@@ -104,6 +115,7 @@ declare namespace LocalJSX {
         "app-root": AppRoot;
         "app-user-content": AppUserContent;
         "app-user-header": AppUserHeader;
+        "app-user-list": AppUserList;
         "app-user-profile": AppUserProfile;
     }
 }
@@ -117,6 +129,7 @@ declare module "@stencil/core" {
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
             "app-user-content": LocalJSX.AppUserContent & JSXBase.HTMLAttributes<HTMLAppUserContentElement>;
             "app-user-header": LocalJSX.AppUserHeader & JSXBase.HTMLAttributes<HTMLAppUserHeaderElement>;
+            "app-user-list": LocalJSX.AppUserList & JSXBase.HTMLAttributes<HTMLAppUserListElement>;
             "app-user-profile": LocalJSX.AppUserProfile & JSXBase.HTMLAttributes<HTMLAppUserProfileElement>;
         }
     }
