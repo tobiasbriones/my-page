@@ -10,21 +10,48 @@
  * https://opensource.org/licenses/MIT.
  */
 
-import { Component, Host, h } from '@stencil/core';
+import { Component, h, Host, Prop, State } from '@stencil/core';
+import { Data, emptyData } from '../../../../data';
+
+const NAV_ITEMS = [
+  'Profile',
+  'Internships',
+  'Courses',
+  'Honors',
+  'Interests'
+];
 
 @Component({
   tag: 'app-user-nav',
   styleUrl: 'app-user-nav.css',
-  shadow: true,
+  shadow: true
 })
 export class AppUserNav {
+  @Prop()
+  user: Data;
+
+  @State()
+  selectedItem: string;
+
+  constructor() {
+    this.user = emptyData;
+    this.selectedItem = NAV_ITEMS[0];
+  }
 
   render() {
     return (
       <Host>
-        <slot></slot>
+        <app-nav
+          items={ NAV_ITEMS }
+          onItemClick={ (e: CustomEvent<string>) => this.onNavItemClick(e) }
+        />
+        <app-user-content user={ this.user } />
+        <app-user-photo photo={ this.user.profile.photo } />
       </Host>
     );
   }
 
+  onNavItemClick(event: CustomEvent<string>) {
+    this.selectedItem = event.detail;
+  }
 }

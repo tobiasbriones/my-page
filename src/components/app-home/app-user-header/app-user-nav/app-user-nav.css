@@ -13,3 +13,21 @@
 :host {
   display: block;
 }
+
+@media (min-width: 50rem) {
+  :host {
+    display: flex;
+  }
+
+  app-nav {
+    width: 25%;
+  }
+
+  app-user-content {
+    width: 50%;
+  }
+
+  app-user-photo {
+    width: 25%;
+  }
+}
