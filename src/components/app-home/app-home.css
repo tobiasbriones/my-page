@@ -9,3 +9,8 @@
  * LICENSE file in the root directory of this source tree or at
  * https://opensource.org/licenses/MIT.
  */
+
+:host {
+  display: block;
+  background-color: white;
+}

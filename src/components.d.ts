@@ -12,6 +12,7 @@ export namespace Components {
         "name": string;
     }
     interface AppNav {
+        "items": string[];
     }
     interface AppRoot {
     }
@@ -55,6 +56,7 @@ declare namespace LocalJSX {
         "name"?: string;
     }
     interface AppNav {
+        "items"?: string[];
     }
     interface AppRoot {
     }

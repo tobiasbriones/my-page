@@ -10,7 +10,7 @@
  * https://opensource.org/licenses/MIT.
  */
 
-import { Component, h, Host } from '@stencil/core';
+import { Component, h, Prop } from '@stencil/core';
 
 @Component({
   tag: 'app-nav',
@@ -18,13 +18,25 @@ import { Component, h, Host } from '@stencil/core';
   shadow: true
 })
 export class AppNav {
+  @Prop()
+  items: string[];
 
-  render() {
-    return (
-      <Host>
-        <slot></slot>
-      </Host>
-    );
+  constructor() {
+    this.items = [];
   }
 
+  render() {
+    const mapItem = (item: string) => <li key={ item }><span>{ item }</span></li>;
+    return (
+      <nav>
+        <p>
+          Menu
+        </p>
+
+        <ul>
+          { this.items.map(mapItem) }
+        </ul>
+      </nav>
+    );
+  }
 }
