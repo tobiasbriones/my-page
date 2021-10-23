@@ -11,24 +11,58 @@
  */
 
 :host {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+app-nav {
+  order: 1;
+}
+
+app-user-content {
+  order: 3;
+}
+
+app-user-photo {
+  order: 2;
 }
 
 @media (min-width: 50rem) {
   :host {
-    display: flex;
+    flex-direction: row;
+    gap: 0 2%;
+  }
+
+  app-nav,
+  app-user-content,
+  app-user-photo {
+    padding: 0;
+    margin: 0;
   }
 
   app-nav {
-    width: 25%;
+    flex: 1 0 25%;
   }
 
   app-user-content {
-    width: 50%;
+    flex: 1 0 46%;
+    order: 2;
   }
 
   app-user-photo {
-    width: 25%;
     height: 24rem;
+    flex: 1 0 25%;
+    order: 3;
+  }
+}
+
+@media (min-width: 90rem) {
+  :host {
+    gap: 0 4%;
+  }
+
+  app-user-content {
+    flex: 1 0 42%;
   }
 }

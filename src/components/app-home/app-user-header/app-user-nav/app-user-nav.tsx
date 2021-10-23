@@ -40,7 +40,7 @@ export class AppUserNav {
           items={ ITEMS }
           onItemClick={ (e: CustomEvent<NavItem>) => this.onNavItemClick(e) }
         />
-        <app-user-content user={ this.user } />
+        <app-user-content user={ this.user } selectedItem={ this.selectedItem } />
         <app-user-photo photo={ this.user.profile.photo } />
       </Host>
     );

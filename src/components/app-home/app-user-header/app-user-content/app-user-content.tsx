@@ -10,19 +10,32 @@
  * https://opensource.org/licenses/MIT.
  */
 
-import { Component, Host, h } from '@stencil/core';
+import { Component, h, Host, Prop } from '@stencil/core';
+import { Data, emptyData } from '../../../../data';
+import { emptyNavItem, NavItem } from '../app-user-nav/user-nav';
 
 @Component({
   tag: 'app-user-content',
   styleUrl: 'app-user-content.css',
-  shadow: true,
+  shadow: true
 })
 export class AppUserContent {
+  @Prop()
+  user: Data;
+
+  @Prop()
+  selectedItem: NavItem;
+
+  constructor() {
+    this.user = emptyData;
+    this.selectedItem = emptyNavItem;
+  }
 
   render() {
     return (
       <Host>
-        <slot></slot>
+        <p>{ this.selectedItem.value }</p>
+        <app-user-profile profile={ this.user.profile } />
       </Host>
     );
   }

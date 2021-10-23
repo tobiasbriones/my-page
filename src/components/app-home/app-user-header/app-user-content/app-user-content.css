@@ -12,4 +12,15 @@
 
 :host {
   display: block;
+  padding: 1rem;
+}
+
+p {
+  text-align: center;
+}
+
+@media (min-width: 90rem) {
+  :host {
+    padding: 4rem;
+  }
 }
