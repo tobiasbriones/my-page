@@ -1,4 +1,5 @@
 import { Config } from '@stencil/core';
+import { appConfig } from './config';
 
 // https://stenciljs.com/docs/config
 
@@ -14,13 +15,13 @@ export const config: Config = {
           '**/*.{js,css,json,html,ico,png}'
         ]
       },
-      baseUrl: 'https://myapp.local/',
+      baseUrl: appConfig.baseUrl,
       copy: [
         {
           src: 'manifest.webmanifest'
         },
         {
-          src: 'data.json'
+          src: appConfig.userFile
         }
       ]
     }

@@ -10,3 +10,9 @@
  * https://opensource.org/licenses/MIT.
  */
 
+import { AppConfig } from './config';
+
+export const devConfig: AppConfig = {
+  baseUrl: 'https://myapp.local/',
+  userFile: 'dev.user.json'
+};

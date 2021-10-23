@@ -10,3 +10,9 @@
  * https://opensource.org/licenses/MIT.
  */
 
+import { AppConfig } from './config';
+
+export const prodConfig: AppConfig = {
+  baseUrl: 'https://tobiasbriones.github.io/brief-personal-landing-page/',
+  userFile: 'user.json'
+};
