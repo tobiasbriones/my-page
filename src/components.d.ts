@@ -5,7 +5,8 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
-import { Data } from "./data";
+import { NavItem } from "./components/app-home/app-user-header/app-user-nav/user-nav";
+import { Data, Profile } from "./data";
 export namespace Components {
     interface AppHome {
     }
@@ -13,11 +14,12 @@ export namespace Components {
         "name": string;
     }
     interface AppNav {
-        "items": string[];
+        "items": NavItem[];
     }
     interface AppRoot {
     }
     interface AppUserContent {
+        "selectedItem": NavItem;
         "user": Data;
     }
     interface AppUserHeader {
@@ -33,6 +35,7 @@ export namespace Components {
         "photo": string;
     }
     interface AppUserProfile {
+        "profile": Profile;
     }
 }
 declare global {
@@ -116,12 +119,13 @@ declare namespace LocalJSX {
         "name"?: string;
     }
     interface AppNav {
-        "items"?: string[];
-        "onItemClick"?: (event: CustomEvent<string>) => void;
+        "items"?: NavItem[];
+        "onItemClick"?: (event: CustomEvent<NavItem>) => void;
     }
     interface AppRoot {
     }
     interface AppUserContent {
+        "selectedItem"?: NavItem;
         "user"?: Data;
     }
     interface AppUserHeader {
@@ -137,6 +141,7 @@ declare namespace LocalJSX {
         "photo"?: string;
     }
     interface AppUserProfile {
+        "profile"?: Profile;
     }
     interface IntrinsicElements {
         "app-home": AppHome;
