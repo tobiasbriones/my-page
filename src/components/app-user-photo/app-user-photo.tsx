@@ -10,28 +10,26 @@
  * https://opensource.org/licenses/MIT.
  */
 
-import { Component, h, Prop } from '@stencil/core';
-import { Data, emptyData } from '../../../data';
+import { Component, Host, h, Prop } from '@stencil/core';
 
 @Component({
-  tag: 'app-user-header',
-  styleUrl: 'app-user-header.css',
-  shadow: true
+  tag: 'app-user-photo',
+  styleUrl: 'app-user-photo.css',
+  shadow: true,
 })
-export class AppUserHeader {
+export class AppUserPhoto {
   @Prop()
-  data: Data;
+  photo: string;
 
   constructor() {
-    this.data = emptyData;
+    this.photo = '';
   }
 
   render() {
     return (
-      <header>
-        <app-iam name={ this.data.profile.name } />
-        <app-user-nav user={ this.data } />
-      </header>
+      <Host>
+        <img src={ this.photo } alt="User photo" />
+      </Host>
     );
   }
 }

@@ -33,7 +33,7 @@ export class AppHome {
   render() {
     return (
       <div class="app-home">
-        <app-user-header />
+        <app-user-header data={ this.data } />
       </div>
     );
   }

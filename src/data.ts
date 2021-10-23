@@ -10,26 +10,6 @@
  * https://opensource.org/licenses/MIT.
  */
 
-export const emptyData: Data = {
-  profile: {
-    name: '',
-    photo: '',
-    studies: [],
-    experience: '',
-    tools: [],
-    language: {
-      firstClass: [],
-      secondClass: [],
-      others: [],
-      naturalLanguages: []
-    }
-  },
-  courses: [],
-  honors: [],
-  interests: [],
-  internships: []
-};
-
 export interface Data {
   profile: Profile
   internships: string[];
@@ -64,3 +44,25 @@ export class AppDataRepository {
     return await res.json();
   }
 }
+
+export const emptyProfile: Profile = {
+  name: '',
+  photo: '',
+  studies: [],
+  experience: '',
+  tools: [],
+  language: {
+    firstClass: [],
+    secondClass: [],
+    others: [],
+    naturalLanguages: []
+  }
+};
+
+export const emptyData: Data = {
+  profile: emptyProfile,
+  courses: [],
+  honors: [],
+  interests: [],
+  internships: []
+};
