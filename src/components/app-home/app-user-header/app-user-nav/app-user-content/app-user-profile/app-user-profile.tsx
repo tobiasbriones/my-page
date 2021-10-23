@@ -11,7 +11,7 @@
  */
 
 import { Component, h, Host, Prop } from '@stencil/core';
-import { emptyProfile, Profile } from '../../data';
+import { emptyProfile, Profile } from '../../../../../../data';
 
 @Component({
   tag: 'app-user-profile',
