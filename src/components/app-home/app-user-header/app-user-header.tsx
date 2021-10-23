@@ -11,7 +11,7 @@
  */
 
 import { Component, h, Prop } from '@stencil/core';
-import { Data, emptyData } from '../../../data';
+import { User, emptyUser } from '../../../user';
 
 @Component({
   tag: 'app-user-header',
@@ -20,17 +20,17 @@ import { Data, emptyData } from '../../../data';
 })
 export class AppUserHeader {
   @Prop()
-  data: Data;
+  user: User;
 
   constructor() {
-    this.data = emptyData;
+    this.user = emptyUser;
   }
 
   render() {
     return (
       <header>
-        <app-iam name={ this.data.profile.name } />
-        <app-user-nav user={ this.data } />
+        <app-iam name={ this.user.profile.name } />
+        <app-user-nav user={ this.user } />
       </header>
     );
   }

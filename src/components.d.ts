@@ -6,7 +6,7 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { NavItem } from "./components/app-home/app-user-header/app-user-nav/user-nav";
-import { Data, Profile } from "./data";
+import { Profile, User } from "./user";
 export namespace Components {
     interface AppHome {
     }
@@ -21,16 +21,16 @@ export namespace Components {
     }
     interface AppUserContent {
         "selectedItem": NavItem;
-        "user": Data;
+        "user": User;
     }
     interface AppUserHeader {
-        "data": Data;
+        "user": User;
     }
     interface AppUserList {
         "items": string[];
     }
     interface AppUserNav {
-        "user": Data;
+        "user": User;
     }
     interface AppUserPhoto {
         "photo": string;
@@ -128,16 +128,16 @@ declare namespace LocalJSX {
     }
     interface AppUserContent {
         "selectedItem"?: NavItem;
-        "user"?: Data;
+        "user"?: User;
     }
     interface AppUserHeader {
-        "data"?: Data;
+        "user"?: User;
     }
     interface AppUserList {
         "items"?: string[];
     }
     interface AppUserNav {
-        "user"?: Data;
+        "user"?: User;
     }
     interface AppUserPhoto {
         "photo"?: string;

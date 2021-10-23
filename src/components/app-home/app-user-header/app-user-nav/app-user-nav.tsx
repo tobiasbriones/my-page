@@ -11,7 +11,7 @@
  */
 
 import { Component, h, Host, Prop, State } from '@stencil/core';
-import { Data, emptyData } from '../../../../data';
+import { User, emptyUser } from '../../../../user';
 import { getNavItems, NavItem } from './user-nav';
 
 const ITEMS = getNavItems();
@@ -23,13 +23,13 @@ const ITEMS = getNavItems();
 })
 export class AppUserNav {
   @Prop()
-  user: Data;
+  user: User;
 
   @State()
   selectedItem: NavItem;
 
   constructor() {
-    this.user = emptyData;
+    this.user = emptyUser;
     this.selectedItem = ITEMS[0];
   }
 

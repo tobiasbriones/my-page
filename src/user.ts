@@ -10,7 +10,7 @@
  * https://opensource.org/licenses/MIT.
  */
 
-export interface Data {
+export interface User {
   profile: Profile
   internships: string[];
   courses: string[];
@@ -34,13 +34,13 @@ export interface Language {
   naturalLanguages: string[];
 }
 
-export class AppDataRepository {
+export class AppUserRepository {
   private static readonly FILE_NAME = 'data.json';
 
   constructor() {}
 
-  async get(): Promise<Data> {
-    const res = await fetch(AppDataRepository.FILE_NAME);
+  async get(): Promise<User> {
+    const res = await fetch(AppUserRepository.FILE_NAME);
     return await res.json();
   }
 }
@@ -59,7 +59,7 @@ export const emptyProfile: Profile = {
   }
 };
 
-export const emptyData: Data = {
+export const emptyUser: User = {
   profile: emptyProfile,
   courses: [],
   honors: [],

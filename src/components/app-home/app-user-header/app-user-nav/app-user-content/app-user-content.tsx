@@ -11,7 +11,7 @@
  */
 
 import { Component, h, Host, Prop } from '@stencil/core';
-import { Data, emptyData } from '../../../../../data';
+import { User, emptyUser } from '../../../../../user';
 import { emptyNavItem, ItemId, NavItem } from '../user-nav';
 
 @Component({
@@ -21,13 +21,13 @@ import { emptyNavItem, ItemId, NavItem } from '../user-nav';
 })
 export class AppUserContent {
   @Prop()
-  user: Data;
+  user: User;
 
   @Prop()
   selectedItem: NavItem;
 
   constructor() {
-    this.user = emptyData;
+    this.user = emptyUser;
     this.selectedItem = emptyNavItem;
   }
 

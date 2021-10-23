@@ -11,7 +11,7 @@
  */
 
 import { Component, h, State } from '@stencil/core';
-import { AppDataRepository, Data, emptyData } from '../../data';
+import { AppUserRepository, User, emptyUser } from '../../user';
 
 @Component({
   tag: 'app-home',
@@ -20,10 +20,10 @@ import { AppDataRepository, Data, emptyData } from '../../data';
 })
 export class AppHome {
   @State()
-  data: Data;
+  user: User;
 
   constructor() {
-    this.data = emptyData;
+    this.user = emptyUser;
   }
 
   async componentWillLoad() {
@@ -33,15 +33,15 @@ export class AppHome {
   render() {
     return (
       <div class="app-home">
-        <app-user-header data={ this.data } />
+        <app-user-header user={ this.user } />
       </div>
     );
   }
 
   async load() {
     try {
-      const dataRepository = new AppDataRepository();
-      this.data = await dataRepository.get();
+      const userRepository = new AppUserRepository();
+      this.user = await userRepository.get();
     }
     catch (e) {
       console.log(e);
