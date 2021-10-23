@@ -23,6 +23,11 @@ export interface NavItem {
   value: string;
 }
 
+export const emptyNavItem: NavItem = {
+  id: -1,
+  value: ''
+};
+
 export function getNavItems(): NavItem[] {
   const mapItem = (item: string, index: number) => ({
     id: index + 1,
