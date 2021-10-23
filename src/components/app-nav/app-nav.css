@@ -27,7 +27,6 @@ ul {
 
 ul > li {
   width: 100%;
-  min-height: 3.5rem;
   list-style: none;
 }
 
