@@ -27,7 +27,7 @@ ul {
 
 ul > li {
   width: 100%;
-  min-height: 56px;
+  min-height: 3.5rem;
   list-style: none;
 }
 
@@ -35,10 +35,14 @@ ul > li > span {
   display: block;
   height: 100%;
   padding: 1rem;
-  transition: all 200ms;
+  transition: all 150ms;
   cursor: pointer;
 }
 
 ul > li > span:hover {
-  background-color: #D0D0D0;
+  background-color: var(--hover-color);
+}
+
+.selected {
+  background-color: var(--selected-color);
 }

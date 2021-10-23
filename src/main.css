@@ -13,6 +13,8 @@
 :root {
   --primary-color: #81D4FA;
   --primary-background: #FAFAFA;
+  --hover-color: #E0E0E0;
+  --selected-color: #C0C0C0;
 }
 
 * {
@@ -33,14 +35,4 @@ body {
   body {
     padding: 0 15%;
   }
-}
-
-/* ---------------------------  GLOBAL APP THEME  --------------------------- */
-
-nav li {
-  list-style: none;
-}
-
-.selected {
-  background-color: #969696;
 }
