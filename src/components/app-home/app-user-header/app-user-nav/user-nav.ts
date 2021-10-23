@@ -10,13 +10,21 @@
  * https://opensource.org/licenses/MIT.
  */
 
-const ITEMS = [
+const VALUES = [
   'Profile',
   'Internships',
   'Courses',
   'Honors',
   'Interests'
 ];
+
+export enum ItemId {
+  PROFILE = 1,
+  INTERNSHIPS,
+  COURSES,
+  HONORS,
+  INTERESTS
+}
 
 export interface NavItem {
   id: number;
@@ -29,9 +37,9 @@ export const emptyNavItem: NavItem = {
 };
 
 export function getNavItems(): NavItem[] {
-  const mapItem = (item: string, index: number) => ({
+  const mapValue = (item: string, index: number) => ({
     id: index + 1,
     value: item
   });
-  return ITEMS.map(mapItem);
+  return VALUES.map(mapValue);
 }
