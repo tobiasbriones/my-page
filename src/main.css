@@ -29,9 +29,9 @@ body {
   background: url('/assets/bg.svg') center;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 90rem) {
   body {
-    padding: 5% 15%;
+    padding: 0 15%;
   }
 }
 
