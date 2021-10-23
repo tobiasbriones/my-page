@@ -12,7 +12,9 @@
 
 import { Component, h, Host, Prop, State } from '@stencil/core';
 import { Data, emptyData } from '../../../../data';
-import { NAV_ITEMS } from './user-nav';
+import { getNavItems, NavItem } from './user-nav';
+
+const ITEMS = getNavItems();
 
 @Component({
   tag: 'app-user-nav',
@@ -24,19 +26,19 @@ export class AppUserNav {
   user: Data;
 
   @State()
-  selectedItem: string;
+  selectedItem: NavItem;
 
   constructor() {
     this.user = emptyData;
-    this.selectedItem = NAV_ITEMS[0];
+    this.selectedItem = ITEMS[0];
   }
 
   render() {
     return (
       <Host>
         <app-nav
-          items={ NAV_ITEMS }
-          onItemClick={ (e: CustomEvent<string>) => this.onNavItemClick(e) }
+          items={ ITEMS }
+          onItemClick={ (e: CustomEvent<NavItem>) => this.onNavItemClick(e) }
         />
         <app-user-content user={ this.user } />
         <app-user-photo photo={ this.user.profile.photo } />
@@ -44,7 +46,7 @@ export class AppUserNav {
     );
   }
 
-  onNavItemClick(event: CustomEvent<string>) {
+  onNavItemClick(event: CustomEvent<NavItem>) {
     this.selectedItem = event.detail;
   }
 }

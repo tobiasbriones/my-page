@@ -11,6 +11,7 @@
  */
 
 import { Component, Event, EventEmitter, h, Prop } from '@stencil/core';
+import { NavItem } from '../app-home/app-user-header/app-user-nav/user-nav';
 
 @Component({
   tag: 'app-nav',
@@ -19,26 +20,29 @@ import { Component, Event, EventEmitter, h, Prop } from '@stencil/core';
 })
 export class AppNav {
   @Prop()
-  items: string[];
+  items: NavItem[];
 
   @Event()
-  itemClick?: EventEmitter<string>;
+  itemClick?: EventEmitter<NavItem>;
 
   constructor() {
     this.items = [];
   }
 
   render() {
-    const mapItem = (item: string) =>
-      <li key={ item } onClick={ e => this.onItemClick(e) }>
-        <span>{ item }</span>
-      </li>;
+    const mapItem = (item: NavItem) => (
+      <li
+        id={ item.id.toString() }
+        key={ item.id.toString() }
+        onClick={ e => this.onItemClick(e) }
+      >
+        <span>{ item.value }</span>
+      </li>
+    );
+
     return (
       <nav>
-        <p>
-          Menu
-        </p>
-
+        <p>Menu</p>
         <ul>
           { this.items.map(mapItem) }
         </ul>
@@ -46,10 +50,10 @@ export class AppNav {
     );
   }
 
-  onItemClick(e: MouseEvent) {
-    const el = e.target as HTMLSpanElement;
-    const item = el.textContent || '';
-
+  onItemClick(event: MouseEvent) {
+    const el = event.currentTarget as HTMLUListElement;
+    const id = parseInt(el.id);
+    const item = this.items.find(item => item.id === id);
     this.itemClick?.emit(item);
   }
 }

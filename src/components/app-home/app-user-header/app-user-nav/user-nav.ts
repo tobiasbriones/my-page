@@ -10,10 +10,23 @@
  * https://opensource.org/licenses/MIT.
  */
 
-export const NAV_ITEMS = [
+const ITEMS = [
   'Profile',
   'Internships',
   'Courses',
   'Honors',
   'Interests'
 ];
+
+export interface NavItem {
+  id: number;
+  value: string;
+}
+
+export function getNavItems(): NavItem[] {
+  const mapItem = (item: string, index: number) => ({
+    id: index + 1,
+    value: item
+  });
+  return ITEMS.map(mapItem);
+}
