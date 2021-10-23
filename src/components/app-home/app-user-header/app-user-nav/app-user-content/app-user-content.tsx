@@ -34,7 +34,7 @@ export class AppUserContent {
   render() {
     return (
       <Host>
-        <p>{ this.selectedItem.value }</p>
+        <h3>{ this.selectedItem.value }</h3>
         { this.renderContent() }
       </Host>
     );

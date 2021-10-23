@@ -22,6 +22,9 @@ export class AppNav {
   @Prop()
   items: NavItem[];
 
+  @Prop()
+  selectedItem?: NavItem;
+
   @Event()
   itemClick?: EventEmitter<NavItem>;
 
@@ -30,16 +33,17 @@ export class AppNav {
   }
 
   render() {
+    const getClass = (item: NavItem) => item.id === this.selectedItem?.id ? 'selected' : '';
     const mapItem = (item: NavItem) => (
       <li
         id={ item.id.toString() }
         key={ item.id.toString() }
+        class={ getClass(item) }
         onClick={ e => this.onItemClick(e) }
       >
         <span>{ item.value }</span>
       </li>
     );
-
     return (
       <nav>
         <p>Menu</p>

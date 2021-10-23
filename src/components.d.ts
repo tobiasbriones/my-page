@@ -15,6 +15,7 @@ export namespace Components {
     }
     interface AppNav {
         "items": NavItem[];
+        "selectedItem"?: NavItem;
     }
     interface AppRoot {
     }
@@ -121,6 +122,7 @@ declare namespace LocalJSX {
     interface AppNav {
         "items"?: NavItem[];
         "onItemClick"?: (event: CustomEvent<NavItem>) => void;
+        "selectedItem"?: NavItem;
     }
     interface AppRoot {
     }

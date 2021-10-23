@@ -38,6 +38,7 @@ export class AppUserNav {
       <Host>
         <app-nav
           items={ ITEMS }
+          selectedItem={ this.selectedItem }
           onItemClick={ (e: CustomEvent<NavItem>) => this.onNavItemClick(e) }
         />
         <app-user-content user={ this.user } selectedItem={ this.selectedItem } />

@@ -10,23 +10,31 @@
  * https://opensource.org/licenses/MIT.
  */
 
+:host {
+  display: block;
+}
+
 header {
   display: flex;
-  height: 56px;
+  height: 3.5rem;
   padding: 0 1rem;
   align-items: center;
-  color: white;
-  background: #5851FF;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  background: var(--primary-color);
 }
 
 img {
-  width: 36px;
-  height: 36px;
+  width: 2.25rem;
+  height: 2.25rem;
 }
 
 h1 {
-  padding: 0 12px;
+  padding: 0 0.75rem;
   font-size: 1.4rem;
   font-weight: 500;
+}
+
+@media (min-width: 90rem) {
+  :host {
+    border: 0.0625rem solid rgba(0, 0, 0, 0.1);
+  }
 }

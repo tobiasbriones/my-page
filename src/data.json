@@ -1,19 +1,19 @@
 {
   "profile": {
-    "name": "",
-    "photo": "",
-    "studies": [],
-    "experience": "",
-    "tools": [],
+    "name": "Tobias Briones",
+    "photo": "https://avatars.githubusercontent.com/u/39544153?s=400&u=5282ed666fe1908a396b929b9054b8150849108d&v=4",
+    "studies": ["Engineering", "Math", "..."],
+    "experience": "Software engineer",
+    "tools": ["IntelliJ", "Git", "GitHub"],
     "language": {
-      "firstClass": [],
-      "secondClass": [],
-      "others": [],
-      "naturalLanguages": []
+      "firstClass": ["Java"],
+      "secondClass": ["PHP"],
+      "others": [""],
+      "naturalLanguages": ["English", "Spanish (native)"]
     }
   },
-  "internships": [],
-  "courses": [],
+  "internships": ["GOIT HN", "PL Intelligent Solutions, Co."],
+  "courses": ["Coursera"],
   "honors": [],
   "interests": []
 }

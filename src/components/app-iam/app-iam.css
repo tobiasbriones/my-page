@@ -13,8 +13,8 @@
 :host {
   display: block;
   padding: 2rem;
-  background-color: #B3E5FC;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: var(--primary-color);
+  border-bottom: 0.0625rem solid #4FC3F7;
 }
 
 p {
