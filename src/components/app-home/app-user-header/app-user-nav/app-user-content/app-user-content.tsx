@@ -12,7 +12,7 @@
 
 import { Component, h, Host, Prop } from '@stencil/core';
 import { Data, emptyData } from '../../../../../data';
-import { emptyNavItem, NavItem } from '../user-nav';
+import { emptyNavItem, ItemId, NavItem } from '../user-nav';
 
 @Component({
   tag: 'app-user-content',
@@ -35,9 +35,26 @@ export class AppUserContent {
     return (
       <Host>
         <p>{ this.selectedItem.value }</p>
-        <app-user-profile profile={ this.user.profile } />
+        { this.renderContent() }
       </Host>
     );
   }
 
+  private renderContent() {
+    const user = this.user;
+    switch (this.selectedItem.id) {
+      case ItemId.PROFILE:
+        return <app-user-profile profile={ user.profile } />;
+      case ItemId.INTERNSHIPS:
+        return <app-user-list items={ user.internships } />;
+      case ItemId.COURSES:
+        return <app-user-list items={ user.courses } />;
+      case ItemId.HONORS:
+        return <app-user-list items={ user.honors } />;
+      case ItemId.INTERESTS:
+        return <app-user-list items={ user.interests } />;
+      default:
+        return <div />;
+    }
+  }
 }
