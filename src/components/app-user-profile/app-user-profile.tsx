@@ -10,21 +10,72 @@
  * https://opensource.org/licenses/MIT.
  */
 
-import { Component, Host, h } from '@stencil/core';
+import { Component, h, Host, Prop } from '@stencil/core';
+import { emptyProfile, Profile } from '../../data';
 
 @Component({
   tag: 'app-user-profile',
   styleUrl: 'app-user-profile.css',
-  shadow: true,
+  shadow: true
 })
 export class AppUserProfile {
+  @Prop()
+  profile: Profile;
+
+  constructor() {
+    this.profile = emptyProfile;
+  }
 
   render() {
     return (
       <Host>
-        <slot></slot>
+        <div>
+          <h3>Studies</h3>
+          <app-user-list items={ this.profile.studies } />
+        </div>
+
+        <div>
+          <h3>Experience</h3>
+          <p>{ this.profile.experience }</p>
+        </div>
+
+        <div>
+          <h3>Tools</h3>
+          <app-user-list items={ this.profile.tools } />
+        </div>
+
+        { this.getLanguages() }
       </Host>
     );
   }
 
+  private getLanguages() {
+    const lang = this.profile.language;
+    return (
+      <div>
+        <div>
+          <h3>Programming Languages</h3>
+          <div>
+            This section shows the programming languages according to my career
+            orientation.
+          </div>
+
+          <h5>First class</h5>
+          <app-user-list items={ lang.firstClass } />
+
+          <h5>Second class</h5>
+          <app-user-list items={ lang.secondClass } />
+
+          <h5>Others</h5>
+          <app-user-list items={ lang.others } />
+        </div>
+
+        <div>
+          <h3>Natural Languages</h3>
+
+          <app-user-list items={ lang.naturalLanguages } />
+        </div>
+      </div>
+    );
+  }
 }
