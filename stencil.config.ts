@@ -25,5 +25,8 @@ export const config: Config = {
         }
       ]
     }
-  ]
+  ],
+  env: {
+    userFile: appConfig.userFile
+  }
 };

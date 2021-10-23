@@ -10,6 +10,8 @@
  * https://opensource.org/licenses/MIT.
  */
 
+import { Env } from '@stencil/core';
+
 export interface User {
   profile: Profile
   internships: string[];
@@ -35,7 +37,7 @@ export interface Language {
 }
 
 export class AppUserRepository {
-  private static readonly FILE_NAME = 'data.json';
+  private static readonly FILE_NAME = Env.userFile as string;
 
   constructor() {}
 
