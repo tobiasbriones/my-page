@@ -1,7 +1,3 @@
-#App
-src/user.json
-
-# Others
 dist/
 !www/favicon.ico
 www/
