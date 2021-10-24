@@ -6,6 +6,23 @@
 
 Minimalistic and small landing page for a nice and colorful personal index or portfolio.
 
+## Getting started
+
+Install dependencies with `npm i`. 
+
+Run in dev-mode with `npm run start`.
+
+Build to `./www` with `npm run build`.
+
+Configuration files:
+
+- [prod.config.ts](./config/prod.config.ts): defines the application production values.
+
+- [dev.config.ts](./config/prod.config.ts): defines the application development values.
+
+- [dev.user.json](./src/dev.user.json): defines a development local user to load into the application.
+
+For the `user.json` user file used in production, add the URL of the json file to the production configuration.
 
 ## Contact
 
@@ -24,4 +41,4 @@ Copyright © 2021 Tobias Briones. All rights reserved.
 
 ### License
 
-This project is licensed under the [MIT LICENSE](./LICENSE).
+This project is licensed under the [MIT License](./LICENSE).
