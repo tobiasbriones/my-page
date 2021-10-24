@@ -28,7 +28,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: url('/assets/bg.svg') center;
+  background: url('.././assets/bg.svg') center;
 }
 
 @media (min-width: 90rem) {

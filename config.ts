@@ -16,6 +16,7 @@ import { devConfig } from './dev.config';
 const isDev: boolean = process.argv && process.argv.indexOf('--dev') > -1;
 
 export interface AppConfig {
+  routerRoot: string;
   baseUrl: string,
   userFile: string
 }

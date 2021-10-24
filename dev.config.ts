@@ -13,6 +13,7 @@
 import { AppConfig } from './config';
 
 export const devConfig: AppConfig = {
+  routerRoot: '/',
   baseUrl: 'https://myapp.local/',
   userFile: 'dev.user.json'
 };

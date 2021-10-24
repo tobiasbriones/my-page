@@ -12,7 +12,10 @@
 
 import { AppConfig } from './config';
 
+const routerRoot = '/brief-personal-landing-page/';
+
 export const prodConfig: AppConfig = {
-  baseUrl: 'https://tobiasbriones.github.io/brief-personal-landing-page/',
-  userFile: 'user.json'
+  routerRoot: routerRoot,
+  baseUrl: `https://tobiasbriones.github.io${ routerRoot }`,
+  userFile: 'https://raw.githubusercontent.com/tobiasbriones/brief-personal-landing-page/static/user.json'
 };
