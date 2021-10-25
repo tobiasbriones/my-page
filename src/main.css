@@ -28,11 +28,31 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: url('.././assets/bg.svg') center;
+  background: url('.././assets/bg-w640.png') center;
 }
 
 @media (min-width: 90rem) {
   body {
     padding: 0 15%;
+  }
+}
+
+/* ------------------------  BACKGROUND BREAKPOINTS  ------------------------ */
+
+@media (min-width: 641px) {
+  body {
+    background: url('.././assets/bg-w1280.png') center;
+  }
+}
+
+@media (min-width: 1281px) {
+  body {
+    background: url('.././assets/bg-w1920.png') center;
+  }
+}
+
+@media (min-width: 2561px) {
+  body {
+    background: url('.././assets/bg.svg') center;
   }
 }
