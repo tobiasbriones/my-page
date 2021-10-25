@@ -7,6 +7,6 @@ This project contains images provided by Pixabay (https://pixabay.com/),
 available under the Pixabay License (https://pixabay.com/service/license/). The
 complete list of images is listed next:
 
-- ./src/assets/bg.svg (originally watercolor-4117017.ai)
+- ./src/assets/bg.svg, /bg-w*.png (originally watercolor-4117017.ai)
   from: https://pixabay.com/vectors/watercolor-pink-violet-purple-4117017/
   by  : https://pixabay.com/users/stux-12364/
