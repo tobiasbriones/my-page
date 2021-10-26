@@ -12,6 +12,8 @@
 
 :root {
   --primary-color: #81D4FA;
+  --primary-dark-color: #0288D1;
+  --accent-color: #546E7A;
   --primary-background: #FAFAFA;
   --hover-color: #E0E0E0;
   --selected-color: #C0C0C0;
