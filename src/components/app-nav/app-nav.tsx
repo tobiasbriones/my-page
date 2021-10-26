@@ -41,6 +41,10 @@ export class AppNav {
         class={ getClass(item) }
         onClick={ e => this.onItemClick(e) }
       >
+        <img
+          src={ this.getIconSrc(item) }
+          alt={ item.value }
+        />
         <span>{ item.value }</span>
       </li>
     );
@@ -59,5 +63,11 @@ export class AppNav {
     const id = parseInt(el.id);
     const item = this.items.find(item => item.id === id);
     this.itemClick?.emit(item);
+  }
+
+  private getIconSrc(item: NavItem): string {
+    return this.selectedItem?.id === item.id ?
+      `${ item.iconSrc }-active.svg` :
+      `${ item.iconSrc }.svg`;
   }
 }
