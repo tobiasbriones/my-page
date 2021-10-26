@@ -10,14 +10,6 @@
  * https://opensource.org/licenses/MIT.
  */
 
-const VALUES = [
-  'Profile',
-  'Internships',
-  'Courses',
-  'Honors',
-  'Interests'
-];
-
 export enum ItemId {
   PROFILE = 1,
   INTERNSHIPS,
@@ -29,17 +21,48 @@ export enum ItemId {
 export interface NavItem {
   id: number;
   value: string;
+  iconSrc: string;
 }
 
 export const emptyNavItem: NavItem = {
   id: -1,
-  value: ''
+  value: '',
+  iconSrc: ''
 };
 
 export function getNavItems(): NavItem[] {
-  const mapValue = (item: string, index: number) => ({
-    id: index + 1,
-    value: item
-  });
-  return VALUES.map(mapValue);
+  return VALUES;
+}
+
+const VALUES: NavItem[] = [
+  {
+    id: ItemId.PROFILE,
+    value: 'Profile',
+    iconSrc: getIconSrc('person')
+  },
+  {
+    id: ItemId.INTERNSHIPS,
+    value: 'Internships',
+    iconSrc: getIconSrc('location-city')
+  },
+  {
+    id: ItemId.COURSES,
+    value: 'Courses',
+    iconSrc: getIconSrc('school')
+  },
+  {
+    id: ItemId.HONORS,
+    value: 'Honors',
+    iconSrc: getIconSrc('military-tech')
+  },
+  {
+    id: ItemId.INTERESTS,
+    value: 'Interests',
+    iconSrc: getIconSrc('interests')
+  }
+];
+
+function getIconSrc(name: string): string {
+  const ASSETS_MD = '.././assets/icon/md';
+  return `${ ASSETS_MD }/${ name }`;
 }
