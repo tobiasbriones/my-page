@@ -13,3 +13,9 @@
 :host {
   display: block;
 }
+
+@media (min-width: 50rem) {
+  app-iam {
+    padding: 0 1rem 1.5rem 1rem;
+  }
+}

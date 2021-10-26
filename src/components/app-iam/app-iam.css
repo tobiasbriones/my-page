@@ -12,12 +12,14 @@
 
 :host {
   display: block;
-  padding: 2rem;
+  padding: 0 1rem 1rem 1rem;
   background-color: var(--primary-color);
   border-bottom: 0.0625rem solid #4FC3F7;
 }
 
-p {
+h2 {
   margin: 0;
+  font-size: 1.4rem;
+  font-weight: bold;
   text-align: center;
 }
