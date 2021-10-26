@@ -11,7 +11,11 @@
  */
 
 :host {
+  position: fixed;
   display: block;
+  width: 100%;
+  bottom: 0;
+  background-color: white;
 }
 
 img {
@@ -20,26 +24,28 @@ img {
 }
 
 h3 {
-  padding: 1rem;
-  font-weight: bold;
-  text-align: center;
+  display: none;
 }
 
 ul {
+  display: flex;
   padding: 0;
+  margin: 0;
 }
 
 ul > li {
   display: flex;
   padding: 1rem;
+  flex-grow: 1;
   align-items: center;
-  list-style: none;
-  cursor: pointer;
+  justify-content: center;
   transition: all 150ms;
+  cursor: pointer;
+  list-style: none;
 }
 
 ul > li > span {
-  margin: 0 1rem;
+  display: none;
 }
 
 ul > li:hover {
@@ -48,4 +54,32 @@ ul > li:hover {
 
 .selected {
   background-color: var(--selected-color);
+}
+
+@media (min-width: 50rem) {
+  :host {
+    position: relative;
+    display: block;
+    width: auto;
+  }
+
+  h3 {
+    display: block;
+    padding: 1rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  ul {
+    display: block;
+  }
+
+  ul > li {
+    justify-content: start;
+  }
+
+  ul > li > span {
+    display: inline-block;
+    margin: 0 1rem;
+  }
 }
