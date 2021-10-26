@@ -11,8 +11,9 @@
  */
 
 import { Component, h, Host, Prop } from '@stencil/core';
-import { User, emptyUser } from '../../../../../user';
-import { emptyNavItem, ItemId, NavItem } from '../user-nav';
+import { emptyUser, User } from '../../../../../user';
+import { emptyNavItem, NavItem } from '../../../../app-nav/nav-item';
+import { ItemId } from '../user-nav';
 
 @Component({
   tag: 'app-user-content',

@@ -10,16 +10,14 @@
  * https://opensource.org/licenses/MIT.
  */
 
-:host {
-  display: block;
-  padding: 0 1rem 1rem 1rem;
-  background-color: var(--primary-color);
-  border-bottom: 0.0625rem solid #4FC3F7;
+export interface NavItem {
+  id: number;
+  value: string;
+  iconSrc: string;
 }
 
-h2 {
-  margin: 0;
-  font-size: 1.4rem;
-  font-weight: bold;
-  text-align: center;
-}
+export const emptyNavItem: NavItem = {
+  id: -1,
+  value: '',
+  iconSrc: ''
+};

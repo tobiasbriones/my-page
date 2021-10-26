@@ -10,6 +10,8 @@
  * https://opensource.org/licenses/MIT.
  */
 
+import { NavItem } from '../../../app-nav/nav-item';
+
 export enum ItemId {
   PROFILE = 1,
   INTERNSHIPS,
@@ -17,18 +19,6 @@ export enum ItemId {
   HONORS,
   INTERESTS
 }
-
-export interface NavItem {
-  id: number;
-  value: string;
-  iconSrc: string;
-}
-
-export const emptyNavItem: NavItem = {
-  id: -1,
-  value: '',
-  iconSrc: ''
-};
 
 export function getNavItems(): NavItem[] {
   return VALUES;

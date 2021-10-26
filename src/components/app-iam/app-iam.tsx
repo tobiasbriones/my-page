@@ -28,7 +28,7 @@ export class AppIam {
   render() {
     return (
       <Host>
-        <p>My name is <strong>{ this.name }</strong></p>
+        <h2>{ this.name }</h2>
       </Host>
     );
   }

@@ -11,42 +11,49 @@
  */
 
 :host {
+  position: fixed;
   display: block;
+  width: 100%;
+  bottom: 0;
+  background-color: white;
+  border-top: 0.0625rem solid var(--selected-color);
 }
 
-img {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
-p {
-  padding: 1rem;
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
+h3 {
+  display: none;
 }
 
 ul {
-  padding: 0;
-}
-
-ul > li {
   display: flex;
-  padding: 1rem;
-  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  flex-grow: 1;
   list-style: none;
-  cursor: pointer;
-  transition: all 150ms;
-}
-
-ul > li > span {
-  margin: 0 1rem;
-}
-
-ul > li:hover {
-  background-color: var(--hover-color);
 }
 
 .selected {
   background-color: var(--selected-color);
+}
+
+@media (min-width: 50rem) {
+  :host {
+    position: relative;
+    display: block;
+    width: auto;
+    border-top: none;
+  }
+
+  h3 {
+    display: block;
+    padding: 1rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  ul {
+    display: block;
+  }
 }

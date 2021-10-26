@@ -10,16 +10,14 @@
  * https://opensource.org/licenses/MIT.
  */
 
-:host {
-  display: block;
-  padding: 0 1rem 1rem 1rem;
-  background-color: var(--primary-color);
-  border-bottom: 0.0625rem solid #4FC3F7;
-}
+import { newE2EPage } from '@stencil/core/testing';
 
-h2 {
-  margin: 0;
-  font-size: 1.4rem;
-  font-weight: bold;
-  text-align: center;
-}
+describe('app-nav-item', () => {
+  it('renders', async () => {
+    const page = await newE2EPage();
+    await page.setContent('<app-nav-item></app-nav-item>');
+
+    const element = await page.find('app-nav-item');
+    expect(element).toHaveClass('hydrated');
+  });
+});
