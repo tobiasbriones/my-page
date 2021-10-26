@@ -5,7 +5,7 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
-import { NavItem } from "./components/app-home/app-user-header/app-user-nav/user-nav";
+import { NavItem } from "./components/app-nav/nav-item";
 import { Profile, User } from "./user";
 export namespace Components {
     interface AppHome {
@@ -16,6 +16,10 @@ export namespace Components {
     interface AppNav {
         "items": NavItem[];
         "selectedItem"?: NavItem;
+    }
+    interface AppNavItem {
+        "isSelected": boolean;
+        "item": NavItem;
     }
     interface AppRoot {
     }
@@ -57,6 +61,12 @@ declare global {
     var HTMLAppNavElement: {
         prototype: HTMLAppNavElement;
         new (): HTMLAppNavElement;
+    };
+    interface HTMLAppNavItemElement extends Components.AppNavItem, HTMLStencilElement {
+    }
+    var HTMLAppNavItemElement: {
+        prototype: HTMLAppNavItemElement;
+        new (): HTMLAppNavItemElement;
     };
     interface HTMLAppRootElement extends Components.AppRoot, HTMLStencilElement {
     }
@@ -104,6 +114,7 @@ declare global {
         "app-home": HTMLAppHomeElement;
         "app-iam": HTMLAppIamElement;
         "app-nav": HTMLAppNavElement;
+        "app-nav-item": HTMLAppNavItemElement;
         "app-root": HTMLAppRootElement;
         "app-user-content": HTMLAppUserContentElement;
         "app-user-header": HTMLAppUserHeaderElement;
@@ -123,6 +134,11 @@ declare namespace LocalJSX {
         "items"?: NavItem[];
         "onItemClick"?: (event: CustomEvent<NavItem>) => void;
         "selectedItem"?: NavItem;
+    }
+    interface AppNavItem {
+        "isSelected"?: boolean;
+        "item"?: NavItem;
+        "onItemClick"?: (event: CustomEvent<NavItem>) => void;
     }
     interface AppRoot {
     }
@@ -149,6 +165,7 @@ declare namespace LocalJSX {
         "app-home": AppHome;
         "app-iam": AppIam;
         "app-nav": AppNav;
+        "app-nav-item": AppNavItem;
         "app-root": AppRoot;
         "app-user-content": AppUserContent;
         "app-user-header": AppUserHeader;
@@ -165,6 +182,7 @@ declare module "@stencil/core" {
             "app-home": LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
             "app-iam": LocalJSX.AppIam & JSXBase.HTMLAttributes<HTMLAppIamElement>;
             "app-nav": LocalJSX.AppNav & JSXBase.HTMLAttributes<HTMLAppNavElement>;
+            "app-nav-item": LocalJSX.AppNavItem & JSXBase.HTMLAttributes<HTMLAppNavItemElement>;
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
             "app-user-content": LocalJSX.AppUserContent & JSXBase.HTMLAttributes<HTMLAppUserContentElement>;
             "app-user-header": LocalJSX.AppUserHeader & JSXBase.HTMLAttributes<HTMLAppUserHeaderElement>;

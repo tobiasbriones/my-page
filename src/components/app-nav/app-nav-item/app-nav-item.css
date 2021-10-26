@@ -11,5 +11,35 @@
  */
 
 :host {
-  display: block;
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  transition: all 150ms;
+  cursor: pointer;
+  list-style: none;
+}
+
+:host(:hover) {
+  background-color: var(--hover-color);
+}
+
+img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+span {
+  display: none;
+}
+
+@media (min-width: 50rem) {
+  :host {
+    justify-content: start;
+  }
+
+  span {
+    display: inline-block;
+    margin: 0 1rem;
+  }
 }
