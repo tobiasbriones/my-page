@@ -50,7 +50,7 @@ export class AppNav {
     );
     return (
       <nav>
-        <p>Menu</p>
+        <h3>Menu</h3>
         <ul>
           { this.items.map(mapItem) }
         </ul>
