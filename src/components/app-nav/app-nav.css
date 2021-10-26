@@ -16,6 +16,7 @@
   width: 100%;
   bottom: 0;
   background-color: white;
+  border-top: 0.0625rem solid var(--selected-color);
 }
 
 h3 {
@@ -42,6 +43,7 @@ li {
     position: relative;
     display: block;
     width: auto;
+    border-top: none;
   }
 
   h3 {
