@@ -11,8 +11,9 @@
  */
 
 import { Component, h, Host, Prop, State } from '@stencil/core';
-import { User, emptyUser } from '../../../../user';
-import { getNavItems, NavItem } from './user-nav';
+import { emptyUser, User } from '../../../../user';
+import { getNavItems } from './user-nav';
+import { NavItem } from '../../../app-nav/nav-item';
 
 const ITEMS = getNavItems();
 

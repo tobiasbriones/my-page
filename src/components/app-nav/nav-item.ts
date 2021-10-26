@@ -10,3 +10,14 @@
  * https://opensource.org/licenses/MIT.
  */
 
+export interface NavItem {
+  id: number;
+  value: string;
+  iconSrc: string;
+}
+
+export const emptyNavItem: NavItem = {
+  id: -1,
+  value: '',
+  iconSrc: ''
+};
