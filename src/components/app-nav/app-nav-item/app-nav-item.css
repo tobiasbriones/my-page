@@ -43,3 +43,9 @@ span {
     margin: 0 1rem;
   }
 }
+
+@media (min-width: 90rem) {
+  :host {
+    padding: 1.5rem 2rem;
+  }
+}
