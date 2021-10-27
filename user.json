@@ -6,14 +6,33 @@
     "experience": "",
     "tools": [],
     "language": {
-      "firstClass": [],
-      "secondClass": [],
-      "others": [],
-      "naturalLanguages": []
+      "firstClass": [
+        "Java",
+        "JavaScript/TypeScript"
+      ],
+      "secondClass": [
+        "Kotlin",
+        "Go",
+        "Python",
+        "PHP",
+        "C#"
+      ],
+      "others": [
+        "C",
+        "C++"
+      ],
+      "naturalLanguages": [
+        "English",
+        "Spanish (native)"
+      ]
     }
   },
   "internships": [],
   "courses": [],
   "honors": [],
-  "interests": []
+  "interests": [
+    "Tech articles and news",
+    "Video Games",
+    "Music (Rihanna, David Guetta, Ariana Grande, Dua Lipa, Martin Garrrix, etc.)"
+  ]
 }
