@@ -10,3 +10,11 @@ complete list of images is listed next:
 - ./src/assets/bg.svg, /bg-w*.png (originally watercolor-4117017.ai)
   from: https://pixabay.com/vectors/watercolor-pink-violet-purple-4117017/
   by  : https://pixabay.com/users/stux-12364/
+
+--------------------------------------------------------------------------------
+
+Material Design icons from
+https://fonts.google.com/icons?selected=Material+Icons licensed under the
+Apache 2.0 License:
+
+- ./src/assets/icon/md/*

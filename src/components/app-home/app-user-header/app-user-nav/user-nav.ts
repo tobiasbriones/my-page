@@ -10,13 +10,7 @@
  * https://opensource.org/licenses/MIT.
  */
 
-const VALUES = [
-  'Profile',
-  'Internships',
-  'Courses',
-  'Honors',
-  'Interests'
-];
+import { NavItem } from '../../../app-nav/nav-item';
 
 export enum ItemId {
   PROFILE = 1,
@@ -26,20 +20,39 @@ export enum ItemId {
   INTERESTS
 }
 
-export interface NavItem {
-  id: number;
-  value: string;
+export function getNavItems(): NavItem[] {
+  return VALUES;
 }
 
-export const emptyNavItem: NavItem = {
-  id: -1,
-  value: ''
-};
+const VALUES: NavItem[] = [
+  {
+    id: ItemId.PROFILE,
+    value: 'Profile',
+    iconSrc: getIconSrc('person')
+  },
+  {
+    id: ItemId.INTERNSHIPS,
+    value: 'Internships',
+    iconSrc: getIconSrc('location-city')
+  },
+  {
+    id: ItemId.COURSES,
+    value: 'Courses',
+    iconSrc: getIconSrc('school')
+  },
+  {
+    id: ItemId.HONORS,
+    value: 'Honors',
+    iconSrc: getIconSrc('military-tech')
+  },
+  {
+    id: ItemId.INTERESTS,
+    value: 'Interests',
+    iconSrc: getIconSrc('interests')
+  }
+];
 
-export function getNavItems(): NavItem[] {
-  const mapValue = (item: string, index: number) => ({
-    id: index + 1,
-    value: item
-  });
-  return VALUES.map(mapValue);
+function getIconSrc(name: string): string {
+  const ASSETS_MD = '.././assets/icon/md';
+  return `${ ASSETS_MD }/${ name }`;
 }

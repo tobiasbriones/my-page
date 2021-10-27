@@ -5,8 +5,8 @@
   "start_url": "https://tobiasbriones.me/brief-personal-landing-page/",
   "display": "standalone",
   "orientation": "any",
-  "theme_color": "#16161d",
-  "background_color": "#16161d",
+  "theme_color": "#0288D1",
+  "background_color": "#81D4FA",
   "icons": [
     {
       "src": "assets/icon/icon.png",
