@@ -1,19 +1,59 @@
 {
   "profile": {
-    "name": "",
-    "photo": "",
-    "studies": [],
-    "experience": "",
-    "tools": [],
+    "name": "Full Name",
+    "photo": "https://raw.githubusercontent.com/tobiasbriones/brief-personal-landing-page/main/src/assets/icon/icon.png",
+    "studies": [
+      "Degree A at University X (XXXX-YYYY)",
+      "Degree B at University Y (ZZZZ)"
+    ],
+    "experience": "Professional experience with technologies A, B and C.",
+    "tools": [
+      "Tool A",
+      "Tool B",
+      "Tool C"
+    ],
     "language": {
-      "firstClass": [],
-      "secondClass": [],
-      "others": [],
-      "naturalLanguages": []
+      "firstClass": [
+        "Rust",
+        "Java",
+        "Haskell"
+      ],
+      "secondClass": [
+        "Clojure",
+        "C",
+        "C#",
+        "Kotlin",
+        "JavaScript"
+      ],
+      "others": [
+        "Dart"
+      ],
+      "naturalLanguages": [
+        "English (native)",
+        "Spanish",
+        "Italian",
+        "French",
+        "Japanese"
+      ]
     }
   },
-  "internships": [],
-  "courses": [],
-  "honors": [],
-  "interests": []
+  "internships": [
+    "Company A (XXXX) as Position W",
+    "Company B (YYYY) as Position Y"
+  ],
+  "courses": [
+    "Course A at Org A",
+    "Course B at Org B",
+    "Course C at Org C"
+  ],
+  "honors": [
+    "Diploma A at Org A",
+    "Diploma B at Org B",
+    "Diploma C at Org C"
+  ],
+  "interests": [
+    "Interest A",
+    "Interest B",
+    "Interest C"
+  ]
 }

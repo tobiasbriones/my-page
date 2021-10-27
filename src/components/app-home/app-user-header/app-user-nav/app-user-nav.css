@@ -12,6 +12,7 @@
 
 :host {
   display: flex;
+  padding: var(--padding-y) var(--padding-x);
   flex-direction: column;
   flex-wrap: wrap;
 }
@@ -21,18 +22,11 @@ app-nav {
 }
 
 app-user-content {
-  padding: 0 1rem;
   order: 3;
 }
 
 app-user-photo {
   order: 2;
-}
-
-@media (min-width: 30rem) {
-  app-user-content {
-    padding: 0 2rem;
-  }
 }
 
 @media (min-width: 50rem) {
