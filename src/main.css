@@ -17,6 +17,8 @@
   --primary-background: #FAFAFA;
   --hover-color: #EEEEEE;
   --selected-color: #E0E0E0;
+  --padding-x: 1rem;
+  --padding-y: 2rem;
   --nav-mobile-height: 56px;
 }
 
@@ -32,6 +34,19 @@
 body {
   font-family: 'Poppins', sans-serif;
   background: url('.././assets/bg-w640.png') center;
+}
+
+@media (min-width: 30rem) {
+  :root {
+    --padding-x: 2rem;
+    --padding-y: 2rem;
+  }
+}
+
+@media (min-width: 50rem) {
+  :root {
+    --padding-x: 0;
+  }
 }
 
 @media (min-width: 90rem) {
