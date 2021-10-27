@@ -33,7 +33,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: url('.././assets/bg-w640.png') center;
+  background: url('.././assets/bg-w640.png') fixed center;
 }
 
 @media (min-width: 30rem) {
@@ -59,18 +59,18 @@ body {
 
 @media (min-width: 641px) {
   body {
-    background: url('.././assets/bg-w1280.png') center;
+    background-image: url('.././assets/bg-w1280.png');
   }
 }
 
 @media (min-width: 1281px) {
   body {
-    background: url('.././assets/bg-w1920.png') center;
+    background-image: url('.././assets/bg-w1920.png');
   }
 }
 
 @media (min-width: 2561px) {
   body {
-    background: url('.././assets/bg.svg') center;
+    background-image: url('.././assets/bg.svg');
   }
 }
