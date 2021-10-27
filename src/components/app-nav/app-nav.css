@@ -15,6 +15,7 @@
   display: block;
   width: 100%;
   height: var(--nav-mobile-height);
+  left: 0;
   bottom: 0;
   background-color: white;
   border-top: 0.0625rem solid var(--selected-color);
