@@ -53,6 +53,6 @@ const VALUES: NavItem[] = [
 ];
 
 function getIconSrc(name: string): string {
-  const ASSETS_MD = '.././assets/icon/md';
+  const ASSETS_MD = './assets/icon/md';
   return `${ ASSETS_MD }/${ name }`;
 }
