@@ -33,6 +33,16 @@ h1 {
   font-weight: 500;
 }
 
+main {
+  margin-bottom: var(--nav-mobile-height);
+}
+
+@media (min-width: 50rem) {
+  main {
+    margin-bottom: 0;
+  }
+}
+
 @media (min-width: 90rem) {
   :host {
     border: 0.0625rem solid rgba(0, 0, 0, 0.1);

@@ -14,6 +14,7 @@
   position: fixed;
   display: block;
   width: 100%;
+  height: var(--nav-mobile-height);
   bottom: 0;
   background-color: white;
   border-top: 0.0625rem solid var(--selected-color);
@@ -43,6 +44,7 @@ li {
     position: relative;
     display: block;
     width: auto;
+    height: auto;
     border-top: none;
   }
 

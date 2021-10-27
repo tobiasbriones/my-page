@@ -17,6 +17,7 @@
   --primary-background: #FAFAFA;
   --hover-color: #EEEEEE;
   --selected-color: #E0E0E0;
+  --nav-mobile-height: 56px;
 }
 
 * {
