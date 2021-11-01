@@ -46,6 +46,6 @@ span {
 
 @media (min-width: 90rem) {
   :host {
-    padding: 1.5rem 2rem;
+    padding: 1.25rem 2rem;
   }
 }
