@@ -18,7 +18,7 @@
   --hover-color: #EEEEEE;
   --selected-color: #E0E0E0;
   --padding-x: 1rem;
-  --padding-y: 2rem;
+  --padding-y: 1rem;
   --nav-mobile-height: 56px;
 }
 
@@ -39,7 +39,7 @@ body {
 @media (min-width: 30rem) {
   :root {
     --padding-x: 2rem;
-    --padding-y: 2rem;
+    --padding-y: 1.5rem;
   }
 }
 
