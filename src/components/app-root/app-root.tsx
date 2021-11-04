@@ -21,11 +21,7 @@ export class AppRoot {
   render() {
     return (
       <Host>
-        <header>
-          <img src="./assets/icon/icon.png" alt="Icon" />
-          <h1>My Page</h1>
-        </header>
-
+        <app-header />
         <main>
           <stencil-router root={ Env.routerRoot }>
             <stencil-route-switch scrollTopOffset={ 0 }>

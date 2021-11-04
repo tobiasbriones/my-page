@@ -10,21 +10,20 @@
  * https://opensource.org/licenses/MIT.
  */
 
-import { Component, Host, h } from '@stencil/core';
+import { Component, h } from '@stencil/core';
 
 @Component({
   tag: 'app-header',
   styleUrl: 'app-header.css',
-  shadow: true,
+  shadow: true
 })
 export class AppHeader {
-
   render() {
     return (
-      <Host>
-        <slot></slot>
-      </Host>
+      <header>
+        <img src="./assets/icon/icon.png" alt="Icon" />
+        <h1>My Page</h1>
+      </header>
     );
   }
-
 }
