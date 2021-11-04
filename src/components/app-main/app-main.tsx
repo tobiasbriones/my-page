@@ -10,21 +10,23 @@
  * https://opensource.org/licenses/MIT.
  */
 
-import { Component, Host, h } from '@stencil/core';
+import { Component, Env, h } from '@stencil/core';
 
 @Component({
   tag: 'app-main',
   styleUrl: 'app-main.css',
-  shadow: true,
+  shadow: true
 })
 export class AppMain {
-
   render() {
     return (
-      <Host>
-        <slot></slot>
-      </Host>
+      <main>
+        <stencil-router root={ Env.routerRoot }>
+          <stencil-route-switch scrollTopOffset={ 0 }>
+            <stencil-route url="/" component="app-home" exact={ true } />
+          </stencil-route-switch>
+        </stencil-router>
+      </main>
     );
   }
-
 }

@@ -13,3 +13,13 @@
 :host {
   display: block;
 }
+
+main {
+  margin-bottom: var(--nav-mobile-height);
+}
+
+@media (min-width: 50rem) {
+  main {
+    margin-bottom: 0;
+  }
+}
