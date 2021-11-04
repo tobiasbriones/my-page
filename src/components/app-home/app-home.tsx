@@ -10,8 +10,8 @@
  * https://opensource.org/licenses/MIT.
  */
 
-import { Component, h, State } from '@stencil/core';
-import { AppUserRepository, User, emptyUser } from '../../user';
+import { Component, h, Host, State } from '@stencil/core';
+import { AppUserRepository, emptyUser, User } from '../../user';
 
 @Component({
   tag: 'app-home',
@@ -32,9 +32,9 @@ export class AppHome {
 
   render() {
     return (
-      <div class="app-home">
+      <Host>
         <app-user-header user={ this.user } />
-      </div>
+      </Host>
     );
   }
 
