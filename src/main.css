@@ -19,7 +19,9 @@
   --selected-color: #E0E0E0;
   --padding-x: 1rem;
   --padding-y: 2rem;
+  --header-height: 3.5rem;
   --nav-mobile-height: 3.5rem;
+  --iam-height: 3.5rem;
 }
 
 * {
