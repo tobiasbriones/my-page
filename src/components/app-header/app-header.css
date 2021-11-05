@@ -16,7 +16,7 @@
 
 header {
   display: flex;
-  height: 3.5rem;
+  height: var(--header-height);
   padding: 0 1rem;
   align-items: center;
   background: var(--primary-color);
