@@ -4,8 +4,8 @@
 
 [![Project GitHub License](https://img.shields.io/github/license/tobiasbriones/brief-and-colorful-personal-landing-page.svg?style=flat-square)](https://github.com/tobiasbriones/brief-and-colorful-personal-landing-page/blob/main/LICENSE)
 
-Minimalistic and small landing page for a nice and colorful personal index or
-portfolio.
+Brief personal landing page for a nice and colorful professional and personal
+index, resume or portfolio.
 
 ## Getting started
 
@@ -41,8 +41,8 @@ Tobias Briones: [GitHub](https://github.com/tobiasbriones)
 
 **My Page**
 
-Minimalistic and small landing page for a nice and colorful personal index or
-portfolio.
+Brief personal landing page for a nice and colorful professional and personal
+index, resume or portfolio.
 
 Copyright © 2021 Tobias Briones. All rights reserved.
 
