@@ -1,8 +1,8 @@
 # My Page
 
-[![GitHub Repository](https://raw.githubusercontent.com/tobiasbriones/general-images/main/example-projects/badges/ep-gh-repo-badge.svg)](https://github.com/tobiasbriones/brief-and-colorful-personal-landing-page)
+[![GitHub Repository](https://raw.githubusercontent.com/tobiasbriones/general-images/main/example-projects/badges/ep-gh-repo-badge.svg)](https://github.com/tobiasbriones/my-page)
 
-[![Project GitHub License](https://img.shields.io/github/license/tobiasbriones/brief-and-colorful-personal-landing-page.svg?style=flat-square)](https://github.com/tobiasbriones/brief-and-colorful-personal-landing-page/blob/main/LICENSE)
+[![Project GitHub License](https://img.shields.io/github/license/tobiasbriones/my-page.svg?style=flat-square)](https://github.com/tobiasbriones/my-page/blob/main/LICENSE)
 
 Brief personal landing page for a nice and colorful professional and personal
 index, resume or portfolio.
@@ -31,9 +31,8 @@ to the production configuration.
 
 ## Contact
 
-This
-project: [Docs](https://tobiasbriones.github.io/brief-personal-landing-page),
-[Repository](https://github.com/tobiasbriones/brief-personal-landing-page)
+This project: [Docs](https://tobiasbriones.github.io/my-page),
+[Repository](https://github.com/tobiasbriones/my-page)
 
 Tobias Briones: [GitHub](https://github.com/tobiasbriones)
 
