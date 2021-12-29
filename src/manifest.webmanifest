@@ -2,7 +2,7 @@
   "name": "Brief Personal Landing Page",
   "short_name": "My Page",
   "description": "Brief personal landing page for a nice and colorful professional and personal index, resume or portfolio.",
-  "start_url": "https://me.mathsoftware.engineeer",
+  "start_url": "https://me.mathsoftware.engineer",
   "display": "standalone",
   "orientation": "any",
   "theme_color": "#0288D1",
