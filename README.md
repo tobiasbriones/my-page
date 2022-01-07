@@ -1,6 +1,6 @@
 # My Page
 
-[![GitHub Repository](https://raw.githubusercontent.com/tobiasbriones/general-images/main/example-projects/badges/ep-gh-repo-badge.svg)](https://github.com/tobiasbriones/my-page)
+[![GitHub Repository](https://img.shields.io/static/v1?label=GITHUB&message=REPOSITORY&labelColor=555&color=0277bd&style=for-the-badge&logo=GITHUB)](https://github.com/tobiasbriones/my-page)
 
 [![Project GitHub License](https://img.shields.io/github/license/tobiasbriones/my-page.svg?style=flat-square)](https://github.com/tobiasbriones/my-page/blob/main/LICENSE)
 
