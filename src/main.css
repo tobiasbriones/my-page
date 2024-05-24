@@ -12,14 +12,16 @@
 
 :root {
   --primary-color: #81D4FA;
-  --primary-dark-color: #29B6F6;
+  --primary-dark-color: #0288D1;
   --accent-color: #2979FF;
   --primary-background: #FAFAFA;
   --hover-color: #EEEEEE;
   --selected-color: #E0E0E0;
   --padding-x: 1rem;
-  --padding-y: 1rem;
-  --nav-mobile-height: 56px;
+  --padding-y: 2rem;
+  --header-height: 3.5rem;
+  --nav-mobile-height: 3.5rem;
+  --iam-height: 3.5rem;
 }
 
 * {
@@ -39,7 +41,7 @@ body {
 @media (min-width: 30rem) {
   :root {
     --padding-x: 2rem;
-    --padding-y: 1.5rem;
+    --padding-y: 2rem;
   }
 }
 

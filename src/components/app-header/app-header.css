@@ -10,20 +10,25 @@
  * https://opensource.org/licenses/MIT.
  */
 
-import { Component, h, Host } from '@stencil/core';
+:host {
+  display: block;
+}
 
-@Component({
-  tag: 'app-root',
-  styleUrl: 'app-root.css',
-  shadow: true
-})
-export class AppRoot {
-  render() {
-    return (
-      <Host>
-        <app-header />
-        <app-main />
-      </Host>
-    );
-  }
+header {
+  display: flex;
+  height: var(--header-height);
+  padding: 0 1rem;
+  align-items: center;
+  background: var(--primary-color);
+}
+
+img {
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+h1 {
+  padding: 0 0.75rem;
+  font-size: 1.4rem;
+  font-weight: 500;
 }

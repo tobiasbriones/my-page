@@ -10,20 +10,21 @@
  * https://opensource.org/licenses/MIT.
  */
 
-import { Component, h, Host } from '@stencil/core';
+import { Component, Host, h } from '@stencil/core';
 
 @Component({
-  tag: 'app-root',
-  styleUrl: 'app-root.css',
-  shadow: true
+  tag: 'app-header-nav',
+  styleUrl: 'app-header-nav.css',
+  shadow: true,
 })
-export class AppRoot {
+export class AppHeaderNav {
+
   render() {
     return (
       <Host>
-        <app-header />
-        <app-main />
+        <slot></slot>
       </Host>
     );
   }
+
 }
