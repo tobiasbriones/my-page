@@ -8,6 +8,8 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { NavItem } from "./components/app-nav/nav-item";
 import { Profile, User } from "./user";
 export namespace Components {
+    interface AppContactInfo {
+    }
     interface AppHeader {
     }
     interface AppHeaderNav {
@@ -50,6 +52,12 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLAppContactInfoElement extends Components.AppContactInfo, HTMLStencilElement {
+    }
+    var HTMLAppContactInfoElement: {
+        prototype: HTMLAppContactInfoElement;
+        new (): HTMLAppContactInfoElement;
+    };
     interface HTMLAppHeaderElement extends Components.AppHeader, HTMLStencilElement {
     }
     var HTMLAppHeaderElement: {
@@ -135,6 +143,7 @@ declare global {
         new (): HTMLAppUserProfileElement;
     };
     interface HTMLElementTagNameMap {
+        "app-contact-info": HTMLAppContactInfoElement;
         "app-header": HTMLAppHeaderElement;
         "app-header-nav": HTMLAppHeaderNavElement;
         "app-home": HTMLAppHomeElement;
@@ -152,6 +161,8 @@ declare global {
     }
 }
 declare namespace LocalJSX {
+    interface AppContactInfo {
+    }
     interface AppHeader {
     }
     interface AppHeaderNav {
@@ -195,6 +206,7 @@ declare namespace LocalJSX {
         "profile"?: Profile;
     }
     interface IntrinsicElements {
+        "app-contact-info": AppContactInfo;
         "app-header": AppHeader;
         "app-header-nav": AppHeaderNav;
         "app-home": AppHome;
@@ -215,6 +227,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "app-contact-info": LocalJSX.AppContactInfo & JSXBase.HTMLAttributes<HTMLAppContactInfoElement>;
             "app-header": LocalJSX.AppHeader & JSXBase.HTMLAttributes<HTMLAppHeaderElement>;
             "app-header-nav": LocalJSX.AppHeaderNav & JSXBase.HTMLAttributes<HTMLAppHeaderNavElement>;
             "app-home": LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
