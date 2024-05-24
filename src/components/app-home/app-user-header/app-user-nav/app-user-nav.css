@@ -47,7 +47,6 @@ app-user-photo {
   }
 
   app-user-content {
-    padding: 1rem 0;
     flex: 1 0 46%;
     order: 2;
   }
