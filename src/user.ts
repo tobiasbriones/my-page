@@ -13,12 +13,27 @@
 import { Env } from '@stencil/core';
 
 export interface User {
-  profile: Profile
+  contact: Contact;
+  profile: Profile;
   internships: string[];
   courses: string[];
   honors: string[];
   interests: string[];
 }
+
+export interface Contact {
+  email: string;
+  phone: string;
+  location: string;
+  linkedInUser: string;
+}
+
+export const emptyContact: Contact = {
+  email: '',
+  phone: '',
+  location: '',
+  linkedInUser: ''
+};
 
 export interface Profile {
   name: string;
@@ -39,7 +54,8 @@ export interface Language {
 export class AppUserRepository {
   private static readonly FILE_NAME = Env.userFile as string;
 
-  constructor() {}
+  constructor() {
+  }
 
   async get(): Promise<User> {
     const res = await fetch(AppUserRepository.FILE_NAME);
@@ -62,6 +78,7 @@ export const emptyProfile: Profile = {
 };
 
 export const emptyUser: User = {
+  contact: emptyContact,
   profile: emptyProfile,
   courses: [],
   honors: [],

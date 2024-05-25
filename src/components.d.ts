@@ -9,6 +9,10 @@ import { NavItem } from "./components/app-nav/nav-item";
 import { Profile, User } from "./user";
 export namespace Components {
     interface AppContactInfo {
+        "email": string;
+        "linkedInUser": string;
+        "location": string;
+        "phone": string;
     }
     interface AppHeader {
     }
@@ -162,6 +166,10 @@ declare global {
 }
 declare namespace LocalJSX {
     interface AppContactInfo {
+        "email"?: string;
+        "linkedInUser"?: string;
+        "location"?: string;
+        "phone"?: string;
     }
     interface AppHeader {
     }

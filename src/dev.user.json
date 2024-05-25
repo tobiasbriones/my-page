@@ -1,4 +1,10 @@
 {
+  "contact": {
+    "email": "email@example.com",
+    "phone": "(+1) 123-456-7890",
+    "location": "123 Main St, Springfield",
+    "linkedInUser": "username"
+  },
   "profile": {
     "name": "Full Name",
     "photo": "https://raw.githubusercontent.com/tobiasbriones/brief-personal-landing-page/main/src/assets/icon/icon.png",

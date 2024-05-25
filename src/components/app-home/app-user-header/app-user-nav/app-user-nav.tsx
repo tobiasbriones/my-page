@@ -38,12 +38,20 @@ export class AppUserNav {
     return (
       <Host>
         <app-nav
-          items={ ITEMS }
-          selectedItem={ this.selectedItem }
-          onItemClick={ (e: CustomEvent<NavItem>) => this.onNavItemClick(e) }
+          items={ITEMS}
+          selectedItem={this.selectedItem}
+          onItemClick={(e: CustomEvent<NavItem>) => this.onNavItemClick(e)}
         />
-        <app-user-content user={ this.user } selectedItem={ this.selectedItem } />
-        <app-user-photo photo={ this.user.profile.photo } />
+        <app-user-content user={this.user} selectedItem={this.selectedItem}/>
+        <div class="app-user-detail">
+          <app-user-photo photo={this.user.profile.photo}/>
+          <app-contact-info
+            location={this.user.contact.location}
+            email={this.user.contact.email}
+            phone={this.user.contact.phone}
+            linkedInUser={this.user.contact.linkedInUser}
+          />
+        </div>
       </Host>
     );
   }
