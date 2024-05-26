@@ -14,3 +14,8 @@
   display: block;
   background-color: white;
 }
+
+footer {
+  padding: 1rem;
+  text-align: center;
+}
