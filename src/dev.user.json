@@ -8,15 +8,36 @@
   "profile": {
     "name": "Full Name",
     "photo": "https://raw.githubusercontent.com/tobiasbriones/brief-personal-landing-page/main/src/assets/icon/icon.png",
-    "studies": [
-      "Degree A at University X (XXXX-YYYY)",
-      "Degree B at University Y (ZZZZ)"
-    ],
-    "experience": "Professional experience with technologies A, B and C.",
-    "tools": [
-      "Tool A",
-      "Tool B",
-      "Tool C"
+    "cv": [
+      {
+        "sectionName": "Work Experience",
+        "entries": [
+          {
+            "title": "Title A",
+            "company": "Company A",
+            "place": "Place A",
+            "date": "TimeA1-TimeA2",
+            "description": "Description A",
+            "items": [
+              "Item A1",
+              "Item A2"
+            ],
+            "footer": "Footer with **bold Tech** for keyword scanning."
+          },
+          {
+            "title": "Title B",
+            "company": "Company B",
+            "place": "Place B",
+            "date": "TimeB1-TimeB2",
+            "description": "Description B",
+            "items": [
+              "Item A1",
+              "Item A2"
+            ],
+            "footer": "Footer B"
+          }
+        ]
+      }
     ],
     "language": {
       "firstClass": [

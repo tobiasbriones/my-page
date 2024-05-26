@@ -5,14 +5,18 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { CvEntry, Profile, User } from "./user";
 import { NavItem } from "./components/app-nav/nav-item";
-import { Profile, User } from "./user";
 export namespace Components {
     interface AppContactInfo {
         "email": string;
         "linkedInUser": string;
         "location": string;
         "phone": string;
+    }
+    interface AppCvSection {
+        "entries": CvEntry[];
+        "name": string;
     }
     interface AppHeader {
     }
@@ -61,6 +65,12 @@ declare global {
     var HTMLAppContactInfoElement: {
         prototype: HTMLAppContactInfoElement;
         new (): HTMLAppContactInfoElement;
+    };
+    interface HTMLAppCvSectionElement extends Components.AppCvSection, HTMLStencilElement {
+    }
+    var HTMLAppCvSectionElement: {
+        prototype: HTMLAppCvSectionElement;
+        new (): HTMLAppCvSectionElement;
     };
     interface HTMLAppHeaderElement extends Components.AppHeader, HTMLStencilElement {
     }
@@ -148,6 +158,7 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "app-contact-info": HTMLAppContactInfoElement;
+        "app-cv-section": HTMLAppCvSectionElement;
         "app-header": HTMLAppHeaderElement;
         "app-header-nav": HTMLAppHeaderNavElement;
         "app-home": HTMLAppHomeElement;
@@ -170,6 +181,10 @@ declare namespace LocalJSX {
         "linkedInUser"?: string;
         "location"?: string;
         "phone"?: string;
+    }
+    interface AppCvSection {
+        "entries"?: CvEntry[];
+        "name"?: string;
     }
     interface AppHeader {
     }
@@ -215,6 +230,7 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "app-contact-info": AppContactInfo;
+        "app-cv-section": AppCvSection;
         "app-header": AppHeader;
         "app-header-nav": AppHeaderNav;
         "app-home": AppHome;
@@ -236,6 +252,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "app-contact-info": LocalJSX.AppContactInfo & JSXBase.HTMLAttributes<HTMLAppContactInfoElement>;
+            "app-cv-section": LocalJSX.AppCvSection & JSXBase.HTMLAttributes<HTMLAppCvSectionElement>;
             "app-header": LocalJSX.AppHeader & JSXBase.HTMLAttributes<HTMLAppHeaderElement>;
             "app-header-nav": LocalJSX.AppHeaderNav & JSXBase.HTMLAttributes<HTMLAppHeaderNavElement>;
             "app-home": LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
