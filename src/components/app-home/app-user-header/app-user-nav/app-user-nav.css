@@ -25,7 +25,7 @@ app-user-content {
   order: 3;
 }
 
-app-user-photo {
+.app-user-detail {
   order: 2;
 }
 
@@ -52,7 +52,10 @@ app-user-photo {
   }
 
   app-user-photo {
-    height: 24rem;
+    margin: 4rem 0 2rem;
+  }
+
+  .app-user-detail {
     flex: 1 0 25%;
     order: 3;
   }

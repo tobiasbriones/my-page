@@ -1,0 +1,40 @@
+/* Copyright (c) 2024 Tobias Briones. All rights reserved. */
+/* SPDX-License-Identifier: MIT */
+/* This file is part of https://github.com/tobiasbriones/my-page. */
+
+:host {
+  display: block;
+}
+
+h3, h4, h5 {
+  color: var(--heading-color);
+}
+
+.cv-section h4 {
+  padding: 0.5rem;
+  font-size: 1.125rem;
+  text-align: center;
+  border-bottom: 1px solid rgb(79, 195, 247);
+}
+
+.experience {
+  margin-top: 1.0rem;
+}
+
+.experience-header {
+  display: flex;
+}
+
+.experience-title {
+  flex: 1;
+}
+
+.experience-header h5 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.experience-meta {
+  color: rgb(25, 118, 210);
+  font-size: 0.8125rem;
+}

@@ -1,17 +1,62 @@
 {
+  "contact": {
+    "email": "email@example.com",
+    "phone": "(+1) 123-456-7890",
+    "location": "123 Main St, Springfield",
+    "linkedInUser": "username"
+  },
   "profile": {
     "name": "Full Name",
     "photo": "https://raw.githubusercontent.com/tobiasbriones/brief-personal-landing-page/main/src/assets/icon/icon.png",
-    "studies": [
-      "Degree A at University X (XXXX-YYYY)",
-      "Degree B at University Y (ZZZZ)"
-    ],
-    "experience": "Professional experience with technologies A, B and C.",
-    "tools": [
-      "Tool A",
-      "Tool B",
-      "Tool C"
-    ],
+    "cv": {
+      "abstract": "Brief description of yourself.",
+      "sections": [
+        {
+          "sectionName": "Work Experience",
+          "entries": [
+            {
+              "title": "Title A",
+              "company": "Company A",
+              "place": "Place A",
+              "date": "TimeA1-TimeA2",
+              "description": "Description A",
+              "items": [
+                "Item A1",
+                "Item A2"
+              ],
+              "footer": "Footer with **bold Tech** for keyword scanning."
+            },
+            {
+              "title": "Title B",
+              "company": "Company B",
+              "place": "Place B",
+              "date": "TimeB1-TimeB2",
+              "description": "Description B",
+              "items": [
+                "Item A1",
+                "Item A2"
+              ],
+              "footer": "Footer B"
+            }
+          ]
+        },
+        {
+          "sectionName": "Projects",
+          "entries": [
+            {
+              "title": "Project A",
+              "date": "TimeA1-TimeA2",
+              "description": "Description of Project A",
+              "items": [
+                "Item A1 with [Link to Project](https://github.com).",
+                "Item A2"
+              ],
+              "footer": "Footer with **bold Tech** for keyword scanning."
+            }
+          ]
+        }
+      ]
+    },
     "language": {
       "firstClass": [
         "Rust",

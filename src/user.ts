@@ -13,20 +13,53 @@
 import { Env } from '@stencil/core';
 
 export interface User {
-  profile: Profile
+  contact: Contact;
+  profile: Profile;
   internships: string[];
   courses: string[];
   honors: string[];
   interests: string[];
 }
 
+export interface Contact {
+  email: string;
+  phone: string;
+  location: string;
+  linkedInUser: string;
+}
+
+export const emptyContact: Contact = {
+  email: '',
+  phone: '',
+  location: '',
+  linkedInUser: ''
+};
+
 export interface Profile {
   name: string;
   photo: string;
-  studies: string[];
-  experience: string;
-  tools: string[];
+  cv: Cv;
   language: Language;
+}
+
+export interface Cv {
+  abstract: string;
+  sections: CvSection[];
+}
+
+export interface CvSection {
+  sectionName: string;
+  entries: CvEntry[];
+}
+
+export interface CvEntry {
+  title: string;
+  company: string | undefined;
+  place: string | undefined;
+  date: string;
+  description: string;
+  items: string[];
+  footer: string;
 }
 
 export interface Language {
@@ -39,7 +72,8 @@ export interface Language {
 export class AppUserRepository {
   private static readonly FILE_NAME = Env.userFile as string;
 
-  constructor() {}
+  constructor() {
+  }
 
   async get(): Promise<User> {
     const res = await fetch(AppUserRepository.FILE_NAME);
@@ -47,12 +81,25 @@ export class AppUserRepository {
   }
 }
 
+export const emptyCvSection: CvEntry = {
+  title: '',
+  company: '',
+  place: '',
+  date: '',
+  description: '',
+  items: [],
+  footer: ''
+};
+
+export const emptyCv: Cv = {
+  abstract: '',
+  sections: [],
+};
+
 export const emptyProfile: Profile = {
   name: '',
   photo: '',
-  studies: [],
-  experience: '',
-  tools: [],
+  cv: emptyCv,
   language: {
     firstClass: [],
     secondClass: [],
@@ -62,6 +109,7 @@ export const emptyProfile: Profile = {
 };
 
 export const emptyUser: User = {
+  contact: emptyContact,
   profile: emptyProfile,
   courses: [],
   honors: [],

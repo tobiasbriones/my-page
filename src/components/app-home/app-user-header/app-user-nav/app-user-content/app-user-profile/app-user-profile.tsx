@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2021 Tobias Briones. All rights reserved.
+ * Copyright (c) 2021, 2024 Tobias Briones. All rights reserved.
  *
  * SPDX-License-Identifier: MIT
  *
@@ -27,24 +27,17 @@ export class AppUserProfile {
   }
 
   render() {
+    const {abstract, sections} = this.profile.cv;
+
     return (
       <Host>
-        <div>
-          <h3>Studies</h3>
-          <app-user-list items={ this.profile.studies } />
-        </div>
+        <p>{abstract}</p>
 
-        <div>
-          <h3>Experience</h3>
-          <p>{ this.profile.experience }</p>
-        </div>
+        {sections.map(({sectionName, entries}) =>
+          <app-cv-section name={sectionName} entries={entries}/>
+        )}
 
-        <div>
-          <h3>Tools</h3>
-          <app-user-list items={ this.profile.tools } />
-        </div>
-
-        { this.getLanguages() }
+        {this.getLanguages()}
       </Host>
     );
   }
@@ -61,19 +54,19 @@ export class AppUserProfile {
           </div>
 
           <h5>First class</h5>
-          <app-user-list items={ lang.firstClass } />
+          <app-user-list items={lang.firstClass}/>
 
           <h5>Second class</h5>
-          <app-user-list items={ lang.secondClass } />
+          <app-user-list items={lang.secondClass}/>
 
           <h5>Others</h5>
-          <app-user-list items={ lang.others } />
+          <app-user-list items={lang.others}/>
         </div>
 
         <div>
           <h3>Natural Languages</h3>
 
-          <app-user-list items={ lang.naturalLanguages } />
+          <app-user-list items={lang.naturalLanguages}/>
         </div>
       </div>
     );

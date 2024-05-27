@@ -33,7 +33,19 @@ export class AppHome {
   render() {
     return (
       <Host>
-        <app-user-header user={ this.user } />
+        <app-user-header user={this.user}/>
+        <footer>
+          <div><strong>My Page</strong></div>
+          <div>Copyright © 2021-present Tobias Briones. All rights reserved.</div>
+          <div>Licensed under the <a
+            href="https://github.com/tobiasbriones/my-page"
+            target="_blank"
+            rel="noreferrer"
+          >
+            MIT License
+          </a>.
+          </div>
+        </footer>
       </Host>
     );
   }
@@ -42,8 +54,7 @@ export class AppHome {
     try {
       const userRepository = new AppUserRepository();
       this.user = await userRepository.get();
-    }
-    catch (e) {
+    } catch (e) {
       console.log(e);
     }
   }

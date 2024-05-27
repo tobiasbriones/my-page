@@ -16,6 +16,7 @@
 
 h3 {
   text-align: center;
+  color: var(--heading-color);
 }
 
 @media (min-width: 90rem) {

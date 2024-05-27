@@ -15,6 +15,8 @@
   --primary-dark-color: #0288D1;
   --accent-color: #2979FF;
   --primary-background: #FAFAFA;
+  --heading-color: #212121;
+  --text-color: #424242;
   --hover-color: #EEEEEE;
   --selected-color: #E0E0E0;
   --padding-x: 1rem;
@@ -29,13 +31,17 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: rgba(0, 0, 0, 0.89);
-  user-select: none;
+  color: var(--text-color);
 }
 
 body {
   font-family: 'Poppins', sans-serif;
   background: url('.././assets/bg-w640.png') fixed center;
+}
+
+h1, h2, h3, h4, h5 {
+  color: var(--heading-color);
+  user-select: none;
 }
 
 @media (min-width: 30rem) {
