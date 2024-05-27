@@ -19,3 +19,13 @@ footer {
   padding: 1rem;
   text-align: center;
 }
+
+a {
+  text-decoration: none;
+  color: #1565c0;
+}
+
+a:hover {
+  color: #0a58ca;
+  text-decoration: underline;
+}

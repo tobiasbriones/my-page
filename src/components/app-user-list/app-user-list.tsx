@@ -11,6 +11,7 @@
  */
 
 import { Component, h, Host, Prop } from '@stencil/core';
+import { parseMarkdown } from '../../markdown/markdown';
 
 @Component({
   tag: 'app-user-list',
@@ -26,7 +27,7 @@ export class AppUserList {
   }
 
   render() {
-    const mapItem = (item: string) => <li key={ item }>{ item }</li>;
+    const mapItem = (item: string) => <li key={ item }>{ parseMarkdown(item) }</li>;
     return (
       <Host>
         <ul>

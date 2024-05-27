@@ -54,8 +54,8 @@ export interface CvSection {
 
 export interface CvEntry {
   title: string;
-  company: string;
-  place: string;
+  company: string | undefined;
+  place: string | undefined;
   date: string;
   description: string;
   items: string[];

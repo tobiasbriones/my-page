@@ -4,6 +4,7 @@
 
 import { Component, h, Host, Prop } from '@stencil/core';
 import { CvEntry } from '../../../../../../user';
+import { parseMarkdown } from '../../../../../../markdown/markdown';
 
 @Component({
   tag: 'app-cv-section',
@@ -51,28 +52,4 @@ export class AppCvSection {
       </div>
     </div>
   }
-}
-
-function parseMarkdown(markdown: string) {
-  const tokens = [];
-  const regex = /\*\*(.*?)\*\*/g;
-  let lastIndex = 0;
-  let match;
-
-  while ((match = regex.exec(markdown)) !== null) {
-    // Push the text before the match
-    if (match.index > lastIndex) {
-      tokens.push(<span>{markdown.slice(lastIndex, match.index)}</span>);
-    }
-    // Push the bold text
-    tokens.push(<b>{match[1]}</b>);
-    lastIndex = regex.lastIndex;
-  }
-
-  // Push the remaining text
-  if (lastIndex < markdown.length) {
-    tokens.push(<span>{markdown.slice(lastIndex)}</span>);
-  }
-
-  return tokens;
 }

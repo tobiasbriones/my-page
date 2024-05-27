@@ -39,6 +39,21 @@
               "footer": "Footer B"
             }
           ]
+        },
+        {
+          "sectionName": "Projects",
+          "entries": [
+            {
+              "title": "Project A",
+              "date": "TimeA1-TimeA2",
+              "description": "Description of Project A",
+              "items": [
+                "Item A1 with [Link to Project](https://github.com).",
+                "Item A2"
+              ],
+              "footer": "Footer with **bold Tech** for keyword scanning."
+            }
+          ]
         }
       ]
     },

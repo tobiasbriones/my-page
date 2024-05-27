@@ -13,3 +13,13 @@
 :host {
   display: block;
 }
+
+a {
+  text-decoration: none;
+  color: #1565c0;
+}
+
+a:hover {
+  color: #0a58ca;
+  text-decoration: underline;
+}
