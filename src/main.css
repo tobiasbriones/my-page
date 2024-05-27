@@ -32,16 +32,15 @@
   margin: 0;
   box-sizing: border-box;
   color: var(--text-color);
-  user-select: none;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
   background: url('.././assets/bg-w640.png') fixed center;
 }
-
 h1, h2, h3, h4, h5 {
   color: var(--heading-color);
+  user-select: none;
 }
 
 @media (min-width: 30rem) {

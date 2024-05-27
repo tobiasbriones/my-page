@@ -19,6 +19,7 @@
   bottom: 0;
   background-color: white;
   border-top: 0.0625rem solid var(--selected-color);
+  user-select: none;
 }
 
 h3 {
