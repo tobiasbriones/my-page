@@ -38,8 +38,13 @@ export const emptyContact: Contact = {
 export interface Profile {
   name: string;
   photo: string;
-  cv: CvSection[];
+  cv: Cv;
   language: Language;
+}
+
+export interface Cv {
+  abstract: string;
+  sections: CvSection[];
 }
 
 export interface CvSection {
@@ -86,10 +91,15 @@ export const emptyCvSection: CvEntry = {
   footer: ''
 };
 
+export const emptyCv: Cv = {
+  abstract: '',
+  sections: [],
+};
+
 export const emptyProfile: Profile = {
   name: '',
   photo: '',
-  cv: [],
+  cv: emptyCv,
   language: {
     firstClass: [],
     secondClass: [],

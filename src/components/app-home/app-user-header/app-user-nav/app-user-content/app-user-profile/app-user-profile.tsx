@@ -27,9 +27,13 @@ export class AppUserProfile {
   }
 
   render() {
+    const {abstract, sections} = this.profile.cv;
+
     return (
       <Host>
-        {this.profile.cv.map(({sectionName, entries}) =>
+        <p>{abstract}</p>
+
+        {sections.map(({sectionName, entries}) =>
           <app-cv-section name={sectionName} entries={entries}/>
         )}
 
