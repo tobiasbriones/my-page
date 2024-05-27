@@ -6,6 +6,10 @@
   display: block;
 }
 
+h3, h4, h5 {
+  color: var(--heading-color);
+}
+
 .cv-section h4 {
   padding: 0.5rem;
   font-size: 1.125rem;
