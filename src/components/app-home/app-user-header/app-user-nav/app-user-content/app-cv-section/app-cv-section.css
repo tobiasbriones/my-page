@@ -35,6 +35,7 @@ h3, h4, h5 {
 }
 
 .experience-meta {
+  max-width: 12rem;
   color: rgb(25, 118, 210);
   font-size: 0.8125rem;
 }
