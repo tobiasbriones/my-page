@@ -9,7 +9,7 @@
     "name": "Tobias Briones",
     "photo": "https://raw.githubusercontent.com/tobiasbriones/my-page/static/tobiasbriones.png",
     "cv": {
-      "abstract": "I'm a leading **mathematical software engineer**, and founder of **Math.Software**. I work with computational mathematical models and strong software engineering foundations optimizing for functional programming.",
+      "abstract": "I'm a leading mathematical software engineer and founder of Math.Software. I work with computational mathematical models and strong software engineering foundations optimizing for functional programming.",
       "sections": [
         {
           "sectionName": "Work Experience",
