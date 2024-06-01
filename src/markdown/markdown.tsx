@@ -8,7 +8,11 @@ import { h } from '@stencil/core';
  * It converts Markdown text with bold style and links to JSX.
  * @param markdown string with Markdown syntax
  */
-export function parseMarkdown(markdown: string) {
+export function parseMarkdown(markdown: string | undefined) {
+  if (markdown === undefined) {
+    return [];
+  }
+
   const tokens = [];
   const regex = /(\*\*(.*?)\*\*|\[(.*?)\]\((.*?)\))/g;
   let lastIndex = 0;
