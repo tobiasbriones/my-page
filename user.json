@@ -1,38 +1,92 @@
 {
+  "contact": {
+    "email": "tobiasbriones.dev@gmail.com",
+    "phone": "(+504) 94838074",
+    "location": "Honduras, San Pedro Sula",
+    "linkedInUser": "tobiasbriones"
+  },
   "profile": {
     "name": "Tobias Briones",
-    "photo": "https://github.com/tobiasbriones.png",
-    "studies": [],
-    "experience": "",
-    "tools": [],
+    "photo": "https://raw.githubusercontent.com/tobiasbriones/my-page/static/tobiasbriones.png",
+    "cv": {
+      "abstract": "I'm a leading **mathematical software engineer**, and founder of **Math.Software**. I work with computational mathematical models and strong software engineering foundations optimizing for functional programming.",
+      "sections": [
+        {
+          "sectionName": "Work Experience",
+          "entries": [
+            {
+              "title": "Software Engineer",
+              "company": "Truora",
+              "place": "Full-Time Remote/Colombia",
+              "date": "Jul 2022 - Feb 2023",
+              "description": "I performed ML roles for combating digital fraud, standing by the Y-Combinator Startup culture, where I:",
+              "items": [
+                "Expanded document support, experimented with potential techniques, and worked datasets out.",
+                "Applied newer machine/deep learning skills in short iterations for fraud detection and object detection on ID documents.",
+                "Developed in-house tools for my daily job and helped mates get unblocked internally."
+              ],
+              "footer": "Tech: **OpenCV, TensorFlow, PyTorch, Jira (Scrum), Bitbucket, AWS, Go, Vue.js**"
+            },
+            {
+              "title": "Mathematics, Engineering Intern",
+              "company": "PL Intelligent Solutions",
+              "place": "Remote/Honduras",
+              "date": "May 2021 - Jun 2022",
+              "description": "I contributed to developing ML and DS research while developing ERP web apps and the company website. I completed a Mexican scholarship for the activities I performed. Tech: **Python**, **Deepnote**, **Tailwind CSS**, and **Vue.js**."
+            },
+            {
+              "title": "Engineering Intern",
+              "company": "GO IT Solutions",
+              "place": "Remote/Honduras",
+              "date": "Jan 2021 - Apr 2021",
+              "description": "I worked in a team to develop a tourism application (Virtravl) where I developed a full backend API in **Nest.js** with **Amazon AWS** services, managed operations, and helped with the **MySQL** database and the **Vue.js** frontend."
+            }
+          ]
+        },
+        {
+          "sectionName": "Projects",
+          "entries": [
+            {
+              "title": "MathSwe",
+              "date": "2021 - present",
+              "description": "I continuously apply my mathematical and engineering background to modernize mathematics.",
+              "items": [
+                "[Math.Software (MSW)](https://math.software).",
+                "[MathSoftware.Engineer](https://mathsoftware.engineer).",
+                "[MathSwe.Com](https://mathswe.com).",
+              ],
+              "footer": ""
+            }
+          ]
+        }
+      ]
+    },
     "language": {
       "firstClass": [
-        "Java",
-        "JavaScript/TypeScript"
       ],
       "secondClass": [
-        "Kotlin",
-        "Go",
-        "Python",
-        "PHP",
-        "C#"
+        
       ],
       "others": [
-        "C",
-        "C++"
+        
       ],
       "naturalLanguages": [
         "English",
-        "Spanish (native)"
+        "Spanish (native)",
+        "French (beginner)"
       ]
     }
   },
-  "internships": [],
-  "courses": [],
-  "honors": [],
+  "internships": [
+    
+  ],
+  "courses": [
+    
+  ],
+  "honors": [
+    
+  ],
   "interests": [
-    "Tech articles and news",
-    "Video Games",
-    "Music (Rihanna, David Guetta, Ariana Grande, Dua Lipa, Martin Garrrix, etc.)"
+    
   ]
 }
