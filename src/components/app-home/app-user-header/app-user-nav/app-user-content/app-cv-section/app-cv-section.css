@@ -10,6 +10,14 @@ h3, h4, h5 {
   color: var(--heading-color);
 }
 
+h4 {
+  margin: 0.5rem 0;
+}
+
+p {
+  margin: 0 0 0.5rem;
+}
+
 .cv-section h4 {
   padding: 0.5rem;
   font-size: 1.125rem;
@@ -18,11 +26,14 @@ h3, h4, h5 {
 }
 
 .experience {
-  margin-top: 1.0rem;
+  margin-bottom: 1.5rem;
 }
 
 .experience-header {
   display: flex;
+  margin-bottom: 0.5rem;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .experience-title {
@@ -35,6 +46,14 @@ h3, h4, h5 {
 }
 
 .experience-meta {
+  width: 12rem;
   color: rgb(25, 118, 210);
   font-size: 0.8125rem;
+}
+
+@media (min-width: 600px) {
+  .experience-header {
+    flex-direction: row;
+    gap: 0;
+  }
 }
