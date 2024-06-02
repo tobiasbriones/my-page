@@ -46,7 +46,7 @@ p {
 }
 
 .experience-meta {
-  max-width: 12rem;
+  width: 12rem;
   color: rgb(25, 118, 210);
   font-size: 0.8125rem;
 }
