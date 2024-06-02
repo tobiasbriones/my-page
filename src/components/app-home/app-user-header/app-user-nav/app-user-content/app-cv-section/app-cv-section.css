@@ -54,6 +54,6 @@ p {
 @media (min-width: 600px) {
   .experience-header {
     flex-direction: row;
-    gap: 0;
+    gap: 1rem;
   }
 }
