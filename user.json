@@ -21,7 +21,7 @@
               "date": "Jul 2022 - Feb 2023",
               "description": "I performed SWE and ML roles for combating digital fraud, adhering to the Y-Combinator Startup culture, where I:",
               "items": [
-                "Expanded document model support with **Golang**, and **Python**, experimented with potential techniques, analysed metrics, and worked datasets out with **OpenCV**, **Tensorflow**, and **PyTorch**.",
+                "Expanded document model support with **Golang**, and **Python**, experimented with potential techniques, analyzed metrics, and worked datasets out with **OpenCV**, **Tensorflow**, and **PyTorch**.",
                 "Applied and learned new ML/DL skills in short iterations for fraud and object detection on ID documents.",
                 "Developed in-house tools for my daily tasks and assisted colleagues with inquiries or blockers.",
                 "Utilized **DVC**, **AWS**, **Paperspace**, **Jira (Scrum)**, and **Bitbucket**."
@@ -33,7 +33,7 @@
               "company": "PL Intelligent Solutions",
               "place": "Remote/Honduras",
               "date": "May 2021 - Jun 2022",
-              "description": "I contributed to developing ML and DS research while developing the company website and ERP web apps. I completed a Mexican scholarship for the activities I performed with **Python**, **Deepnote**, **Tailwind CSS**, and **Vue.js**."
+              "description": "I contributed to developing ML and DS research while developing the company website and ERP web apps. I completed a Mexican scholarship for my activities with **Python**, **Deepnote**, **Tailwind CSS**, and **Vue.js**."
             },
             {
               "title": "Engineering Intern",
