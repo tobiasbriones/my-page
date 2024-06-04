@@ -60,6 +60,8 @@ export interface CvEntry {
   description: string;
   items: string[];
   footer: string;
+  image: Image | undefined;
+  gallery: Gallery | undefined;
 }
 
 export interface Language {
@@ -67,6 +69,16 @@ export interface Language {
   secondClass: string[];
   others: string[];
   naturalLanguages: string[];
+}
+
+export interface Image {
+  src: string;
+  title: string;
+}
+
+export interface Gallery {
+  title: string;
+  images: Image[];
 }
 
 export class AppUserRepository {
@@ -88,7 +100,9 @@ export const emptyCvSection: CvEntry = {
   date: '',
   description: '',
   items: [],
-  footer: ''
+  footer: '',
+  image: undefined,
+  gallery: undefined,
 };
 
 export const emptyCv: Cv = {
