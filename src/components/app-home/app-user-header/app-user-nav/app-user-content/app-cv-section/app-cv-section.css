@@ -18,6 +18,68 @@ p {
   margin: 0 0 0.5rem;
 }
 
+figure {
+  margin: 0 0 1rem;
+}
+
+figure > img {
+  width: 10rem;
+  display: block;
+  max-width: 100%;
+  margin: auto;
+  transition: transform 0.3s ease;
+}
+
+figure > img,
+.gallery > img {
+  cursor: pointer;
+}
+
+figure > img,
+.gallery {
+  border: 1px solid #e0e0e0;
+  border-radius: 1rem 1rem 0 0;
+  border-bottom: none;
+}
+
+figcaption {
+  width: 10rem;
+  padding: 0.5rem 0;
+  margin: auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 0 0 0.5rem 0.5rem;
+  text-align: center;
+  font-weight: bold;
+  color: var(--heading-color);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
+  gap: 1rem;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border: 1px solid #e0e0e0;
+  border-radius: 1rem;
+  align-self: center;
+}
+
+figure img:hover,
+.gallery img:hover {
+  border: none;
+  transform: scale(1.05);
+}
+
+.gallery + figcaption {
+  width: 100%;
+}
+
 .cv-section h4 {
   padding: 0.5rem;
   font-size: 1.125rem;
@@ -54,6 +116,6 @@ p {
 @media (min-width: 600px) {
   .experience-header {
     flex-direction: row;
-    gap: 0;
+    gap: 1rem;
   }
 }

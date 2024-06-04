@@ -6,6 +6,7 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { CvEntry, Profile, User } from "./user";
+import { ModalImage } from "./components/app-image-modal/modal-image";
 import { NavItem } from "./components/app-nav/nav-item";
 export namespace Components {
     interface AppContactInfo {
@@ -26,6 +27,10 @@ export namespace Components {
     }
     interface AppIam {
         "name": string;
+    }
+    interface AppImageModal {
+        "modalImage": ModalImage | undefined;
+        "size": number | undefined;
     }
     interface AppMain {
     }
@@ -96,6 +101,12 @@ declare global {
         prototype: HTMLAppIamElement;
         new (): HTMLAppIamElement;
     };
+    interface HTMLAppImageModalElement extends Components.AppImageModal, HTMLStencilElement {
+    }
+    var HTMLAppImageModalElement: {
+        prototype: HTMLAppImageModalElement;
+        new (): HTMLAppImageModalElement;
+    };
     interface HTMLAppMainElement extends Components.AppMain, HTMLStencilElement {
     }
     var HTMLAppMainElement: {
@@ -163,6 +174,7 @@ declare global {
         "app-header-nav": HTMLAppHeaderNavElement;
         "app-home": HTMLAppHomeElement;
         "app-iam": HTMLAppIamElement;
+        "app-image-modal": HTMLAppImageModalElement;
         "app-main": HTMLAppMainElement;
         "app-nav": HTMLAppNavElement;
         "app-nav-item": HTMLAppNavItemElement;
@@ -194,6 +206,13 @@ declare namespace LocalJSX {
     }
     interface AppIam {
         "name"?: string;
+    }
+    interface AppImageModal {
+        "modalImage"?: ModalImage | undefined;
+        "onClose"?: (event: CustomEvent<void>) => void;
+        "onNext"?: (event: CustomEvent<ModalImage>) => void;
+        "onPrevious"?: (event: CustomEvent<ModalImage>) => void;
+        "size"?: number | undefined;
     }
     interface AppMain {
     }
@@ -235,6 +254,7 @@ declare namespace LocalJSX {
         "app-header-nav": AppHeaderNav;
         "app-home": AppHome;
         "app-iam": AppIam;
+        "app-image-modal": AppImageModal;
         "app-main": AppMain;
         "app-nav": AppNav;
         "app-nav-item": AppNavItem;
@@ -257,6 +277,7 @@ declare module "@stencil/core" {
             "app-header-nav": LocalJSX.AppHeaderNav & JSXBase.HTMLAttributes<HTMLAppHeaderNavElement>;
             "app-home": LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
             "app-iam": LocalJSX.AppIam & JSXBase.HTMLAttributes<HTMLAppIamElement>;
+            "app-image-modal": LocalJSX.AppImageModal & JSXBase.HTMLAttributes<HTMLAppImageModalElement>;
             "app-main": LocalJSX.AppMain & JSXBase.HTMLAttributes<HTMLAppMainElement>;
             "app-nav": LocalJSX.AppNav & JSXBase.HTMLAttributes<HTMLAppNavElement>;
             "app-nav-item": LocalJSX.AppNavItem & JSXBase.HTMLAttributes<HTMLAppNavItemElement>;
