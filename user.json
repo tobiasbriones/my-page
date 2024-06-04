@@ -66,7 +66,32 @@
               "title": "Mathematics with Computer Science Orientation, Licentiate",
               "date": "2016 - 2021, Grad Jul 2024. Magna Cum Laude (92%)",
               "company": "Universidad Nacional Autónoma de Honduras",
-              "description": ""
+              "description": "",
+              "gallery": {
+                "title": "Math and Engineering Honors",
+                "images": [
+                  {
+                    "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/static/edu/unah/MM-Highest-Honor-Grades-2018_300dpi.jpg",
+                    "title": "Career's Highest Honor Grades 2018"
+                  },
+                  {
+                    "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/static/edu/unah/IS-Highest-Honor-Grades-2017_300dpi.jpg",
+                    "title": "Career's Highest Honor Grades 2017"
+                  },
+                  {
+                    "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/static/edu/unah/IS-Honor-Grades-2019_300dpi.jpg",
+                    "title": "Honor Grades 2018"
+                  },
+                  {
+                    "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/static/edu/unah/IS-Honor-Grades-2018_300dpi.jpg",
+                    "title": "Honor Grades 2017"
+                  },
+                  {
+                    "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/static/edu/unah/IS-Honor-Grades-2017_300dpi.jpg",
+                    "title": "Honor Grades 2016"
+                  }
+                ]
+              }
             },
             {
               "title": "Systems Engineering",
