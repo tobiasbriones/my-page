@@ -19,27 +19,27 @@
               "company": "Truora",
               "place": "Full-Time Remote/Colombia",
               "date": "Jul 2022 - Feb 2023",
-              "description": "I performed ML roles for combating digital fraud, standing by the Y-Combinator Startup culture, where I:",
+              "description": "I performed SWE and ML roles for combating digital fraud, adhering to the Y-Combinator Startup culture, where I:",
               "items": [
-                "Expanded document support, experimented with potential techniques, and worked datasets out.",
-                "Applied newer machine/deep learning skills in short iterations for fraud detection and object detection on ID documents.",
-                "Developed in-house tools for my daily job and helped mates get unblocked internally."
+                "Expanded document model support with **Golang**, and **Python**, experimented with potential techniques, analyzed metrics, and worked datasets out with **OpenCV**, **Tensorflow**, and **PyTorch**.",
+                "Applied and learned new ML/DL skills in short iterations for fraud and object detection on ID documents while developing in-house tools for my daily tasks and assisting colleagues.",
+                "Utilized **DVC**, **AWS**, **Paperspace**, **Jira (Scrum)**, and **Bitbucket**."
               ],
-              "footer": "Tech: **OpenCV, TensorFlow, PyTorch, Jira (Scrum), Bitbucket, AWS, Go, Vue.js**"
+              "footer": ""
             },
             {
               "title": "Mathematics, Engineering Intern",
               "company": "PL Intelligent Solutions",
               "place": "Remote/Honduras",
               "date": "May 2021 - Jun 2022",
-              "description": "I contributed to developing ML and DS research while developing ERP web apps and the company website. I completed a Mexican scholarship for the activities I performed. Tech: **Python**, **Deepnote**, **Tailwind CSS**, and **Vue.js**."
+              "description": "I contributed to developing ML and DS research while developing the company website and ERP web apps. I completed a Mexican scholarship for my activities with **Python**, **Deepnote**, **Tailwind CSS**, and **Vue.js**."
             },
             {
               "title": "Engineering Intern",
               "company": "GO IT Solutions",
               "place": "Remote/Honduras",
               "date": "Jan 2021 - Apr 2021",
-              "description": "I worked in a team to develop a tourism application (Virtravl) where I developed a full backend API in **Nest.js** with **Amazon AWS** services, managed operations, and helped with the **MySQL** database and the **Vue.js** frontend."
+              "description": "I built a full backend API with **Nest.js** and **AWS** for a tourism application (Virtravl) and assisted the team with operations, the **MySQL** database, and the **Vue.js** frontend."
             }
           ]
         },
@@ -58,6 +58,24 @@
               "footer": ""
             }
           ]
+        },
+        {
+          "sectionName": "Education",
+          "entries": [
+            {
+              "title": "Mathematics with Computer Science Orientation, Licentiate",
+              "date": "2016 - 2021, Grad Jul 2024. Magna Cum Laude (92%)",
+              "company": "Universidad Nacional Autónoma de Honduras",
+              "description": ""
+            },
+            {
+              "title": "Systems Engineering",
+              "place": "2015 - 2022",
+              "date": "44/55 classes approved",
+              "company": "Universidad Nacional Autónoma de Honduras",
+              "description": ""
+            }
+          ]
         }
       ]
     },
@@ -65,10 +83,10 @@
       "firstClass": [
       ],
       "secondClass": [
-        
+
       ],
       "others": [
-        
+
       ],
       "naturalLanguages": [
         "English",
@@ -78,15 +96,15 @@
     }
   },
   "internships": [
-    
+
   ],
   "courses": [
-    
+
   ],
   "honors": [
-    
+
   ],
   "interests": [
-    
+
   ]
 }
