@@ -6,288 +6,288 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { CvEntry, Profile, User } from "./user";
-import { ModalImage } from "./components/app-image-modal/modal-image";
-import { NavItem } from "./components/app-nav/nav-item";
+import { ModalImage } from "./components/image-modal/modal-image";
+import { Item } from "./components/nav/nav-item";
 export namespace Components {
-    interface AppContactInfo {
+    interface MaIam {
+        "name": string;
+    }
+    interface MeContactInfo {
         "email": string;
         "linkedInUser": string;
         "location": string;
         "phone": string;
     }
-    interface AppCvSection {
+    interface MeCvSection {
         "entries": CvEntry[];
         "name": string;
     }
-    interface AppHeader {
+    interface MeHeader {
     }
-    interface AppHeaderNav {
+    interface MeHeaderNav {
     }
-    interface AppHome {
+    interface MeHome {
     }
-    interface AppIam {
-        "name": string;
-    }
-    interface AppImageModal {
+    interface MeImageModal {
         "modalImage": ModalImage | undefined;
         "size": number | undefined;
     }
-    interface AppMain {
+    interface MeMain {
     }
-    interface AppNav {
-        "items": NavItem[];
-        "selectedItem"?: NavItem;
+    interface MeNav {
+        "items": Item[];
+        "selectedItem"?: Item;
     }
-    interface AppNavItem {
+    interface MeNavItem {
         "isSelected": boolean;
-        "item": NavItem;
+        "item": Item;
     }
-    interface AppRoot {
+    interface MeRoot {
     }
-    interface AppUserContent {
-        "selectedItem": NavItem;
+    interface MeUserContent {
+        "selectedItem": Item;
         "user": User;
     }
-    interface AppUserHeader {
+    interface MeUserHeader {
         "user": User;
     }
-    interface AppUserList {
+    interface MeUserList {
         "items": string[];
     }
-    interface AppUserNav {
+    interface MeUserNav {
         "user": User;
     }
-    interface AppUserPhoto {
+    interface MeUserPhoto {
         "photo": string;
     }
-    interface AppUserProfile {
+    interface MeUserProfile {
         "profile": Profile;
     }
 }
 declare global {
-    interface HTMLAppContactInfoElement extends Components.AppContactInfo, HTMLStencilElement {
+    interface HTMLMaIamElement extends Components.MaIam, HTMLStencilElement {
     }
-    var HTMLAppContactInfoElement: {
-        prototype: HTMLAppContactInfoElement;
-        new (): HTMLAppContactInfoElement;
+    var HTMLMaIamElement: {
+        prototype: HTMLMaIamElement;
+        new (): HTMLMaIamElement;
     };
-    interface HTMLAppCvSectionElement extends Components.AppCvSection, HTMLStencilElement {
+    interface HTMLMeContactInfoElement extends Components.MeContactInfo, HTMLStencilElement {
     }
-    var HTMLAppCvSectionElement: {
-        prototype: HTMLAppCvSectionElement;
-        new (): HTMLAppCvSectionElement;
+    var HTMLMeContactInfoElement: {
+        prototype: HTMLMeContactInfoElement;
+        new (): HTMLMeContactInfoElement;
     };
-    interface HTMLAppHeaderElement extends Components.AppHeader, HTMLStencilElement {
+    interface HTMLMeCvSectionElement extends Components.MeCvSection, HTMLStencilElement {
     }
-    var HTMLAppHeaderElement: {
-        prototype: HTMLAppHeaderElement;
-        new (): HTMLAppHeaderElement;
+    var HTMLMeCvSectionElement: {
+        prototype: HTMLMeCvSectionElement;
+        new (): HTMLMeCvSectionElement;
     };
-    interface HTMLAppHeaderNavElement extends Components.AppHeaderNav, HTMLStencilElement {
+    interface HTMLMeHeaderElement extends Components.MeHeader, HTMLStencilElement {
     }
-    var HTMLAppHeaderNavElement: {
-        prototype: HTMLAppHeaderNavElement;
-        new (): HTMLAppHeaderNavElement;
+    var HTMLMeHeaderElement: {
+        prototype: HTMLMeHeaderElement;
+        new (): HTMLMeHeaderElement;
     };
-    interface HTMLAppHomeElement extends Components.AppHome, HTMLStencilElement {
+    interface HTMLMeHeaderNavElement extends Components.MeHeaderNav, HTMLStencilElement {
     }
-    var HTMLAppHomeElement: {
-        prototype: HTMLAppHomeElement;
-        new (): HTMLAppHomeElement;
+    var HTMLMeHeaderNavElement: {
+        prototype: HTMLMeHeaderNavElement;
+        new (): HTMLMeHeaderNavElement;
     };
-    interface HTMLAppIamElement extends Components.AppIam, HTMLStencilElement {
+    interface HTMLMeHomeElement extends Components.MeHome, HTMLStencilElement {
     }
-    var HTMLAppIamElement: {
-        prototype: HTMLAppIamElement;
-        new (): HTMLAppIamElement;
+    var HTMLMeHomeElement: {
+        prototype: HTMLMeHomeElement;
+        new (): HTMLMeHomeElement;
     };
-    interface HTMLAppImageModalElement extends Components.AppImageModal, HTMLStencilElement {
+    interface HTMLMeImageModalElement extends Components.MeImageModal, HTMLStencilElement {
     }
-    var HTMLAppImageModalElement: {
-        prototype: HTMLAppImageModalElement;
-        new (): HTMLAppImageModalElement;
+    var HTMLMeImageModalElement: {
+        prototype: HTMLMeImageModalElement;
+        new (): HTMLMeImageModalElement;
     };
-    interface HTMLAppMainElement extends Components.AppMain, HTMLStencilElement {
+    interface HTMLMeMainElement extends Components.MeMain, HTMLStencilElement {
     }
-    var HTMLAppMainElement: {
-        prototype: HTMLAppMainElement;
-        new (): HTMLAppMainElement;
+    var HTMLMeMainElement: {
+        prototype: HTMLMeMainElement;
+        new (): HTMLMeMainElement;
     };
-    interface HTMLAppNavElement extends Components.AppNav, HTMLStencilElement {
+    interface HTMLMeNavElement extends Components.MeNav, HTMLStencilElement {
     }
-    var HTMLAppNavElement: {
-        prototype: HTMLAppNavElement;
-        new (): HTMLAppNavElement;
+    var HTMLMeNavElement: {
+        prototype: HTMLMeNavElement;
+        new (): HTMLMeNavElement;
     };
-    interface HTMLAppNavItemElement extends Components.AppNavItem, HTMLStencilElement {
+    interface HTMLMeNavItemElement extends Components.MeNavItem, HTMLStencilElement {
     }
-    var HTMLAppNavItemElement: {
-        prototype: HTMLAppNavItemElement;
-        new (): HTMLAppNavItemElement;
+    var HTMLMeNavItemElement: {
+        prototype: HTMLMeNavItemElement;
+        new (): HTMLMeNavItemElement;
     };
-    interface HTMLAppRootElement extends Components.AppRoot, HTMLStencilElement {
+    interface HTMLMeRootElement extends Components.MeRoot, HTMLStencilElement {
     }
-    var HTMLAppRootElement: {
-        prototype: HTMLAppRootElement;
-        new (): HTMLAppRootElement;
+    var HTMLMeRootElement: {
+        prototype: HTMLMeRootElement;
+        new (): HTMLMeRootElement;
     };
-    interface HTMLAppUserContentElement extends Components.AppUserContent, HTMLStencilElement {
+    interface HTMLMeUserContentElement extends Components.MeUserContent, HTMLStencilElement {
     }
-    var HTMLAppUserContentElement: {
-        prototype: HTMLAppUserContentElement;
-        new (): HTMLAppUserContentElement;
+    var HTMLMeUserContentElement: {
+        prototype: HTMLMeUserContentElement;
+        new (): HTMLMeUserContentElement;
     };
-    interface HTMLAppUserHeaderElement extends Components.AppUserHeader, HTMLStencilElement {
+    interface HTMLMeUserHeaderElement extends Components.MeUserHeader, HTMLStencilElement {
     }
-    var HTMLAppUserHeaderElement: {
-        prototype: HTMLAppUserHeaderElement;
-        new (): HTMLAppUserHeaderElement;
+    var HTMLMeUserHeaderElement: {
+        prototype: HTMLMeUserHeaderElement;
+        new (): HTMLMeUserHeaderElement;
     };
-    interface HTMLAppUserListElement extends Components.AppUserList, HTMLStencilElement {
+    interface HTMLMeUserListElement extends Components.MeUserList, HTMLStencilElement {
     }
-    var HTMLAppUserListElement: {
-        prototype: HTMLAppUserListElement;
-        new (): HTMLAppUserListElement;
+    var HTMLMeUserListElement: {
+        prototype: HTMLMeUserListElement;
+        new (): HTMLMeUserListElement;
     };
-    interface HTMLAppUserNavElement extends Components.AppUserNav, HTMLStencilElement {
+    interface HTMLMeUserNavElement extends Components.MeUserNav, HTMLStencilElement {
     }
-    var HTMLAppUserNavElement: {
-        prototype: HTMLAppUserNavElement;
-        new (): HTMLAppUserNavElement;
+    var HTMLMeUserNavElement: {
+        prototype: HTMLMeUserNavElement;
+        new (): HTMLMeUserNavElement;
     };
-    interface HTMLAppUserPhotoElement extends Components.AppUserPhoto, HTMLStencilElement {
+    interface HTMLMeUserPhotoElement extends Components.MeUserPhoto, HTMLStencilElement {
     }
-    var HTMLAppUserPhotoElement: {
-        prototype: HTMLAppUserPhotoElement;
-        new (): HTMLAppUserPhotoElement;
+    var HTMLMeUserPhotoElement: {
+        prototype: HTMLMeUserPhotoElement;
+        new (): HTMLMeUserPhotoElement;
     };
-    interface HTMLAppUserProfileElement extends Components.AppUserProfile, HTMLStencilElement {
+    interface HTMLMeUserProfileElement extends Components.MeUserProfile, HTMLStencilElement {
     }
-    var HTMLAppUserProfileElement: {
-        prototype: HTMLAppUserProfileElement;
-        new (): HTMLAppUserProfileElement;
+    var HTMLMeUserProfileElement: {
+        prototype: HTMLMeUserProfileElement;
+        new (): HTMLMeUserProfileElement;
     };
     interface HTMLElementTagNameMap {
-        "app-contact-info": HTMLAppContactInfoElement;
-        "app-cv-section": HTMLAppCvSectionElement;
-        "app-header": HTMLAppHeaderElement;
-        "app-header-nav": HTMLAppHeaderNavElement;
-        "app-home": HTMLAppHomeElement;
-        "app-iam": HTMLAppIamElement;
-        "app-image-modal": HTMLAppImageModalElement;
-        "app-main": HTMLAppMainElement;
-        "app-nav": HTMLAppNavElement;
-        "app-nav-item": HTMLAppNavItemElement;
-        "app-root": HTMLAppRootElement;
-        "app-user-content": HTMLAppUserContentElement;
-        "app-user-header": HTMLAppUserHeaderElement;
-        "app-user-list": HTMLAppUserListElement;
-        "app-user-nav": HTMLAppUserNavElement;
-        "app-user-photo": HTMLAppUserPhotoElement;
-        "app-user-profile": HTMLAppUserProfileElement;
+        "ma-iam": HTMLMaIamElement;
+        "me-contact-info": HTMLMeContactInfoElement;
+        "me-cv-section": HTMLMeCvSectionElement;
+        "me-header": HTMLMeHeaderElement;
+        "me-header-nav": HTMLMeHeaderNavElement;
+        "me-home": HTMLMeHomeElement;
+        "me-image-modal": HTMLMeImageModalElement;
+        "me-main": HTMLMeMainElement;
+        "me-nav": HTMLMeNavElement;
+        "me-nav-item": HTMLMeNavItemElement;
+        "me-root": HTMLMeRootElement;
+        "me-user-content": HTMLMeUserContentElement;
+        "me-user-header": HTMLMeUserHeaderElement;
+        "me-user-list": HTMLMeUserListElement;
+        "me-user-nav": HTMLMeUserNavElement;
+        "me-user-photo": HTMLMeUserPhotoElement;
+        "me-user-profile": HTMLMeUserProfileElement;
     }
 }
 declare namespace LocalJSX {
-    interface AppContactInfo {
+    interface MaIam {
+        "name"?: string;
+    }
+    interface MeContactInfo {
         "email"?: string;
         "linkedInUser"?: string;
         "location"?: string;
         "phone"?: string;
     }
-    interface AppCvSection {
+    interface MeCvSection {
         "entries"?: CvEntry[];
         "name"?: string;
     }
-    interface AppHeader {
+    interface MeHeader {
     }
-    interface AppHeaderNav {
+    interface MeHeaderNav {
     }
-    interface AppHome {
+    interface MeHome {
     }
-    interface AppIam {
-        "name"?: string;
-    }
-    interface AppImageModal {
+    interface MeImageModal {
         "modalImage"?: ModalImage | undefined;
         "onClose"?: (event: CustomEvent<void>) => void;
         "onNext"?: (event: CustomEvent<ModalImage>) => void;
         "onPrevious"?: (event: CustomEvent<ModalImage>) => void;
         "size"?: number | undefined;
     }
-    interface AppMain {
+    interface MeMain {
     }
-    interface AppNav {
-        "items"?: NavItem[];
-        "onItemClick"?: (event: CustomEvent<NavItem>) => void;
-        "selectedItem"?: NavItem;
+    interface MeNav {
+        "items"?: Item[];
+        "onItemClick"?: (event: CustomEvent<Item>) => void;
+        "selectedItem"?: Item;
     }
-    interface AppNavItem {
+    interface MeNavItem {
         "isSelected"?: boolean;
-        "item"?: NavItem;
-        "onItemClick"?: (event: CustomEvent<NavItem>) => void;
+        "item"?: Item;
+        "onItemClick"?: (event: CustomEvent<Item>) => void;
     }
-    interface AppRoot {
+    interface MeRoot {
     }
-    interface AppUserContent {
-        "selectedItem"?: NavItem;
+    interface MeUserContent {
+        "selectedItem"?: Item;
         "user"?: User;
     }
-    interface AppUserHeader {
+    interface MeUserHeader {
         "user"?: User;
     }
-    interface AppUserList {
+    interface MeUserList {
         "items"?: string[];
     }
-    interface AppUserNav {
+    interface MeUserNav {
         "user"?: User;
     }
-    interface AppUserPhoto {
+    interface MeUserPhoto {
         "photo"?: string;
     }
-    interface AppUserProfile {
+    interface MeUserProfile {
         "profile"?: Profile;
     }
     interface IntrinsicElements {
-        "app-contact-info": AppContactInfo;
-        "app-cv-section": AppCvSection;
-        "app-header": AppHeader;
-        "app-header-nav": AppHeaderNav;
-        "app-home": AppHome;
-        "app-iam": AppIam;
-        "app-image-modal": AppImageModal;
-        "app-main": AppMain;
-        "app-nav": AppNav;
-        "app-nav-item": AppNavItem;
-        "app-root": AppRoot;
-        "app-user-content": AppUserContent;
-        "app-user-header": AppUserHeader;
-        "app-user-list": AppUserList;
-        "app-user-nav": AppUserNav;
-        "app-user-photo": AppUserPhoto;
-        "app-user-profile": AppUserProfile;
+        "ma-iam": MaIam;
+        "me-contact-info": MeContactInfo;
+        "me-cv-section": MeCvSection;
+        "me-header": MeHeader;
+        "me-header-nav": MeHeaderNav;
+        "me-home": MeHome;
+        "me-image-modal": MeImageModal;
+        "me-main": MeMain;
+        "me-nav": MeNav;
+        "me-nav-item": MeNavItem;
+        "me-root": MeRoot;
+        "me-user-content": MeUserContent;
+        "me-user-header": MeUserHeader;
+        "me-user-list": MeUserList;
+        "me-user-nav": MeUserNav;
+        "me-user-photo": MeUserPhoto;
+        "me-user-profile": MeUserProfile;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "app-contact-info": LocalJSX.AppContactInfo & JSXBase.HTMLAttributes<HTMLAppContactInfoElement>;
-            "app-cv-section": LocalJSX.AppCvSection & JSXBase.HTMLAttributes<HTMLAppCvSectionElement>;
-            "app-header": LocalJSX.AppHeader & JSXBase.HTMLAttributes<HTMLAppHeaderElement>;
-            "app-header-nav": LocalJSX.AppHeaderNav & JSXBase.HTMLAttributes<HTMLAppHeaderNavElement>;
-            "app-home": LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
-            "app-iam": LocalJSX.AppIam & JSXBase.HTMLAttributes<HTMLAppIamElement>;
-            "app-image-modal": LocalJSX.AppImageModal & JSXBase.HTMLAttributes<HTMLAppImageModalElement>;
-            "app-main": LocalJSX.AppMain & JSXBase.HTMLAttributes<HTMLAppMainElement>;
-            "app-nav": LocalJSX.AppNav & JSXBase.HTMLAttributes<HTMLAppNavElement>;
-            "app-nav-item": LocalJSX.AppNavItem & JSXBase.HTMLAttributes<HTMLAppNavItemElement>;
-            "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
-            "app-user-content": LocalJSX.AppUserContent & JSXBase.HTMLAttributes<HTMLAppUserContentElement>;
-            "app-user-header": LocalJSX.AppUserHeader & JSXBase.HTMLAttributes<HTMLAppUserHeaderElement>;
-            "app-user-list": LocalJSX.AppUserList & JSXBase.HTMLAttributes<HTMLAppUserListElement>;
-            "app-user-nav": LocalJSX.AppUserNav & JSXBase.HTMLAttributes<HTMLAppUserNavElement>;
-            "app-user-photo": LocalJSX.AppUserPhoto & JSXBase.HTMLAttributes<HTMLAppUserPhotoElement>;
-            "app-user-profile": LocalJSX.AppUserProfile & JSXBase.HTMLAttributes<HTMLAppUserProfileElement>;
+            "ma-iam": LocalJSX.MaIam & JSXBase.HTMLAttributes<HTMLMaIamElement>;
+            "me-contact-info": LocalJSX.MeContactInfo & JSXBase.HTMLAttributes<HTMLMeContactInfoElement>;
+            "me-cv-section": LocalJSX.MeCvSection & JSXBase.HTMLAttributes<HTMLMeCvSectionElement>;
+            "me-header": LocalJSX.MeHeader & JSXBase.HTMLAttributes<HTMLMeHeaderElement>;
+            "me-header-nav": LocalJSX.MeHeaderNav & JSXBase.HTMLAttributes<HTMLMeHeaderNavElement>;
+            "me-home": LocalJSX.MeHome & JSXBase.HTMLAttributes<HTMLMeHomeElement>;
+            "me-image-modal": LocalJSX.MeImageModal & JSXBase.HTMLAttributes<HTMLMeImageModalElement>;
+            "me-main": LocalJSX.MeMain & JSXBase.HTMLAttributes<HTMLMeMainElement>;
+            "me-nav": LocalJSX.MeNav & JSXBase.HTMLAttributes<HTMLMeNavElement>;
+            "me-nav-item": LocalJSX.MeNavItem & JSXBase.HTMLAttributes<HTMLMeNavItemElement>;
+            "me-root": LocalJSX.MeRoot & JSXBase.HTMLAttributes<HTMLMeRootElement>;
+            "me-user-content": LocalJSX.MeUserContent & JSXBase.HTMLAttributes<HTMLMeUserContentElement>;
+            "me-user-header": LocalJSX.MeUserHeader & JSXBase.HTMLAttributes<HTMLMeUserHeaderElement>;
+            "me-user-list": LocalJSX.MeUserList & JSXBase.HTMLAttributes<HTMLMeUserListElement>;
+            "me-user-nav": LocalJSX.MeUserNav & JSXBase.HTMLAttributes<HTMLMeUserNavElement>;
+            "me-user-photo": LocalJSX.MeUserPhoto & JSXBase.HTMLAttributes<HTMLMeUserPhotoElement>;
+            "me-user-profile": LocalJSX.MeUserProfile & JSXBase.HTMLAttributes<HTMLMeUserProfileElement>;
         }
     }
 }
