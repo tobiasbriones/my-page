@@ -6,6 +6,7 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { CvEntry, Profile, User } from "./user";
+import { ModalImage } from "./components/app-image-modal/modal-image";
 import { NavItem } from "./components/app-nav/nav-item";
 export namespace Components {
     interface AppContactInfo {
@@ -28,6 +29,8 @@ export namespace Components {
         "name": string;
     }
     interface AppImageModal {
+        "modalImage": ModalImage | undefined;
+        "size": number | undefined;
     }
     interface AppMain {
     }
@@ -205,6 +208,11 @@ declare namespace LocalJSX {
         "name"?: string;
     }
     interface AppImageModal {
+        "modalImage"?: ModalImage | undefined;
+        "onClose"?: (event: CustomEvent<void>) => void;
+        "onNext"?: (event: CustomEvent<ModalImage>) => void;
+        "onPrevious"?: (event: CustomEvent<ModalImage>) => void;
+        "size"?: number | undefined;
     }
     interface AppMain {
     }
