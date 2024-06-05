@@ -18,7 +18,7 @@
               "title": "Title A",
               "company": "Company A",
               "place": "Place A",
-              "date": "TimeA1-TimeA2",
+              "date": "20AB - 20CD",
               "description": "Description A",
               "items": [
                 "Item A1",
@@ -30,7 +30,7 @@
               "title": "Title B",
               "company": "Company B",
               "place": "Place B",
-              "date": "TimeB1-TimeB2",
+              "date": "20AB - 20CD",
               "description": "Description B",
               "items": [
                 "Item A1",
@@ -45,7 +45,7 @@
           "entries": [
             {
               "title": "Project A",
-              "date": "TimeA1-TimeA2",
+              "date": "20AB - 20CD",
               "description": "Description of Project A",
               "items": [
                 "Item A1 with [Link to Project](https://github.com).",
