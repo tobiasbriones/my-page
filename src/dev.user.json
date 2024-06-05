@@ -54,6 +54,45 @@
               "footer": "Footer with **bold Tech** for keyword scanning."
             }
           ]
+        },
+        {
+          "sectionName": "Education",
+          "entries": [
+            {
+              "title": "Career 1",
+              "date": "20AB - 20CD, Grad Jul 20EF. Magna Cum Laude (90%)",
+              "company": "University A",
+              "description": "",
+              "image": {
+                "src": "/assets/bg.svg",
+                "title": "Degree in Math"
+              },
+              "gallery": {
+                "title": "Career 1 Honors",
+                "images": [
+                  {
+                    "src": "/assets/bg.svg",
+                    "title": "Career's Highest Honor Grades 2018"
+                  },
+                  {
+                    "src": "/assets/bg.svg",
+                    "title": "Career's Highest Honor Grades 2019"
+                  },
+                  {
+                    "src": "/assets/bg.svg",
+                    "title": "Honor Grades 2019"
+                  }
+                ]
+              }
+            },
+            {
+              "title": "Career 2",
+              "place": "20AB - 20CD",
+              "date": "",
+              "company": "University B",
+              "description": ""
+            }
+          ]
         }
       ]
     },
