@@ -48,6 +48,8 @@ export namespace Components {
         "selectedItem": Item;
         "user": User;
     }
+    interface MeUserEngineering {
+    }
     interface MeUserFocus {
         "userFocus": Focus;
     }
@@ -140,6 +142,12 @@ declare global {
         prototype: HTMLMeUserContentElement;
         new (): HTMLMeUserContentElement;
     };
+    interface HTMLMeUserEngineeringElement extends Components.MeUserEngineering, HTMLStencilElement {
+    }
+    var HTMLMeUserEngineeringElement: {
+        prototype: HTMLMeUserEngineeringElement;
+        new (): HTMLMeUserEngineeringElement;
+    };
     interface HTMLMeUserFocusElement extends Components.MeUserFocus, HTMLStencilElement {
     }
     var HTMLMeUserFocusElement: {
@@ -189,6 +197,7 @@ declare global {
         "me-nav-item": HTMLMeNavItemElement;
         "me-root": HTMLMeRootElement;
         "me-user-content": HTMLMeUserContentElement;
+        "me-user-engineering": HTMLMeUserEngineeringElement;
         "me-user-focus": HTMLMeUserFocusElement;
         "me-user-header": HTMLMeUserHeaderElement;
         "me-user-list": HTMLMeUserListElement;
@@ -242,6 +251,8 @@ declare namespace LocalJSX {
         "selectedItem"?: Item;
         "user"?: User;
     }
+    interface MeUserEngineering {
+    }
     interface MeUserFocus {
         "userFocus"?: Focus;
     }
@@ -273,6 +284,7 @@ declare namespace LocalJSX {
         "me-nav-item": MeNavItem;
         "me-root": MeRoot;
         "me-user-content": MeUserContent;
+        "me-user-engineering": MeUserEngineering;
         "me-user-focus": MeUserFocus;
         "me-user-header": MeUserHeader;
         "me-user-list": MeUserList;
@@ -297,6 +309,7 @@ declare module "@stencil/core" {
             "me-nav-item": LocalJSX.MeNavItem & JSXBase.HTMLAttributes<HTMLMeNavItemElement>;
             "me-root": LocalJSX.MeRoot & JSXBase.HTMLAttributes<HTMLMeRootElement>;
             "me-user-content": LocalJSX.MeUserContent & JSXBase.HTMLAttributes<HTMLMeUserContentElement>;
+            "me-user-engineering": LocalJSX.MeUserEngineering & JSXBase.HTMLAttributes<HTMLMeUserEngineeringElement>;
             "me-user-focus": LocalJSX.MeUserFocus & JSXBase.HTMLAttributes<HTMLMeUserFocusElement>;
             "me-user-header": LocalJSX.MeUserHeader & JSXBase.HTMLAttributes<HTMLMeUserHeaderElement>;
             "me-user-list": LocalJSX.MeUserList & JSXBase.HTMLAttributes<HTMLMeUserListElement>;
