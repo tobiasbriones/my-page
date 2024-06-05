@@ -82,6 +82,17 @@
       ]
     }
   },
+  "focus": {
+    "abstract": "Career specialization to focus.",
+    "items": [
+      "Functional Programming",
+      "Operations Research",
+      "Haskell",
+      "Kotlin",
+      "Rust"
+    ],
+    "conclusion": "Optimizing for **functional programming** to build **mathematical software**."
+  },
   "courses": [
     "Course A at Org A",
     "Course B at Org B",

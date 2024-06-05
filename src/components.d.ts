@@ -5,7 +5,7 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
-import { CvEntry, Profile, User } from "./user";
+import { CvEntry, Focus, Profile, User } from "./user";
 import { ModalImage } from "./components/image-modal/modal-image";
 import { Item } from "./components/nav/nav-item";
 export namespace Components {
@@ -49,6 +49,7 @@ export namespace Components {
         "user": User;
     }
     interface MeUserFocus {
+        "userFocus": Focus;
     }
     interface MeUserHeader {
         "user": User;
@@ -242,6 +243,7 @@ declare namespace LocalJSX {
         "user"?: User;
     }
     interface MeUserFocus {
+        "userFocus"?: Focus;
     }
     interface MeUserHeader {
         "user"?: User;

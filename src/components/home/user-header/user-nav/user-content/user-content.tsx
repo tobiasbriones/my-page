@@ -38,6 +38,8 @@ export class UserContent {
     switch (this.selectedItem.id) {
       case ItemId.PROFILE:
         return <me-user-profile profile={ user.profile } />;
+      case ItemId.FOCUS:
+        return <me-user-focus userFocus={ user.focus } />;
       case ItemId.COURSES:
         return <me-user-list items={ user.courses } />;
       case ItemId.HONORS:
