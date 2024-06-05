@@ -9,7 +9,6 @@ export interface User {
   profile: Profile;
   focus: Focus;
   courses: string[];
-  honors: string[];
   interests: string[];
 }
 
@@ -121,6 +120,5 @@ export const emptyUser: User = {
   profile: emptyProfile,
   focus: emptyFocus,
   courses: [],
-  honors: [],
   interests: [],
 };

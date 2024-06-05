@@ -42,8 +42,6 @@ export class UserContent {
         return <me-user-focus userFocus={ user.focus } />;
       case ItemId.COURSES:
         return <me-user-list items={ user.courses } />;
-      case ItemId.HONORS:
-        return <me-user-list items={ user.honors } />;
       case ItemId.INTERESTS:
         return <me-user-list items={ user.interests } />;
       default:

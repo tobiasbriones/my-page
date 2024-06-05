@@ -8,7 +8,6 @@ export enum ItemId {
   PROFILE = 1,
   FOCUS,
   COURSES,
-  HONORS,
   INTERESTS
 }
 
@@ -31,11 +30,6 @@ const VALUES: Item[] = [
     id: ItemId.COURSES,
     value: 'Courses',
     iconSrc: getIconSrc('school')
-  },
-  {
-    id: ItemId.HONORS,
-    value: 'Honors',
-    iconSrc: getIconSrc('military-tech')
   },
   {
     id: ItemId.INTERESTS,
