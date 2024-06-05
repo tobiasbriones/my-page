@@ -5,7 +5,7 @@
 import { Component, h, Host, Prop } from '@stencil/core';
 
 @Component({
-  tag: 'ma-iam',
+  tag: 'me-iam',
   styleUrl: 'iam.css',
   shadow: true
 })

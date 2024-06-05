@@ -9,9 +9,6 @@ import { CvEntry, Engineering, Focus, Profile, User } from "./user";
 import { ModalImage } from "./components/image-modal/modal-image";
 import { Item } from "./components/nav/nav-item";
 export namespace Components {
-    interface MaIam {
-        "name": string;
-    }
     interface MeContactInfo {
         "email": string;
         "linkedInUser": string;
@@ -27,6 +24,9 @@ export namespace Components {
     interface MeHeaderNav {
     }
     interface MeHome {
+    }
+    interface MeIam {
+        "name": string;
     }
     interface MeImageModal {
         "modalImage": ModalImage | undefined;
@@ -71,12 +71,6 @@ export namespace Components {
     }
 }
 declare global {
-    interface HTMLMaIamElement extends Components.MaIam, HTMLStencilElement {
-    }
-    var HTMLMaIamElement: {
-        prototype: HTMLMaIamElement;
-        new (): HTMLMaIamElement;
-    };
     interface HTMLMeContactInfoElement extends Components.MeContactInfo, HTMLStencilElement {
     }
     var HTMLMeContactInfoElement: {
@@ -106,6 +100,12 @@ declare global {
     var HTMLMeHomeElement: {
         prototype: HTMLMeHomeElement;
         new (): HTMLMeHomeElement;
+    };
+    interface HTMLMeIamElement extends Components.MeIam, HTMLStencilElement {
+    }
+    var HTMLMeIamElement: {
+        prototype: HTMLMeIamElement;
+        new (): HTMLMeIamElement;
     };
     interface HTMLMeImageModalElement extends Components.MeImageModal, HTMLStencilElement {
     }
@@ -186,12 +186,12 @@ declare global {
         new (): HTMLMeUserProfileElement;
     };
     interface HTMLElementTagNameMap {
-        "ma-iam": HTMLMaIamElement;
         "me-contact-info": HTMLMeContactInfoElement;
         "me-cv-section": HTMLMeCvSectionElement;
         "me-header": HTMLMeHeaderElement;
         "me-header-nav": HTMLMeHeaderNavElement;
         "me-home": HTMLMeHomeElement;
+        "me-iam": HTMLMeIamElement;
         "me-image-modal": HTMLMeImageModalElement;
         "me-main": HTMLMeMainElement;
         "me-nav": HTMLMeNavElement;
@@ -208,9 +208,6 @@ declare global {
     }
 }
 declare namespace LocalJSX {
-    interface MaIam {
-        "name"?: string;
-    }
     interface MeContactInfo {
         "email"?: string;
         "linkedInUser"?: string;
@@ -226,6 +223,9 @@ declare namespace LocalJSX {
     interface MeHeaderNav {
     }
     interface MeHome {
+    }
+    interface MeIam {
+        "name"?: string;
     }
     interface MeImageModal {
         "modalImage"?: ModalImage | undefined;
@@ -274,12 +274,12 @@ declare namespace LocalJSX {
         "profile"?: Profile;
     }
     interface IntrinsicElements {
-        "ma-iam": MaIam;
         "me-contact-info": MeContactInfo;
         "me-cv-section": MeCvSection;
         "me-header": MeHeader;
         "me-header-nav": MeHeaderNav;
         "me-home": MeHome;
+        "me-iam": MeIam;
         "me-image-modal": MeImageModal;
         "me-main": MeMain;
         "me-nav": MeNav;
@@ -299,12 +299,12 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "ma-iam": LocalJSX.MaIam & JSXBase.HTMLAttributes<HTMLMaIamElement>;
             "me-contact-info": LocalJSX.MeContactInfo & JSXBase.HTMLAttributes<HTMLMeContactInfoElement>;
             "me-cv-section": LocalJSX.MeCvSection & JSXBase.HTMLAttributes<HTMLMeCvSectionElement>;
             "me-header": LocalJSX.MeHeader & JSXBase.HTMLAttributes<HTMLMeHeaderElement>;
             "me-header-nav": LocalJSX.MeHeaderNav & JSXBase.HTMLAttributes<HTMLMeHeaderNavElement>;
             "me-home": LocalJSX.MeHome & JSXBase.HTMLAttributes<HTMLMeHomeElement>;
+            "me-iam": LocalJSX.MeIam & JSXBase.HTMLAttributes<HTMLMeIamElement>;
             "me-image-modal": LocalJSX.MeImageModal & JSXBase.HTMLAttributes<HTMLMeImageModalElement>;
             "me-main": LocalJSX.MeMain & JSXBase.HTMLAttributes<HTMLMeMainElement>;
             "me-nav": LocalJSX.MeNav & JSXBase.HTMLAttributes<HTMLMeNavElement>;
