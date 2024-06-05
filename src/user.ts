@@ -7,7 +7,6 @@ import { Env } from '@stencil/core';
 export interface User {
   contact: Contact;
   profile: Profile;
-  internships: string[];
   courses: string[];
   honors: string[];
   interests: string[];
@@ -120,5 +119,4 @@ export const emptyUser: User = {
   courses: [],
   honors: [],
   interests: [],
-  internships: []
 };
