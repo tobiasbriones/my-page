@@ -6,7 +6,6 @@ import { Item } from '../../../nav/nav-item';
 
 export enum ItemId {
   PROFILE = 1,
-  INTERNSHIPS,
   COURSES,
   HONORS,
   INTERESTS
@@ -21,11 +20,6 @@ const VALUES: Item[] = [
     id: ItemId.PROFILE,
     value: 'Profile',
     iconSrc: getIconSrc('person')
-  },
-  {
-    id: ItemId.INTERNSHIPS,
-    value: 'Internships',
-    iconSrc: getIconSrc('location-city')
   },
   {
     id: ItemId.COURSES,
