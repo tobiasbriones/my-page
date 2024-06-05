@@ -1,3 +1,24 @@
 :host {
   display: block;
 }
+
+h3, h4, h5 {
+  color: var(--heading-color);
+}
+
+h3 {
+  padding: 0.5rem;
+  font-size: 1.125rem;
+  text-align: center;
+  border-bottom: 1px solid rgb(79, 195, 247);
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+}
+
+.icon > img {
+  width: 10rem;
+  height: 10rem;
+}
