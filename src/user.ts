@@ -63,9 +63,6 @@ export interface CvEntry {
 }
 
 export interface Language {
-  firstClass: string[];
-  secondClass: string[];
-  others: string[];
   naturalLanguages: string[];
 }
 
@@ -113,9 +110,6 @@ export const emptyProfile: Profile = {
   photo: '',
   cv: emptyCv,
   language: {
-    firstClass: [],
-    secondClass: [],
-    others: [],
     naturalLanguages: []
   }
 };

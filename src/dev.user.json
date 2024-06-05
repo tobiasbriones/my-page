@@ -58,21 +58,6 @@
       ]
     },
     "language": {
-      "firstClass": [
-        "Rust",
-        "Java",
-        "Haskell"
-      ],
-      "secondClass": [
-        "Clojure",
-        "C",
-        "C#",
-        "Kotlin",
-        "JavaScript"
-      ],
-      "others": [
-        "Dart"
-      ],
       "naturalLanguages": [
         "English (native)",
         "Spanish",

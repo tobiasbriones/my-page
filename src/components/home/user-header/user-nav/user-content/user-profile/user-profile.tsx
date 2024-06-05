@@ -38,28 +38,9 @@ export class UserProfile {
     const lang = this.profile.language;
     return (
       <div>
-        <div>
-          <h3>Programming Languages</h3>
-          <div>
-            This section shows the programming languages according to my career
-            orientation.
-          </div>
+        <h3>Natural Languages</h3>
 
-          <h5>First class</h5>
-          <me-user-list items={lang.firstClass}/>
-
-          <h5>Second class</h5>
-          <me-user-list items={lang.secondClass}/>
-
-          <h5>Others</h5>
-          <me-user-list items={lang.others}/>
-        </div>
-
-        <div>
-          <h3>Natural Languages</h3>
-
-          <me-user-list items={lang.naturalLanguages}/>
-        </div>
+        <me-user-list items={lang.naturalLanguages}/>
       </div>
     );
   }
