@@ -29,19 +29,12 @@ export class UserProfile {
           <me-cv-section name={sectionName} entries={entries}/>
         )}
 
-        {this.getLanguages()}
+        <div class="cv-section">
+          <h4>Natural Languages</h4>
+
+          <me-user-list items={this.profile.language.naturalLanguages}/>
+        </div>
       </Host>
-    );
-  }
-
-  private getLanguages() {
-    const lang = this.profile.language;
-    return (
-      <div>
-        <h3>Natural Languages</h3>
-
-        <me-user-list items={lang.naturalLanguages}/>
-      </div>
     );
   }
 }
