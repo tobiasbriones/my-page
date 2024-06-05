@@ -92,6 +92,13 @@ export class CvSection {
       updateImage(idx);
     };
 
+    const honorIcon = <span class="honor-caption-icon"></span>;
+
+    const galleryTitle = (title: string) => title
+      .includes('Honors')
+      ? <slot>{title} {honorIcon}</slot>
+      : title;
+
     const renderImage = ({src, title}: Image) => <figure>
       <img src={src} alt={title} onClick={() => onOpen(src, title)}/>
       <figcaption>{title}</figcaption>
@@ -104,14 +111,15 @@ export class CvSection {
         )}
       </div>
 
-      <figcaption>{title}</figcaption>
+      <figcaption>{galleryTitle(title)}</figcaption>
     </figure>;
 
     return <div>
       {image && renderImage(image)}
       {gallery && renderGallery(gallery)}
 
-      <me-image-modal modalImage={this.modalImage} size={gallery?.images.length} onClose={onClose} onPrevious={onPrevious} onNext={onNext}/>
+      <me-image-modal modalImage={this.modalImage} size={gallery?.images.length} onClose={onClose}
+                      onPrevious={onPrevious} onNext={onNext}/>
     </div>;
   }
 }

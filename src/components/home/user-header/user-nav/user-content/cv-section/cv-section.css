@@ -113,6 +113,21 @@ figure img:hover,
   font-size: 0.8125rem;
 }
 
+.gallery + figcaption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.honor-caption-icon {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url("assets/icon/md/military-tech.svg");
+  background-size: cover;
+}
+
 @media (min-width: 600px) {
   .experience-header {
     flex-direction: row;
