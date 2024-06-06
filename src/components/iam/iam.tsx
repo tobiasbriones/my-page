@@ -14,13 +14,13 @@ export class Iam {
   name: string = '';
 
   @Prop()
-  title: string = '';
+  professionTitle: string = '';
 
   render() {
     return (
       <Host>
         <h1>{this.name}</h1>
-        <div class="title">{this.title}</div>
+        <div class="title">{this.professionTitle}</div>
       </Host>
     );
   }

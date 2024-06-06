@@ -25,7 +25,7 @@ export namespace Components {
     }
     interface MeIam {
         "name": string;
-        "title": string;
+        "professionTitle": string;
     }
     interface MeImageModal {
         "modalImage": ModalImage | undefined;
@@ -216,7 +216,7 @@ declare namespace LocalJSX {
     }
     interface MeIam {
         "name"?: string;
-        "title"?: string;
+        "professionTitle"?: string;
     }
     interface MeImageModal {
         "modalImage"?: ModalImage | undefined;
