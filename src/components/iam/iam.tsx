@@ -20,7 +20,7 @@ export class Iam {
   render() {
     return (
       <Host>
-        <h2>{ this.name }</h2>
+        <h1>{ this.name }</h1>
       </Host>
     );
   }

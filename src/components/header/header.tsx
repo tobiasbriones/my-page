@@ -14,7 +14,7 @@ export class Header {
     return (
       <header>
         <img src="./assets/icon/icon.png" alt="Icon" />
-        <h1>My Page</h1>
+        <span class="title">My Page</span>
       </header>
     );
   }

@@ -27,7 +27,7 @@ export class UserContent {
   render() {
     return (
       <Host>
-        <h3>{ this.selectedItem.value }</h3>
+        <h2>{ this.selectedItem.value }</h2>
         { this.renderContent() }
       </Host>
     );

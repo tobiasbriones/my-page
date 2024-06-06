@@ -10,11 +10,11 @@ h3, h4, h5 {
   color: var(--heading-color);
 }
 
-h4 {
+h3 {
   margin: 0.5rem 0;
 }
 
-.cv-section h4 {
+.cv-section h3 {
   padding: 0.5rem;
   font-size: 1.125rem;
   text-align: center;

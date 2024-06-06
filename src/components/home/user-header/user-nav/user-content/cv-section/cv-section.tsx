@@ -25,7 +25,7 @@ export class CvSection {
     return (
       <Host>
         <div class="cv-section">
-          <h4>{this.name}</h4>
+          <h3>{this.name}</h3>
 
           {this.entries.map(entry => this.renderEntry(entry))}
         </div>
@@ -37,7 +37,7 @@ export class CvSection {
     return <div class="experience">
       <div class="experience-header">
         <div class="experience-title">
-          <h5>{title}</h5>
+          <h4>{title}</h4>
           <div><i>{company}</i></div>
         </div>
         <div class="experience-meta">

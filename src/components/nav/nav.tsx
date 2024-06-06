@@ -36,7 +36,7 @@ export class Nav {
     );
     return (
       <nav>
-        <h3>Menu</h3>
+        <div class="title">Menu</div>
         <ul>
           { this.items.map(mapItem) }
         </ul>

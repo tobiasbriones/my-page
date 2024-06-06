@@ -20,7 +20,7 @@ export class UserEngineering {
         {this.engineering
           .sections
           .map(({name, icon, abstract, items, conclusion}) => <div>
-            <h3>{name}</h3>
+            <h2>{name}</h2>
 
             <div class="icon">
               <img src={icon} alt={name}/>

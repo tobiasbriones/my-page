@@ -30,7 +30,7 @@ export class UserProfile {
         )}
 
         <div class="cv-section">
-          <h4>Natural Languages</h4>
+          <h3>Natural Languages</h3>
 
           <me-user-list items={this.profile.language.naturalLanguages}/>
         </div>

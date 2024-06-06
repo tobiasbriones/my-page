@@ -14,9 +14,8 @@
   user-select: none;
 }
 
-h3 {
+.title {
   display: none;
-  color: var(--heading-color);
 }
 
 ul {
@@ -43,8 +42,11 @@ li {
     border-top: none;
   }
 
-  h3 {
+  .title {
     display: block;
+    margin: 1rem;
+    color: var(--heading-color);
+    font-size: 1.25rem;
     font-weight: bold;
     text-align: center;
   }
