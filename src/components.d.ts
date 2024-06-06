@@ -21,8 +21,6 @@ export namespace Components {
     }
     interface MeHeader {
     }
-    interface MeHeaderNav {
-    }
     interface MeHome {
     }
     interface MeIam {
@@ -89,12 +87,6 @@ declare global {
     var HTMLMeHeaderElement: {
         prototype: HTMLMeHeaderElement;
         new (): HTMLMeHeaderElement;
-    };
-    interface HTMLMeHeaderNavElement extends Components.MeHeaderNav, HTMLStencilElement {
-    }
-    var HTMLMeHeaderNavElement: {
-        prototype: HTMLMeHeaderNavElement;
-        new (): HTMLMeHeaderNavElement;
     };
     interface HTMLMeHomeElement extends Components.MeHome, HTMLStencilElement {
     }
@@ -190,7 +182,6 @@ declare global {
         "me-contact-info": HTMLMeContactInfoElement;
         "me-cv-section": HTMLMeCvSectionElement;
         "me-header": HTMLMeHeaderElement;
-        "me-header-nav": HTMLMeHeaderNavElement;
         "me-home": HTMLMeHomeElement;
         "me-iam": HTMLMeIamElement;
         "me-image-modal": HTMLMeImageModalElement;
@@ -220,8 +211,6 @@ declare namespace LocalJSX {
         "name"?: string;
     }
     interface MeHeader {
-    }
-    interface MeHeaderNav {
     }
     interface MeHome {
     }
@@ -279,7 +268,6 @@ declare namespace LocalJSX {
         "me-contact-info": MeContactInfo;
         "me-cv-section": MeCvSection;
         "me-header": MeHeader;
-        "me-header-nav": MeHeaderNav;
         "me-home": MeHome;
         "me-iam": MeIam;
         "me-image-modal": MeImageModal;
@@ -304,7 +292,6 @@ declare module "@stencil/core" {
             "me-contact-info": LocalJSX.MeContactInfo & JSXBase.HTMLAttributes<HTMLMeContactInfoElement>;
             "me-cv-section": LocalJSX.MeCvSection & JSXBase.HTMLAttributes<HTMLMeCvSectionElement>;
             "me-header": LocalJSX.MeHeader & JSXBase.HTMLAttributes<HTMLMeHeaderElement>;
-            "me-header-nav": LocalJSX.MeHeaderNav & JSXBase.HTMLAttributes<HTMLMeHeaderNavElement>;
             "me-home": LocalJSX.MeHome & JSXBase.HTMLAttributes<HTMLMeHomeElement>;
             "me-iam": LocalJSX.MeIam & JSXBase.HTMLAttributes<HTMLMeIamElement>;
             "me-image-modal": LocalJSX.MeImageModal & JSXBase.HTMLAttributes<HTMLMeImageModalElement>;
