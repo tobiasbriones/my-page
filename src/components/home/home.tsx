@@ -20,6 +20,7 @@ export class Home {
 
   async componentWillLoad() {
     await this.load();
+    document.title = `${this.user.profile.name} | My Page`
   }
 
   render() {
