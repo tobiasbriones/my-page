@@ -7,6 +7,7 @@
   },
   "profile": {
     "name": "Full Name",
+    "title": "Mathematician",
     "photo": "https://raw.githubusercontent.com/tobiasbriones/brief-personal-landing-page/main/src/assets/icon/icon.png",
     "cv": {
       "abstract": "Brief description of yourself.",

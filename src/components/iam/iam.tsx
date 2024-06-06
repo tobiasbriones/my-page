@@ -11,16 +11,16 @@ import { Component, h, Host, Prop } from '@stencil/core';
 })
 export class Iam {
   @Prop()
-  name: string;
+  name: string = '';
 
-  constructor() {
-    this.name = '';
-  }
+  @Prop()
+  title: string = '';
 
   render() {
     return (
       <Host>
-        <h1>{ this.name }</h1>
+        <h1>{this.name}</h1>
+        <div class="title">{this.title}</div>
       </Host>
     );
   }

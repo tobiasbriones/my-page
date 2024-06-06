@@ -11,8 +11,14 @@
 
 h1 {
   margin: 0;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
   color: var(--heading-color);
+}
+
+.title {
+  font-family: 'Poppins Light', sans-serif;
+  font-size: 1.125rem;
+  text-align: center;
 }

@@ -3,7 +3,7 @@
 // This file is part of https://github.com/tobiasbriones/my-page.
 
 import { Component, h, Prop } from '@stencil/core';
-import { User, emptyUser } from '../../../user';
+import { emptyUser, User } from '../../../user';
 
 @Component({
   tag: 'me-user-header',
@@ -21,8 +21,8 @@ export class UserHeader {
   render() {
     return (
       <header>
-        <me-iam name={ this.user.profile.name } />
-        <me-user-nav user={ this.user } />
+        <me-iam name={this.user.profile.name} title={this.user.profile.title}/>
+        <me-user-nav user={this.user}/>
       </header>
     );
   }

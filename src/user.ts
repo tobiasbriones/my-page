@@ -29,6 +29,7 @@ export const emptyContact: Contact = {
 
 export interface Profile {
   name: string;
+  title: string;
   photo: string;
   cv: Cv;
   language: Language;
@@ -119,6 +120,7 @@ export const emptyCv: Cv = {
 
 export const emptyProfile: Profile = {
   name: '',
+  title: '',
   photo: '',
   cv: emptyCv,
   language: {
