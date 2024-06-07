@@ -2,8 +2,9 @@
 // SPDX-License-Identifier: MIT
 // This file is part of https://github.com/tobiasbriones/my-page.
 
+@import "h";
+
 h2 {
+  margin-top: 1.5rem;
   font-size: 1.25rem;
-  text-align: center;
-  color: var(--heading-color);
 }
