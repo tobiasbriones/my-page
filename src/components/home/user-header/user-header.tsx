@@ -21,7 +21,7 @@ export class UserHeader {
   render() {
     return (
       <header>
-        <me-iam name={this.user.profile.name} title={this.user.profile.title}/>
+        <me-iam name={this.user.profile.name} professionTitle={this.user.profile.title}/>
         <me-user-nav user={this.user}/>
       </header>
     );
