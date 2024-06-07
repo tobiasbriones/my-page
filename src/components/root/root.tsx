@@ -4,6 +4,7 @@
 
 import { Component, h, Host } from '@stencil/core';
 import { Header } from './header';
+import { Footer } from './footer';
 
 @Component({
   tag: 'me-root',
@@ -16,6 +17,7 @@ export class Root {
       <Host>
         <Header/>
         <me-main/>
+        <Footer/>
       </Host>
     );
   }

@@ -28,18 +28,6 @@ export class Home {
     return (
       <Host>
         <UserHeader user={this.user}/>
-        <footer>
-          <div><strong>My Page</strong></div>
-          <div>Copyright © 2021-present Tobias Briones. All rights reserved.</div>
-          <div>Licensed under the <a
-            href="https://github.com/tobiasbriones/my-page"
-            target="_blank"
-            rel="noreferrer"
-          >
-            MIT License
-          </a>.
-          </div>
-        </footer>
       </Host>
     );
   }
