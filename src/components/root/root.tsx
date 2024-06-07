@@ -7,7 +7,7 @@ import { Header } from './header';
 
 @Component({
   tag: 'me-root',
-  styleUrl: 'root.css',
+  styleUrl: 'root.scss',
   shadow: true
 })
 export class Root {
