@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: MIT
 // This file is part of https://github.com/tobiasbriones/my-page.
 
-import { Component, h, Host, State } from '@stencil/core';
+import { Component, h, State } from '@stencil/core';
 import { AppUserRepository, emptyUser, User } from '../../user';
 import { UserHeader } from './user-header';
 
@@ -26,9 +26,9 @@ export class Home {
 
   render() {
     return (
-      <Host>
+      <main>
         <UserHeader user={this.user}/>
-      </Host>
+      </main>
     );
   }
 
