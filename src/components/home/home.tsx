@@ -4,6 +4,7 @@
 
 import { Component, h, Host, State } from '@stencil/core';
 import { AppUserRepository, emptyUser, User } from '../../user';
+import { UserHeader } from './user-header';
 
 @Component({
   tag: 'me-home',
@@ -26,7 +27,7 @@ export class Home {
   render() {
     return (
       <Host>
-        <me-user-header user={this.user}/>
+        <UserHeader user={this.user}/>
         <footer>
           <div><strong>My Page</strong></div>
           <div>Copyright © 2021-present Tobias Briones. All rights reserved.</div>
