@@ -3,9 +3,14 @@
 /* This file is part of https://github.com/tobiasbriones/my-page. */
 
 @import "../../../../../styles/h3";
+@import "../../../../../styles/h4";
 
 :host {
   display: block;
+}
+
+h4 {
+  text-align: start;
 }
 
 p {
@@ -94,11 +99,6 @@ figure img:hover,
 
 .experience-title {
   flex: 1;
-}
-
-.experience-header h4 {
-  margin: 0;
-  font-size: 1rem;
 }
 
 .experience-meta {
