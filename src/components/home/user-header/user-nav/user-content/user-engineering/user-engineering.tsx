@@ -4,7 +4,7 @@ import { parseMarkdown } from '../../../../../../markdown/markdown';
 
 @Component({
   tag: 'me-user-engineering',
-  styleUrl: 'user-engineering.css',
+  styleUrl: 'user-engineering.scss',
   shadow: true,
 })
 export class UserEngineering {

@@ -1,15 +1,15 @@
+// Copyright (c) 2024 Tobias Briones. All rights reserved.
+// SPDX-License-Identifier: MIT
+// This file is part of https://github.com/tobiasbriones/my-page.
+
+@import "../../../../../styles/h2";
+
 :host {
   display: block;
 }
 
-h2, h3, h4, h5 {
-  color: var(--heading-color);
-}
-
 h2 {
   padding: 0.5rem;
-  font-size: 1.25rem;
-  text-align: center;
   border-bottom: 1px solid rgb(79, 195, 247);
 }
 

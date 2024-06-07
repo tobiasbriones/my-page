@@ -9,7 +9,7 @@ import { ItemId } from '../user-nav-data';
 
 @Component({
   tag: 'me-user-content',
-  styleUrl: 'user-content.css',
+  styleUrl: 'user-content.scss',
   shadow: true
 })
 export class UserContent {
