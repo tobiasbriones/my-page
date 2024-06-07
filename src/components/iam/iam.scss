@@ -2,19 +2,13 @@
 /* SPDX-License-Identifier: MIT */
 /* This file is part of https://github.com/tobiasbriones/my-page. */
 
+@import "../styles/h1";
+
 :host {
   display: block;
   padding: 1rem;
   background-color: var(--primary-color);
   border-bottom: 0.0625rem solid #4FC3F7;
-}
-
-h1 {
-  margin: 0;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center;
-  color: var(--heading-color);
 }
 
 .title {
