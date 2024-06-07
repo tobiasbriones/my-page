@@ -9,7 +9,7 @@ import { ModalImage } from '../../../../../image-modal/modal-image';
 
 @Component({
   tag: 'me-cv-section',
-  styleUrl: 'cv-section.css',
+  styleUrl: 'cv-section.scss',
   shadow: true,
 })
 export class CvSection {
