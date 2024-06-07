@@ -3,6 +3,7 @@
 // This file is part of https://github.com/tobiasbriones/my-page.
 
 import { Component, h, Host } from '@stencil/core';
+import { Header } from './header';
 
 @Component({
   tag: 'me-root',
@@ -13,8 +14,8 @@ export class Root {
   render() {
     return (
       <Host>
-        <me-header />
-        <me-main />
+        <Header/>
+        <me-main/>
       </Host>
     );
   }
