@@ -29,6 +29,8 @@ export namespace Components {
         "modalImage": ModalImage | undefined;
         "size": number | undefined;
     }
+    interface MeMenuNav {
+    }
     interface MeNav {
         "items": Item[];
         "selectedItem"?: Item;
@@ -92,6 +94,12 @@ declare global {
     var HTMLMeImageModalElement: {
         prototype: HTMLMeImageModalElement;
         new (): HTMLMeImageModalElement;
+    };
+    interface HTMLMeMenuNavElement extends Components.MeMenuNav, HTMLStencilElement {
+    }
+    var HTMLMeMenuNavElement: {
+        prototype: HTMLMeMenuNavElement;
+        new (): HTMLMeMenuNavElement;
     };
     interface HTMLMeNavElement extends Components.MeNav, HTMLStencilElement {
     }
@@ -159,6 +167,7 @@ declare global {
         "me-home": HTMLMeHomeElement;
         "me-iam": HTMLMeIamElement;
         "me-image-modal": HTMLMeImageModalElement;
+        "me-menu-nav": HTMLMeMenuNavElement;
         "me-nav": HTMLMeNavElement;
         "me-nav-item": HTMLMeNavItemElement;
         "me-root": HTMLMeRootElement;
@@ -194,6 +203,8 @@ declare namespace LocalJSX {
         "onNext"?: (event: CustomEvent<ModalImage>) => void;
         "onPrevious"?: (event: CustomEvent<ModalImage>) => void;
         "size"?: number | undefined;
+    }
+    interface MeMenuNav {
     }
     interface MeNav {
         "items"?: Item[];
@@ -235,6 +246,7 @@ declare namespace LocalJSX {
         "me-home": MeHome;
         "me-iam": MeIam;
         "me-image-modal": MeImageModal;
+        "me-menu-nav": MeMenuNav;
         "me-nav": MeNav;
         "me-nav-item": MeNavItem;
         "me-root": MeRoot;
@@ -256,6 +268,7 @@ declare module "@stencil/core" {
             "me-home": LocalJSX.MeHome & JSXBase.HTMLAttributes<HTMLMeHomeElement>;
             "me-iam": LocalJSX.MeIam & JSXBase.HTMLAttributes<HTMLMeIamElement>;
             "me-image-modal": LocalJSX.MeImageModal & JSXBase.HTMLAttributes<HTMLMeImageModalElement>;
+            "me-menu-nav": LocalJSX.MeMenuNav & JSXBase.HTMLAttributes<HTMLMeMenuNavElement>;
             "me-nav": LocalJSX.MeNav & JSXBase.HTMLAttributes<HTMLMeNavElement>;
             "me-nav-item": LocalJSX.MeNavItem & JSXBase.HTMLAttributes<HTMLMeNavItemElement>;
             "me-root": LocalJSX.MeRoot & JSXBase.HTMLAttributes<HTMLMeRootElement>;
