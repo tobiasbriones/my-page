@@ -7,7 +7,7 @@ import { emptyProfile, Profile } from '../../../../../../user';
 
 @Component({
   tag: 'me-user-profile',
-  styleUrl: 'user-profile.css',
+  styleUrl: 'user-profile.scss',
   shadow: true
 })
 export class UserProfile {
