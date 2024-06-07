@@ -3,7 +3,7 @@
 // This file is part of https://github.com/tobiasbriones/my-page.
 
 import { Component, h, Host, Prop } from '@stencil/core';
-import { emptyProfile, Profile } from '../../../../../../user';
+import { emptyProfile, Profile } from '../../../../user';
 
 @Component({
   tag: 'me-user-profile',

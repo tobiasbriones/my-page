@@ -2,14 +2,14 @@
 /* SPDX-License-Identifier: MIT */
 /* This file is part of https://github.com/tobiasbriones/my-page. */
 
-@import "../../../../styles/h2";
+@import "../../../styles/h3.scss";
 
 :host {
   display: block;
 }
 
-@media (min-width: 90rem) {
-  :host {
-    padding: 4rem;
-  }
+.cv-section h3 {
+  padding: 0.5rem;
+  font-size: 1.125rem;
+  border-bottom: 1px solid rgb(79, 195, 247);
 }

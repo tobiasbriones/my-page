@@ -3,9 +3,9 @@
 // This file is part of https://github.com/tobiasbriones/my-page.
 
 import { Component, h, Host, Prop, State } from '@stencil/core';
-import { CvEntry, Gallery, Image } from '../../../../../../user';
-import { parseMarkdown } from '../../../../../../markdown/markdown';
-import { ModalImage } from '../../../../../image-modal/modal-image';
+import { CvEntry, Gallery, Image } from '../../../../user';
+import { parseMarkdown } from '../../../../markdown/markdown';
+import { ModalImage } from '../../../image-modal/modal-image';
 
 @Component({
   tag: 'me-cv-section',

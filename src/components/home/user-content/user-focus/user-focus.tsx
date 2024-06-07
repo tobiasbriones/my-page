@@ -1,6 +1,6 @@
 import { Component, h, Host, Prop } from '@stencil/core';
-import { emptyFocus, Focus } from '../../../../../../user';
-import { parseMarkdown } from '../../../../../../markdown/markdown';
+import { emptyFocus, Focus } from '../../../../user';
+import { parseMarkdown } from '../../../../markdown/markdown';
 
 @Component({
   tag: 'me-user-focus',

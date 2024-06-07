@@ -3,9 +3,9 @@
 // This file is part of https://github.com/tobiasbriones/my-page.
 
 import { Component, h, Host, Prop } from '@stencil/core';
-import { emptyUser, User } from '../../../../../user';
-import { emptyItem, Item } from '../../../../nav/nav-item';
-import { ItemId } from '../user-nav-data';
+import { emptyUser, User } from '../../../user';
+import { emptyItem, Item } from '../../nav/nav-item';
+import { ItemId } from '../user-header/user-nav/user-nav-data';
 
 @Component({
   tag: 'me-user-content',

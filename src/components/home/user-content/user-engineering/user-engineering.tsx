@@ -1,6 +1,6 @@
 import { Component, h, Host, Prop } from '@stencil/core';
-import { emptyEngineering, Engineering } from '../../../../../../user';
-import { parseMarkdown } from '../../../../../../markdown/markdown';
+import { emptyEngineering, Engineering } from '../../../../user';
+import { parseMarkdown } from '../../../../markdown/markdown';
 
 @Component({
   tag: 'me-user-engineering',
