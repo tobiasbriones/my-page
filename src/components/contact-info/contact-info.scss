@@ -2,6 +2,8 @@
 /* SPDX-License-Identifier: MIT */
 /* This file is part of https://github.com/tobiasbriones/my-page. */
 
+@import "../styles/a";
+
 :host {
     display: block;
 }
@@ -15,13 +17,4 @@
 
 .section {
     margin-top: 0.25rem;
-}
-
-a {
-    color: #1565c0;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
 }

@@ -6,7 +6,7 @@ import { Component, h, Host, Prop } from '@stencil/core';
 
 @Component({
   tag: 'me-contact-info',
-  styleUrl: 'contact-info.css',
+  styleUrl: 'contact-info.scss',
   shadow: true,
 })
 export class ContactInfo {
