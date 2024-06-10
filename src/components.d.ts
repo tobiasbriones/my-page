@@ -54,7 +54,7 @@ export namespace Components {
     interface MeUserList {
         "items": string[];
     }
-    interface MeUserNav {
+    interface MeUserPage {
         "user": User;
     }
     interface MeUserPhoto {
@@ -143,11 +143,11 @@ declare global {
         prototype: HTMLMeUserListElement;
         new (): HTMLMeUserListElement;
     };
-    interface HTMLMeUserNavElement extends Components.MeUserNav, HTMLStencilElement {
+    interface HTMLMeUserPageElement extends Components.MeUserPage, HTMLStencilElement {
     }
-    var HTMLMeUserNavElement: {
-        prototype: HTMLMeUserNavElement;
-        new (): HTMLMeUserNavElement;
+    var HTMLMeUserPageElement: {
+        prototype: HTMLMeUserPageElement;
+        new (): HTMLMeUserPageElement;
     };
     interface HTMLMeUserPhotoElement extends Components.MeUserPhoto, HTMLStencilElement {
     }
@@ -175,7 +175,7 @@ declare global {
         "me-user-engineering": HTMLMeUserEngineeringElement;
         "me-user-focus": HTMLMeUserFocusElement;
         "me-user-list": HTMLMeUserListElement;
-        "me-user-nav": HTMLMeUserNavElement;
+        "me-user-page": HTMLMeUserPageElement;
         "me-user-photo": HTMLMeUserPhotoElement;
         "me-user-profile": HTMLMeUserProfileElement;
     }
@@ -231,7 +231,7 @@ declare namespace LocalJSX {
     interface MeUserList {
         "items"?: string[];
     }
-    interface MeUserNav {
+    interface MeUserPage {
         "user"?: User;
     }
     interface MeUserPhoto {
@@ -254,7 +254,7 @@ declare namespace LocalJSX {
         "me-user-engineering": MeUserEngineering;
         "me-user-focus": MeUserFocus;
         "me-user-list": MeUserList;
-        "me-user-nav": MeUserNav;
+        "me-user-page": MeUserPage;
         "me-user-photo": MeUserPhoto;
         "me-user-profile": MeUserProfile;
     }
@@ -276,7 +276,7 @@ declare module "@stencil/core" {
             "me-user-engineering": LocalJSX.MeUserEngineering & JSXBase.HTMLAttributes<HTMLMeUserEngineeringElement>;
             "me-user-focus": LocalJSX.MeUserFocus & JSXBase.HTMLAttributes<HTMLMeUserFocusElement>;
             "me-user-list": LocalJSX.MeUserList & JSXBase.HTMLAttributes<HTMLMeUserListElement>;
-            "me-user-nav": LocalJSX.MeUserNav & JSXBase.HTMLAttributes<HTMLMeUserNavElement>;
+            "me-user-page": LocalJSX.MeUserPage & JSXBase.HTMLAttributes<HTMLMeUserPageElement>;
             "me-user-photo": LocalJSX.MeUserPhoto & JSXBase.HTMLAttributes<HTMLMeUserPhotoElement>;
             "me-user-profile": LocalJSX.MeUserProfile & JSXBase.HTMLAttributes<HTMLMeUserProfileElement>;
         }

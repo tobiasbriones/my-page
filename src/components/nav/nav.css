@@ -9,6 +9,7 @@
   height: var(--nav-mobile-height);
   left: 0;
   bottom: 0;
+  z-index: 1;
   background-color: white;
   border-top: 0.0625rem solid var(--selected-color);
   user-select: none;

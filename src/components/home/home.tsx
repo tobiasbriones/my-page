@@ -8,7 +8,7 @@ import { UserHeader } from './user-header';
 
 @Component({
   tag: 'me-home',
-  styleUrl: 'home.css',
+  styleUrl: 'home.scss',
   shadow: true
 })
 export class Home {
@@ -28,6 +28,7 @@ export class Home {
     return (
       <main>
         <UserHeader user={this.user}/>
+        <me-user-page user={this.user}/>
       </main>
     );
   }

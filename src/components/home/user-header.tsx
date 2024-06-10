@@ -12,6 +12,5 @@ export interface UserHeaderProps {
 export const UserHeader = ({user}: UserHeaderProps) => (
   <header>
     <me-iam name={user.profile.name} professionTitle={user.profile.title}/>
-    <me-user-nav user={user}/>
   </header>
 );

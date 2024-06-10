@@ -17,6 +17,7 @@ export class Root {
     return (
       <Host>
         <Header/>
+        <me-menu-nav/>
         <Router/>
         <Footer/>
       </Host>

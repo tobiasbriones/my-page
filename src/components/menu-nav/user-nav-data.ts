@@ -1,8 +1,8 @@
-// Copyright (c) 2021 Tobias Briones. All rights reserved.
+// Copyright (c) 2024 Tobias Briones. All rights reserved.
 // SPDX-License-Identifier: MIT
 // This file is part of https://github.com/tobiasbriones/my-page.
 
-import { Item } from '../../../nav/nav-item';
+import { Item } from '../nav/nav-item';
 
 export enum ItemId {
   PROFILE = 1,
@@ -14,6 +14,11 @@ export enum ItemId {
 
 export function getNavItems(): Item[] {
   return VALUES;
+}
+
+export function getNavItemByHash(hash: string): Item {
+  const filtered = VALUES.filter(x => x.value.toLowerCase() === hash);
+  return filtered.length > 0 ? filtered[0] : VALUES[0];
 }
 
 const VALUES: Item[] = [
