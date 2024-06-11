@@ -34,16 +34,16 @@ export class CvSection {
   }
 
   private renderEntry({title, company, place, date, description, items, footer, image, gallery}: CvEntry) {
+    const wide = title.length > 15 || (company?.length ?? 0) > 15;
+    const headerClasses = `experience-header ${wide ? 'wide' : ''}`;
+
     return <div class="experience">
-      <div class="experience-header">
+      <div class={headerClasses}>
         <div class="experience-title">
           <h4>{title}</h4>
           <div><i>{company}</i></div>
         </div>
-        <div class="experience-meta">
-          <div>{place}</div>
-          <div>{date}</div>
-        </div>
+        {this.renderMeta(place ?? "", date ?? "")}
       </div>
 
       <div>
@@ -121,5 +121,18 @@ export class CvSection {
       <me-image-modal modalImage={this.modalImage} size={gallery?.images.length} onClose={onClose}
                       onPrevious={onPrevious} onNext={onNext}/>
     </div>;
+  }
+
+  private renderMeta(place: string, date: string) {
+    const shortTextLength = 20;
+    const wideMeta = place.length > shortTextLength || date.length > shortTextLength;
+    const classes = `experience-meta ${wideMeta ? "wide" : ""}`;
+
+    return (
+      <div class={classes}>
+        {place.length > 0 && <div>{place}</div>}
+        {date.length > 0 && <div>{date}</div>}
+      </div>
+    );
   }
 }

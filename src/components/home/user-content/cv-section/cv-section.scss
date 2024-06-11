@@ -91,8 +91,12 @@ figure img:hover,
 .experience-header {
   display: flex;
   margin-bottom: 0.5rem;
-  flex-direction: column;
+  flex-direction: row;
   gap: 0.5rem;
+}
+
+.experience-header.wide {
+  flex-direction: column;
 }
 
 .experience-title {
@@ -100,9 +104,18 @@ figure img:hover,
 }
 
 .experience-meta {
-  width: 12rem;
+  width: 10rem;
+  vertical-align: top;
   color: rgb(25, 118, 210);
   font-size: 0.8125rem;
+}
+
+.experience-meta.wide {
+  width: 12rem;
+}
+
+.experience-meta > div {
+  padding: 0.125rem 0;
 }
 
 .gallery + figcaption {
@@ -124,5 +137,9 @@ figure img:hover,
   .experience-header {
     flex-direction: row;
     gap: 1rem;
+  }
+
+  .experience-header.wide {
+    flex-direction: row;
   }
 }
