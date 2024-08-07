@@ -7,3 +7,12 @@
 :host {
   display: block;
 }
+
+ul {
+  padding: 0;
+  list-style-position: inside;
+}
+
+li {
+  margin: 0.5rem 0;
+}
