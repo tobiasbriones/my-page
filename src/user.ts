@@ -71,7 +71,7 @@ export interface CvEntry {
   description: string;
   items: string[];
   footer: string;
-  image: Image | undefined;
+  image: MainImage | undefined;
   gallery: Gallery | undefined;
 }
 
@@ -82,6 +82,12 @@ export interface Language {
 export interface Image {
   src: string;
   title: string;
+}
+
+export interface MainImage {
+  title: string,
+  first: Image,
+  second: Image | undefined,
 }
 
 export interface Gallery {

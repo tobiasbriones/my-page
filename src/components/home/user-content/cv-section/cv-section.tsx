@@ -2,10 +2,10 @@
 // SPDX-License-Identifier: MIT
 // This file is part of https://github.com/tobiasbriones/my-page.
 
-import { Component, h, Host, Prop, State } from '@stencil/core';
-import { CvEntry, Gallery, Image } from '../../../../user';
-import { parseMarkdown } from '../../../../markdown/markdown';
-import { ModalImage } from '../../../image-modal/modal-image';
+import {Component, h, Host, Prop, State} from '@stencil/core';
+import {CvEntry, Gallery, Image, MainImage} from '../../../../user';
+import {parseMarkdown} from '../../../../markdown/markdown';
+import {ModalImage} from '../../../image-modal/modal-image';
 
 @Component({
   tag: 'me-cv-section',
@@ -18,6 +18,8 @@ export class CvSection {
 
   @Prop()
   entries: CvEntry[] = [];
+
+  @State() modalImageList: Image[] = [];
 
   @State() modalImage: ModalImage | undefined = undefined;
 
@@ -58,22 +60,62 @@ export class CvSection {
     </div>
   }
 
-  private renderImages(image: Image | undefined, gallery: Gallery | undefined) {
+  private renderImages(image: MainImage | undefined, gallery: Gallery | undefined) {
     if (image === undefined && gallery === undefined) {
       return <slot/>
     }
 
-    const updateImage = (idx: number | undefined) => {
-      if (idx !== undefined && gallery !== undefined) {
-        this.modalImage = {
-          image: gallery.images[idx],
-          index: idx
-        }
+    return <div>
+      {image && this.renderMainImage(image)}
+      {gallery && this.renderGallery(gallery)}
+    </div>;
+  }
+
+  private renderMainImage({title, first, second}: MainImage) {
+    const onOpen = () => {
+      if (second === undefined) {
+        this.modalImageList = [first];
+      } else {
+        this.modalImageList = [first, second];
       }
     };
 
+    const onClose = () => {
+      this.modalImageList = [];
+    };
+
+    return <div>
+      <figure class="section-fig">
+        <img src={first.src} alt={`${title}_${first.title}`} onClick={() => onOpen()}/>
+        <figcaption>{title}</figcaption>
+      </figure>
+
+      <me-image-list-modal
+        title={title}
+        modalImages={this.modalImageList}
+        onClose={onClose}/>
+    </div>;
+  }
+
+  private renderGallery({title, images}: Gallery) {
     const onOpen = (src: string, title: string, index?: number) => {
       this.modalImage = {image: {src, title}, index}
+    };
+
+    const honorIcon = <span class="honor-caption-icon"></span>;
+
+    const galleryTitle = (title: string) => title
+      .includes('Honors')
+      ? <slot>{title} {honorIcon}</slot>
+      : title;
+
+    const updateImage = (idx: number | undefined) => {
+      if (idx !== undefined) {
+        this.modalImage = {
+          image: images[idx],
+          index: idx
+        }
+      }
     };
 
     const onClose = () => {
@@ -92,34 +134,23 @@ export class CvSection {
       updateImage(idx);
     };
 
-    const honorIcon = <span class="honor-caption-icon"></span>;
-
-    const galleryTitle = (title: string) => title
-      .includes('Honors')
-      ? <slot>{title} {honorIcon}</slot>
-      : title;
-
-    const renderImage = ({src, title}: Image) => <figure>
-      <img src={src} alt={title} onClick={() => onOpen(src, title)}/>
-      <figcaption>{title}</figcaption>
-    </figure>;
-
-    const renderGallery = ({title, images}: Gallery) => <figure>
-      <div class="gallery">
-        {images.map(({src, title}, idx) =>
-          <img src={src} alt={title} onClick={() => onOpen(src, title, idx)}/>
-        )}
-      </div>
-
-      <figcaption>{galleryTitle(title)}</figcaption>
-    </figure>;
-
     return <div>
-      {image && renderImage(image)}
-      {gallery && renderGallery(gallery)}
+      <figure>
+        <div class="gallery">
+          {images.map(({src, title}, idx) =>
+            <img src={src} alt={title} onClick={() => onOpen(src, title, idx)}/>
+          )}
+        </div>
 
-      <me-image-modal modalImage={this.modalImage} size={gallery?.images.length} onClose={onClose}
-                      onPrevious={onPrevious} onNext={onNext}/>
+        <figcaption>{galleryTitle(title)}</figcaption>
+      </figure>
+
+      <me-image-modal
+        modalImage={this.modalImage}
+        size={images.length}
+        onClose={onClose}
+        onPrevious={onPrevious}
+        onNext={onNext}/>
     </div>;
   }
 

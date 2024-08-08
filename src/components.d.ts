@@ -5,7 +5,7 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
-import { CvEntry, Engineering, Focus, Profile, User } from "./user";
+import { CvEntry, Engineering, Focus, Image, Profile, User } from "./user";
 import { ModalImage } from "./components/image-modal/modal-image";
 import { Item } from "./components/nav/nav-item";
 export namespace Components {
@@ -24,6 +24,10 @@ export namespace Components {
     interface MeIam {
         "name": string;
         "professionTitle": string;
+    }
+    interface MeImageListModal {
+        "modalImages": Image[];
+        "title": string;
     }
     interface MeImageModal {
         "modalImage": ModalImage | undefined;
@@ -88,6 +92,12 @@ declare global {
     var HTMLMeIamElement: {
         prototype: HTMLMeIamElement;
         new (): HTMLMeIamElement;
+    };
+    interface HTMLMeImageListModalElement extends Components.MeImageListModal, HTMLStencilElement {
+    }
+    var HTMLMeImageListModalElement: {
+        prototype: HTMLMeImageListModalElement;
+        new (): HTMLMeImageListModalElement;
     };
     interface HTMLMeImageModalElement extends Components.MeImageModal, HTMLStencilElement {
     }
@@ -166,6 +176,7 @@ declare global {
         "me-cv-section": HTMLMeCvSectionElement;
         "me-home": HTMLMeHomeElement;
         "me-iam": HTMLMeIamElement;
+        "me-image-list-modal": HTMLMeImageListModalElement;
         "me-image-modal": HTMLMeImageModalElement;
         "me-menu-nav": HTMLMeMenuNavElement;
         "me-nav": HTMLMeNavElement;
@@ -196,6 +207,11 @@ declare namespace LocalJSX {
     interface MeIam {
         "name"?: string;
         "professionTitle"?: string;
+    }
+    interface MeImageListModal {
+        "modalImages"?: Image[];
+        "onClose"?: (event: CustomEvent<void>) => void;
+        "title"?: string;
     }
     interface MeImageModal {
         "modalImage"?: ModalImage | undefined;
@@ -245,6 +261,7 @@ declare namespace LocalJSX {
         "me-cv-section": MeCvSection;
         "me-home": MeHome;
         "me-iam": MeIam;
+        "me-image-list-modal": MeImageListModal;
         "me-image-modal": MeImageModal;
         "me-menu-nav": MeMenuNav;
         "me-nav": MeNav;
@@ -267,6 +284,7 @@ declare module "@stencil/core" {
             "me-cv-section": LocalJSX.MeCvSection & JSXBase.HTMLAttributes<HTMLMeCvSectionElement>;
             "me-home": LocalJSX.MeHome & JSXBase.HTMLAttributes<HTMLMeHomeElement>;
             "me-iam": LocalJSX.MeIam & JSXBase.HTMLAttributes<HTMLMeIamElement>;
+            "me-image-list-modal": LocalJSX.MeImageListModal & JSXBase.HTMLAttributes<HTMLMeImageListModalElement>;
             "me-image-modal": LocalJSX.MeImageModal & JSXBase.HTMLAttributes<HTMLMeImageModalElement>;
             "me-menu-nav": LocalJSX.MeMenuNav & JSXBase.HTMLAttributes<HTMLMeMenuNavElement>;
             "me-nav": LocalJSX.MeNav & JSXBase.HTMLAttributes<HTMLMeNavElement>;

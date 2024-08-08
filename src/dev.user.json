@@ -65,8 +65,15 @@
               "company": "University A",
               "description": "",
               "image": {
-                "src": "/assets/bg.svg",
-                "title": "Degree in Math"
+                "title": "Mathematics Degree",
+                "first": {
+                  "title": "Front",
+                  "src": "/assets/bg.svg"
+                },
+                "second": {
+                  "title": "Back",
+                  "src": "/assets/bg.svg"
+                }
               },
               "gallery": {
                 "title": "Career 1 Honors",

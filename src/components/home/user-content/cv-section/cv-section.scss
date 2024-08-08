@@ -21,7 +21,11 @@ figure {
   margin: 0 0 1rem;
 }
 
-figure > img {
+figure.section-fig img {
+  width: 12rem;
+}
+
+figure img {
   width: 10rem;
   display: block;
   max-width: 100%;
@@ -39,6 +43,10 @@ figure > img,
   border: 1px solid #e0e0e0;
   border-radius: 1rem 1rem 0 0;
   border-bottom: none;
+}
+
+.section-fig figcaption {
+  width: 12rem;
 }
 
 figcaption {
