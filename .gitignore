@@ -1,3 +1,5 @@
+src/env.dev.user.json
+
 dist/
 !www/favicon.ico
 www/

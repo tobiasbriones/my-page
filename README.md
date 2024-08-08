@@ -21,8 +21,14 @@ Configuration files define:
 
 - [dev.config.ts](config/prod.config.ts): The application development values.
 
-- [dev.user.json](src/dev.user.json): A development local user to load into the
-  application.
+- [dev.user.json](src/dev.user.json): A development user to load into the
+  application with generic values.
+
+- [env.dev.user.json](src/dev.user.json): A development local user to load into
+  the application with custom values. It's not part of the project, so it
+  doesn't go into Git. If it exists, it will override the `dev.user.json`
+  file in dev mode. You can rename it to `_env.dev.user.json` and rebuild, if
+  you don't want to override `dev.user.json` in the development bundle.
 
 For the `user.json` user file used in production, add the URL of the json file
 to the production configuration.

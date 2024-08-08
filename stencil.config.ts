@@ -5,6 +5,8 @@
 import { Config } from "@stencil/core";
 import { appConfig, Mode, mode } from "./config/config";
 import { sass } from "@stencil/sass";
+import { join } from "path";
+import { existsSync } from "fs";
 
 // https://stenciljs.com/docs/config
 
@@ -37,14 +39,20 @@ function getCopy() {
         {
             src: "manifest.webmanifest",
         },
-    ];
+    ] as [{ src: string, dest?: string }];
 
     // The file dev.user.json is used for dev mode only
     // For production the file should be served on its own
     if (mode === Mode.DEV) {
-        copy.push({
-            src: appConfig.userFile,
-        });
+        // Optional env.dev.user.json that would overwrite the dev.user.json
+        let optionalUser = join(__dirname, "src", "env.dev.user.json");
+
+        if (existsSync(optionalUser)) {
+            copy.push({ src: optionalUser, dest: "dev.user.json" });
+        }
+        else {
+            copy.push({ src: appConfig.userFile });
+        }
     }
     return copy;
 }
