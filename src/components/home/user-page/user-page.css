@@ -1,0 +1,35 @@
+/* Copyright (c) 2021 Tobias Briones. All rights reserved. */
+/* SPDX-License-Identifier: MIT */
+/* This file is part of https://github.com/tobiasbriones/my-page. */
+
+:host {
+  display: block;
+  padding: 0 var(--padding-x);
+}
+
+@media (min-width: 50rem) {
+  :host {
+    display: grid;
+    padding: 0;
+    grid-template-columns: var(--nav-width) auto var(--nav-width);
+  }
+
+  me-user-content,
+  me-user-photo {
+    padding: 0;
+    margin: 0;
+  }
+
+  me-user-content {
+    padding: 0 var(--padding-x);
+    grid-column: 2;
+  }
+
+  me-user-photo {
+    margin: 4rem 0 2rem;
+  }
+
+  .me-user-detail {
+    grid-column: 3;
+  }
+}

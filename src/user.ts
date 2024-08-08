@@ -7,9 +7,9 @@ import { Env } from '@stencil/core';
 export interface User {
   contact: Contact;
   profile: Profile;
-  internships: string[];
+  engineering: Engineering;
+  focus: Focus;
   courses: string[];
-  honors: string[];
   interests: string[];
 }
 
@@ -29,9 +29,28 @@ export const emptyContact: Contact = {
 
 export interface Profile {
   name: string;
+  title: string;
   photo: string;
   cv: Cv;
   language: Language;
+}
+
+export interface Focus {
+  abstract: string;
+  items: string[];
+  conclusion: string;
+}
+
+export interface Engineering {
+  sections: EngSection[];
+}
+
+export interface EngSection {
+  name: string;
+  icon: string;
+  abstract: string;
+  items: string[];
+  conclusion: string;
 }
 
 export interface Cv {
@@ -52,20 +71,23 @@ export interface CvEntry {
   description: string;
   items: string[];
   footer: string;
-  image: Image | undefined;
+  image: MainImage | undefined;
   gallery: Gallery | undefined;
 }
 
 export interface Language {
-  firstClass: string[];
-  secondClass: string[];
-  others: string[];
   naturalLanguages: string[];
 }
 
 export interface Image {
   src: string;
   title: string;
+}
+
+export interface MainImage {
+  title: string,
+  first: Image,
+  second: Image | undefined,
 }
 
 export interface Gallery {
@@ -104,21 +126,33 @@ export const emptyCv: Cv = {
 
 export const emptyProfile: Profile = {
   name: '',
+  title: '',
   photo: '',
   cv: emptyCv,
   language: {
-    firstClass: [],
-    secondClass: [],
-    others: [],
     naturalLanguages: []
   }
 };
 
+export const emptyEngSection: EngSection = {
+  name: '',
+  icon: '',
+  abstract: '',
+  items: [],
+  conclusion: '',
+};
+
+export const emptyEngineering: Engineering = {
+  sections: []
+};
+
+export const emptyFocus: Focus = {abstract: '', conclusion: '', items: []};
+
 export const emptyUser: User = {
   contact: emptyContact,
   profile: emptyProfile,
+  engineering: emptyEngineering,
+  focus: emptyFocus,
   courses: [],
-  honors: [],
   interests: [],
-  internships: []
 };

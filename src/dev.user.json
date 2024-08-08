@@ -7,6 +7,7 @@
   },
   "profile": {
     "name": "Full Name",
+    "title": "Mathematician",
     "photo": "https://raw.githubusercontent.com/tobiasbriones/brief-personal-landing-page/main/src/assets/icon/icon.png",
     "cv": {
       "abstract": "Brief description of yourself.",
@@ -18,7 +19,7 @@
               "title": "Title A",
               "company": "Company A",
               "place": "Place A",
-              "date": "TimeA1-TimeA2",
+              "date": "20AB - 20CD",
               "description": "Description A",
               "items": [
                 "Item A1",
@@ -30,7 +31,7 @@
               "title": "Title B",
               "company": "Company B",
               "place": "Place B",
-              "date": "TimeB1-TimeB2",
+              "date": "20AB - 20CD",
               "description": "Description B",
               "items": [
                 "Item A1",
@@ -45,7 +46,7 @@
           "entries": [
             {
               "title": "Project A",
-              "date": "TimeA1-TimeA2",
+              "date": "20AB - 20CD",
               "description": "Description of Project A",
               "items": [
                 "Item A1 with [Link to Project](https://github.com).",
@@ -54,25 +55,56 @@
               "footer": "Footer with **bold Tech** for keyword scanning."
             }
           ]
+        },
+        {
+          "sectionName": "Education",
+          "entries": [
+            {
+              "title": "Career 1",
+              "date": "20AB - 20CD, Grad Jul 20EF. Magna Cum Laude (90%)",
+              "company": "University A",
+              "description": "",
+              "image": {
+                "title": "Mathematics Degree",
+                "first": {
+                  "title": "Front",
+                  "src": "/assets/bg.svg"
+                },
+                "second": {
+                  "title": "Back",
+                  "src": "/assets/bg.svg"
+                }
+              },
+              "gallery": {
+                "title": "Career 1 Honors",
+                "images": [
+                  {
+                    "src": "/assets/bg.svg",
+                    "title": "Career's Highest Honor Grades 2018"
+                  },
+                  {
+                    "src": "/assets/bg.svg",
+                    "title": "Career's Highest Honor Grades 2019"
+                  },
+                  {
+                    "src": "/assets/bg.svg",
+                    "title": "Honor Grades 2019"
+                  }
+                ]
+              }
+            },
+            {
+              "title": "Career 2",
+              "place": "20AB - 20CD",
+              "date": "",
+              "company": "University B",
+              "description": ""
+            }
+          ]
         }
       ]
     },
     "language": {
-      "firstClass": [
-        "Rust",
-        "Java",
-        "Haskell"
-      ],
-      "secondClass": [
-        "Clojure",
-        "C",
-        "C#",
-        "Kotlin",
-        "JavaScript"
-      ],
-      "others": [
-        "Dart"
-      ],
       "naturalLanguages": [
         "English (native)",
         "Spanish",
@@ -82,19 +114,38 @@
       ]
     }
   },
-  "internships": [
-    "Company A (XXXX) as Position W",
-    "Company B (YYYY) as Position Y"
-  ],
+  "engineering": {
+    "sections": [
+      {
+        "name": "Original Project",
+        "icon": "/assets/bg.svg",
+        "abstract": "Results after engineering an original project.",
+        "items": [
+          "Functional Programming",
+          "Operations Research",
+          "Haskell",
+          "Kotlin",
+          "Rust"
+        ],
+        "conclusion": "This project optimized for **functional programming** to build **mathematical software**."
+      }
+    ]
+  },
+  "focus": {
+    "abstract": "Career specialization to focus.",
+    "items": [
+      "Functional Programming",
+      "Operations Research",
+      "Haskell",
+      "Kotlin",
+      "Rust"
+    ],
+    "conclusion": "Optimizing for **functional programming** to build **mathematical software**."
+  },
   "courses": [
     "Course A at Org A",
     "Course B at Org B",
     "Course C at Org C"
-  ],
-  "honors": [
-    "Diploma A at Org A",
-    "Diploma B at Org B",
-    "Diploma C at Org C"
   ],
   "interests": [
     "Interest A",

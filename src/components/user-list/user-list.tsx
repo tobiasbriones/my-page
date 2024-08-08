@@ -7,7 +7,7 @@ import { parseMarkdown } from '../../markdown/markdown';
 
 @Component({
   tag: 'me-user-list',
-  styleUrl: 'user-list.css',
+  styleUrl: 'user-list.scss',
   shadow: true
 })
 export class UserList {

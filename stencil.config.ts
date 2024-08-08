@@ -4,6 +4,7 @@
 
 import { Config } from '@stencil/core';
 import { appConfig, Mode, mode } from './config/config';
+import { sass } from '@stencil/sass';
 
 // https://stenciljs.com/docs/config
 
@@ -11,6 +12,7 @@ export const config: Config = {
   globalStyle: 'src/main.css',
   globalScript: 'src/main.ts',
   taskQueue: 'async',
+  plugins: [sass()],
   outputTargets: [
     {
       type: 'www',

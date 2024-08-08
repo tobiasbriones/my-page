@@ -5,22 +5,22 @@
 import { Component, h, Host, Prop } from '@stencil/core';
 
 @Component({
-  tag: 'ma-iam',
-  styleUrl: 'iam.css',
+  tag: 'me-iam',
+  styleUrl: 'iam.scss',
   shadow: true
 })
 export class Iam {
   @Prop()
-  name: string;
+  name: string = '';
 
-  constructor() {
-    this.name = '';
-  }
+  @Prop()
+  professionTitle: string = '';
 
   render() {
     return (
       <Host>
-        <h2>{ this.name }</h2>
+        <h1>{this.name}</h1>
+        <div class="title">{this.professionTitle}</div>
       </Host>
     );
   }

@@ -1,0 +1,153 @@
+/* Copyright (c) 2024 Tobias Briones. All rights reserved. */
+/* SPDX-License-Identifier: MIT */
+/* This file is part of https://github.com/tobiasbriones/my-page. */
+
+@import "../../../styles/h3";
+@import "../../../styles/h4";
+
+:host {
+  display: block;
+}
+
+h4 {
+  text-align: start;
+}
+
+p {
+  margin: 0 0 0.5rem;
+}
+
+figure {
+  margin: 0 0 1rem;
+}
+
+figure.section-fig img {
+  width: 12rem;
+}
+
+figure img {
+  width: 10rem;
+  display: block;
+  max-width: 100%;
+  margin: auto;
+  transition: transform 0.3s ease;
+}
+
+figure > img,
+.gallery > img {
+  cursor: pointer;
+}
+
+figure > img,
+.gallery {
+  border: 1px solid #e0e0e0;
+  border-radius: 1rem 1rem 0 0;
+  border-bottom: none;
+}
+
+.section-fig figcaption {
+  width: 12rem;
+}
+
+figcaption {
+  width: 10rem;
+  padding: 0.5rem 0;
+  margin: auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 0 0 0.5rem 0.5rem;
+  text-align: center;
+  font-weight: bold;
+  color: var(--heading-color);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
+  gap: 1rem;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border: 1px solid #e0e0e0;
+  border-radius: 1rem;
+  align-self: center;
+}
+
+figure img:hover,
+.gallery img:hover {
+  border: none;
+  transform: scale(1.05);
+}
+
+.gallery + figcaption {
+  width: 100%;
+}
+
+.cv-section h3 {
+  padding: 0.5rem;
+  border-bottom: 1px solid rgb(79, 195, 247);
+}
+
+.experience {
+  margin-bottom: 1.5rem;
+}
+
+.experience-header {
+  display: flex;
+  margin-bottom: 0.5rem;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.experience-header.wide {
+  flex-direction: column;
+}
+
+.experience-title {
+  flex: 1;
+}
+
+.experience-meta {
+  width: 10rem;
+  vertical-align: top;
+  color: rgb(25, 118, 210);
+  font-size: 0.8125rem;
+}
+
+.experience-meta.wide {
+  width: 12rem;
+}
+
+.experience-meta > div {
+  padding: 0.125rem 0;
+}
+
+.gallery + figcaption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.honor-caption-icon {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url("assets/icon/md/military-tech.svg");
+  background-size: cover;
+}
+
+@media (min-width: 600px) {
+  .experience-header {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .experience-header.wide {
+    flex-direction: row;
+  }
+}

@@ -3,18 +3,23 @@
 // This file is part of https://github.com/tobiasbriones/my-page.
 
 import { Component, h, Host } from '@stencil/core';
+import { Header } from './header';
+import { Footer } from './footer';
+import { Router } from './router';
 
 @Component({
   tag: 'me-root',
-  styleUrl: 'root.css',
+  styleUrl: 'root.scss',
   shadow: true
 })
 export class Root {
   render() {
     return (
       <Host>
-        <me-header />
-        <me-main />
+        <Header/>
+        <me-menu-nav/>
+        <Router/>
+        <Footer/>
       </Host>
     );
   }

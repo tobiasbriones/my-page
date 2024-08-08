@@ -1,0 +1,18 @@
+/* Copyright (c) 2021 Tobias Briones. All rights reserved. */
+/* SPDX-License-Identifier: MIT */
+/* This file is part of https://github.com/tobiasbriones/my-page. */
+
+@import "../styles/a";
+
+:host {
+  display: block;
+}
+
+ul {
+  padding: 0;
+  list-style-position: inside;
+}
+
+li {
+  margin: 0.5rem 0;
+}
