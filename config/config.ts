@@ -27,7 +27,7 @@ function getConfig() {
             return prodConfig;
         case Mode.DEV:
             return devConfig;
-        default :
+        default:
             return prodConfig;
     }
 }
