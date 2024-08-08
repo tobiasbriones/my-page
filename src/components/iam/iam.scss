@@ -5,14 +5,14 @@
 @import "../styles/h1";
 
 :host {
-  display: block;
-  padding: 1rem;
-  background-color: var(--primary-color);
-  border-bottom: 0.0625rem solid #4FC3F7;
+    display: block;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    border-bottom: 0.0625rem solid #4FC3F7;
 }
 
 .title {
-  font-family: 'Poppins Light', sans-serif;
-  font-size: 1.25rem;
-  text-align: center;
+    font-family: "Poppins Light", sans-serif;
+    font-size: 1.25rem;
+    text-align: center;
 }

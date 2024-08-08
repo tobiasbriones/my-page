@@ -3,56 +3,56 @@
 /* This file is part of https://github.com/tobiasbriones/my-page. */
 
 :host {
-  position: fixed;
-  display: block;
-  width: 100%;
-  height: var(--nav-mobile-height);
-  left: 0;
-  bottom: 0;
-  z-index: 1;
-  background-color: white;
-  border-top: 0.0625rem solid var(--selected-color);
-  user-select: none;
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: var(--nav-mobile-height);
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: white;
+    border-top: 0.0625rem solid var(--selected-color);
+    user-select: none;
 }
 
 .title {
-  display: none;
+    display: none;
 }
 
 ul {
-  display: flex;
-  padding: 0;
-  margin: 0;
+    display: flex;
+    padding: 0;
+    margin: 0;
 }
 
 li {
-  flex-grow: 1;
-  list-style: none;
+    flex-grow: 1;
+    list-style: none;
 }
 
 .selected {
-  background-color: var(--selected-color);
+    background-color: var(--selected-color);
 }
 
 @media (min-width: 50rem) {
-  :host {
-    position: relative;
-    display: block;
-    width: auto;
-    height: auto;
-    border-top: none;
-  }
+    :host {
+        position: relative;
+        display: block;
+        width: auto;
+        height: auto;
+        border-top: none;
+    }
 
-  .title {
-    display: block;
-    margin: 1rem;
-    color: var(--heading-color);
-    font-size: 1.25rem;
-    font-weight: bold;
-    text-align: center;
-  }
+    .title {
+        display: block;
+        margin: 1rem;
+        color: var(--heading-color);
+        font-size: 1.25rem;
+        font-weight: bold;
+        text-align: center;
+    }
 
-  ul {
-    display: block;
-  }
+    ul {
+        display: block;
+    }
 }

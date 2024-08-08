@@ -2,41 +2,51 @@
 // SPDX-License-Identifier: MIT
 // This file is part of https://github.com/tobiasbriones/my-page.
 
-import {Component, Event, EventEmitter, h, Host, Prop} from '@stencil/core';
-import {Image} from '../../user';
+import { Component, Event, EventEmitter, h, Host, Prop } from "@stencil/core";
+import { Image } from "../../user";
 
 @Component({
-  tag: 'me-image-list-modal',
-  styleUrl: 'image-list-modal.css',
-  shadow: true,
+    tag: "me-image-list-modal",
+    styleUrl: "image-list-modal.css",
+    shadow: true,
 })
 export class ImageListModal {
-  @Prop() caption: string = "";
-  @Prop() modalImages: Image[] = [];
-  @Event() close!: EventEmitter<void>;
+    @Prop()
+    caption: string = "";
 
-  render() {
-    const onContentClick = (e: MouseEvent) => {
-      const el = e.target as HTMLElement;
+    @Prop()
+    modalImages: Image[] = [];
 
-      if (el.classList.contains("modal-content")) {
-        this.close.emit();
-      }
-    };
+    @Event()
+    close!: EventEmitter<void>;
 
-    const img = ({title, src}: Image) => <img src={src} alt={title}/>;
+    render() {
+        const onContentClick = (e: MouseEvent) => {
+            const el = e.target as HTMLElement;
 
-    return this.modalImages.length > 0 && <Host>
-        <div class="modal">
-            <div class="modal-content" onClick={onContentClick}>
-                <span class="close" onClick={() => this.close.emit()}>&times;</span>
-                <figure>
-                    {this.modalImages.map(img)}
+            if (el.classList.contains("modal-content")) {
+                this.close.emit();
+            }
+        };
 
-                    <figcaption>{this.caption}</figcaption>
-                </figure>
+        const img = ({ title, src }: Image) =>
+            <img src={ src } alt={ title } />;
+
+        return this.modalImages.length > 0 && <Host>
+            <div class="modal">
+                <div class="modal-content" onClick={ onContentClick }>
+                    <span
+                        class="close"
+                        onClick={ () => this.close.emit() }>
+                        &times;
+                    </span>
+                    <figure>
+                        { this.modalImages.map(img) }
+
+                        <figcaption>{ this.caption }</figcaption>
+                    </figure>
+                </div>
             </div>
-        </div>
-    </Host>;
-  }
+        </Host>;
+    }
 }

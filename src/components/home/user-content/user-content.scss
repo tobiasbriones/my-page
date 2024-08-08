@@ -5,11 +5,11 @@
 @import "../../styles/h2";
 
 :host {
-  display: block;
+    display: block;
 }
 
 @media (min-width: 90rem) {
-  :host {
-    padding: 4rem;
-  }
+    :host {
+        padding: 4rem;
+    }
 }

@@ -5,14 +5,14 @@
 @import "../styles/a";
 
 footer {
-  padding: 1rem;
-  margin-bottom: var(--nav-mobile-height);
-  text-align: center;
-  background-color: white;
+    padding: 1rem;
+    margin-bottom: var(--nav-mobile-height);
+    text-align: center;
+    background-color: white;
 }
 
 @media (min-width: 50rem) {
-  footer {
-    margin-bottom: 0;
-  }
+    footer {
+        margin-bottom: 0;
+    }
 }

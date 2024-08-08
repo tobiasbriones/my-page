@@ -2,39 +2,42 @@
 // SPDX-License-Identifier: MIT
 // This file is part of https://github.com/tobiasbriones/my-page.
 
-import { Component, h, Host, Prop } from '@stencil/core';
-import { emptyProfile, Profile } from '../../../../user';
+import { Component, h, Host, Prop } from "@stencil/core";
+import { emptyProfile, Profile } from "../../../../user";
 
 @Component({
-  tag: 'me-user-profile',
-  styleUrl: 'user-profile.scss',
-  shadow: true
+    tag: "me-user-profile",
+    styleUrl: "user-profile.scss",
+    shadow: true,
 })
 export class UserProfile {
-  @Prop()
-  profile: Profile;
+    @Prop()
+    profile: Profile;
 
-  constructor() {
-    this.profile = emptyProfile;
-  }
+    constructor() {
+        this.profile = emptyProfile;
+    }
 
-  render() {
-    const {abstract, sections} = this.profile.cv;
+    render() {
+        const { abstract, sections } = this.profile.cv;
 
-    return (
-      <Host>
-        <p>{abstract}</p>
+        return (
+            <Host>
+                <p>{ abstract }</p>
 
-        {sections.map(({sectionName, entries}) =>
-          <me-cv-section name={sectionName} entries={entries}/>
-        )}
+                { sections.map(({ sectionName, entries }) =>
+                    <me-cv-section
+                        name={ sectionName }
+                        entries={ entries } />,
+                ) }
 
-        <div class="cv-section">
-          <h3>Natural Languages</h3>
+                <div class="cv-section">
+                    <h3>Natural Languages</h3>
 
-          <me-user-list items={this.profile.language.naturalLanguages}/>
-        </div>
-      </Host>
-    );
-  }
+                    <me-user-list
+                        items={ this.profile.language.naturalLanguages } />
+                </div>
+            </Host>
+        );
+    }
 }
