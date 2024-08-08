@@ -3,86 +3,86 @@
 /* This file is part of https://github.com/tobiasbriones/my-page. */
 
 :root {
-  --primary-color: #81D4FA;
-  --primary-dark-color: #0288D1;
-  --accent-color: #2979FF;
-  --primary-background: #FAFAFA;
-  --heading-color: #212121;
-  --text-color: #424242;
-  --hover-color: #EEEEEE;
-  --selected-color: #E0E0E0;
-  --padding-x: 1rem;
-  --padding-y: 2rem;
-  --header-height: 3.5rem;
-  --nav-mobile-height: 3.5rem;
-  --nav-width: 25%;
-  --iam-height: 3.5rem;
-  --user-header-height: 6rem;
+    --primary-color: #81D4FA;
+    --primary-dark-color: #0288D1;
+    --accent-color: #2979FF;
+    --primary-background: #FAFAFA;
+    --heading-color: #212121;
+    --text-color: #424242;
+    --hover-color: #EEEEEE;
+    --selected-color: #E0E0E0;
+    --padding-x: 1rem;
+    --padding-y: 2rem;
+    --header-height: 3.5rem;
+    --nav-mobile-height: 3.5rem;
+    --nav-width: 25%;
+    --iam-height: 3.5rem;
+    --user-header-height: 6rem;
 }
 
 * {
-  position: relative;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  color: var(--text-color);
+    position: relative;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--text-color);
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background: url('.././assets/bg-w640.png') fixed center;
+    font-family: 'Poppins', sans-serif;
+    background: url('.././assets/bg-w640.png') fixed center;
 }
 
 h1, h2, h3, h4, h5 {
-  color: var(--heading-color);
-  user-select: none;
+    color: var(--heading-color);
+    user-select: none;
 }
 
 @media (min-width: 30rem) {
-  :root {
-    --padding-x: 2rem;
-    --padding-y: 2rem;
-  }
+    :root {
+        --padding-x: 2rem;
+        --padding-y: 2rem;
+    }
 }
 
 @media (min-width: 50rem) {
-  :root {
-    --padding-x: 1rem;
-  }
+    :root {
+        --padding-x: 1rem;
+    }
 }
 
 @media (min-width: 64rem) {
-  :root {
-    --padding-x: 2rem;
-  }
+    :root {
+        --padding-x: 2rem;
+    }
 }
 
 @media (min-width: 90rem) {
-  :root {
-    --padding-x: 3rem;
-  }
+    :root {
+        --padding-x: 3rem;
+    }
 
-  body {
-    padding: 0 10%;
-  }
+    body {
+        padding: 0 10%;
+    }
 }
 
 /* ------------------------  BACKGROUND BREAKPOINTS  ------------------------ */
 
 @media (min-width: 641px) {
-  body {
-    background-image: url('.././assets/bg-w1280.png');
-  }
+    body {
+        background-image: url('.././assets/bg-w1280.png');
+    }
 }
 
 @media (min-width: 1281px) {
-  body {
-    background-image: url('.././assets/bg-w1920.png');
-  }
+    body {
+        background-image: url('.././assets/bg-w1920.png');
+    }
 }
 
 @media (min-width: 2561px) {
-  body {
-    background-image: url('.././assets/bg.svg');
-  }
+    body {
+        background-image: url('.././assets/bg.svg');
+    }
 }

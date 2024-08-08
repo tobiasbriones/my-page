@@ -3,21 +3,21 @@
 // This file is part of https://github.com/tobiasbriones/my-page.
 
 header {
-  display: flex;
-  height: var(--header-height);
-  padding: 0 1rem;
-  align-items: center;
-  background: var(--primary-color);
+    display: flex;
+    height: var(--header-height);
+    padding: 0 1rem;
+    align-items: center;
+    background: var(--primary-color);
 }
 
 header > img {
-  width: 2.25rem;
-  height: 2.25rem;
+    width: 2.25rem;
+    height: 2.25rem;
 }
 
 header > .title {
-  padding: 0 0.75rem;
-  font-size: 1.4rem;
-  font-weight: bold;
-  color: var(--heading-color);
+    padding: 0 0.75rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--heading-color);
 }

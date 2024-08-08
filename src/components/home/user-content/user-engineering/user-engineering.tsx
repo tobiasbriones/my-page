@@ -1,38 +1,40 @@
-import { Component, h, Host, Prop } from '@stencil/core';
-import { emptyEngineering, Engineering } from '../../../../user';
-import { parseMarkdown } from '../../../../markdown/markdown';
+import { Component, h, Host, Prop } from "@stencil/core";
+import { emptyEngineering, Engineering } from "../../../../user";
+import { parseMarkdown } from "../../../../markdown/markdown";
 
 @Component({
-  tag: 'me-user-engineering',
-  styleUrl: 'user-engineering.scss',
-  shadow: true,
+    tag: "me-user-engineering",
+    styleUrl: "user-engineering.scss",
+    shadow: true,
 })
 export class UserEngineering {
-  @Prop() engineering: Engineering = emptyEngineering;
+    @Prop() engineering: Engineering = emptyEngineering;
 
-  render() {
-    return (
-      <Host>
-        <p>
-          The Engineering section contains the original self-directed work of the author.
-        </p>
+    render() {
+        return (
+            <Host>
+                <p>
+                    The Engineering section contains the original self-directed
+                    work of the author.
+                </p>
 
-        {this.engineering
-          .sections
-          .map(({name, icon, abstract, items, conclusion}) => <div>
-            <h2>{name}</h2>
+                { this.engineering
+                      .sections
+                      .map(({ name, icon, abstract, items, conclusion }) =>
+                          <div>
+                              <h2>{ name }</h2>
 
-            <div class="icon">
-              <img src={icon} alt={name}/>
-            </div>
+                              <div class="icon">
+                                  <img src={ icon } alt={ name } />
+                              </div>
 
-            <p>{abstract}</p>
+                              <p>{ abstract }</p>
 
-            <me-user-list items={items}/>
+                              <me-user-list items={ items } />
 
-            <p>{parseMarkdown(conclusion)}</p>
-          </div>)}
-      </Host>
-    );
-  }
+                              <p>{ parseMarkdown(conclusion) }</p>
+                          </div>) }
+            </Host>
+        );
+    }
 }

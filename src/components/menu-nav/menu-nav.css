@@ -3,14 +3,14 @@
 /* This file is part of https://github.com/tobiasbriones/my-page. */
 
 :host {
-  display: block;
-  background-color: white;
+    display: block;
+    background-color: white;
 }
 
 @media (min-width: 50rem) {
-  :host {
-    position: absolute;
-    width: var(--nav-width);
-    margin-top: var(--user-header-height);
-  }
+    :host {
+        position: absolute;
+        width: var(--nav-width);
+        margin-top: var(--user-header-height);
+    }
 }
