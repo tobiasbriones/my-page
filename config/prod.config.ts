@@ -10,12 +10,12 @@
  * https://opensource.org/licenses/MIT.
  */
 
-import { AppConfig } from './config';
+import { AppConfig } from "./config";
 
-const routerRoot = '/';
+const routerRoot = "/";
 
 export const prodConfig: AppConfig = {
-  routerRoot: routerRoot,
-  baseUrl: `https://me.mathsoftware.engineer${ routerRoot }`,
-  userFile: 'https://raw.githubusercontent.com/tobiasbriones/my-page/static/user.json'
+    routerRoot: routerRoot,
+    baseUrl: `https://me.mathsoftware.engineer${ routerRoot }`,
+    userFile: "https://raw.githubusercontent.com/tobiasbriones/my-page/static/user.json",
 };

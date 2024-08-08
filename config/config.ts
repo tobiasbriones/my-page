@@ -10,32 +10,32 @@
  * https://opensource.org/licenses/MIT.
  */
 
-import { prodConfig } from './prod.config';
-import { devConfig } from './dev.config';
+import { prodConfig } from "./prod.config";
+import { devConfig } from "./dev.config";
 
-const isDev: boolean = process.argv && process.argv.indexOf('--dev') > -1;
+const isDev: boolean = process.argv && process.argv.indexOf("--dev") > -1;
 
 export interface AppConfig {
-  routerRoot: string;
-  baseUrl: string,
-  userFile: string
+    routerRoot: string;
+    baseUrl: string,
+    userFile: string,
 }
 
 export enum Mode {
-  PROD = 'prod',
-  DEV = 'dev'
+    PROD = "prod",
+    DEV = "dev"
 }
 
 export const mode: Mode = isDev ? Mode.DEV : Mode.PROD;
 export const appConfig: AppConfig = getConfig();
 
 function getConfig() {
-  switch (mode) {
-    case Mode.PROD:
-      return prodConfig;
-    case Mode.DEV:
-      return devConfig;
-    default :
-      return prodConfig;
-  }
+    switch (mode) {
+        case Mode.PROD:
+            return prodConfig;
+        case Mode.DEV:
+            return devConfig;
+        default :
+            return prodConfig;
+    }
 }
