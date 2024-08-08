@@ -7,6 +7,7 @@
   },
   "profile": {
     "name": "Tobias Briones",
+    "title": "Mathematical Software Engineer",
     "photo": "https://raw.githubusercontent.com/tobiasbriones/my-page/static/tobiasbriones.png",
     "cv": {
       "abstract": "I'm a leading mathematical software engineer and founder of Math.Software. I work with computational mathematical models and strong software engineering foundations optimizing for functional programming.",
@@ -68,6 +69,17 @@
               "date": "2016 - 2021, Grad Jul 2024. Magna Cum Laude (92%)",
               "company": "Universidad Nacional Autónoma de Honduras",
               "description": "",
+              "image": {
+                "title": "Mathematics Degree",
+                "first": {
+                  "title": "Front",
+                  "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/static/edu/unah/math-degree-front_1200dpi-resized.jpg"
+                },
+                "second": {
+                  "title": "Back",
+                  "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/static/edu/unah/math-degree-back_1200dpi-resized.jpg"
+                }
+              },
               "gallery": {
                 "title": "Math and Engineering Honors",
                 "images": [
@@ -109,10 +121,8 @@
       "firstClass": [
       ],
       "secondClass": [
-
       ],
       "others": [
-
       ],
       "naturalLanguages": [
         "English",
@@ -122,15 +132,11 @@
     }
   },
   "internships": [
-
   ],
   "courses": [
-
   ],
   "honors": [
-
   ],
   "interests": [
-
   ]
 }
