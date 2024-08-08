@@ -17,13 +17,13 @@ Build to `./www` with `npm run build`.
 
 Configuration files:
 
-- [prod.config.ts](./config/prod.config.ts): defines the application production
+- [prod.config.ts](config/prod.config.ts): defines the application production
   values.
 
-- [dev.config.ts](./config/prod.config.ts): defines the application development
+- [dev.config.ts](config/prod.config.ts): defines the application development
   values.
 
-- [dev.user.json](./src/dev.user.json): defines a development local user to load
+- [dev.user.json](src/dev.user.json): defines a development local user to load
   into the application.
 
 For the `user.json` user file used in production, add the URL of the json file
