@@ -91,7 +91,7 @@ export class CvSection {
       </figure>
 
       <me-image-list-modal
-        title={title}
+        caption={title}
         modalImages={this.modalImageList}
         onClose={onClose}/>
     </div>;

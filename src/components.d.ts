@@ -26,8 +26,8 @@ export namespace Components {
         "professionTitle": string;
     }
     interface MeImageListModal {
+        "caption": string;
         "modalImages": Image[];
-        "title": string;
     }
     interface MeImageModal {
         "modalImage": ModalImage | undefined;
@@ -209,9 +209,9 @@ declare namespace LocalJSX {
         "professionTitle"?: string;
     }
     interface MeImageListModal {
+        "caption"?: string;
         "modalImages"?: Image[];
         "onClose"?: (event: CustomEvent<void>) => void;
-        "title"?: string;
     }
     interface MeImageModal {
         "modalImage"?: ModalImage | undefined;

@@ -11,7 +11,7 @@ import {Image} from '../../user';
   shadow: true,
 })
 export class ImageListModal {
-  @Prop() title: string = "";
+  @Prop() caption: string = "";
   @Prop() modalImages: Image[] = [];
   @Event() close!: EventEmitter<void>;
 
@@ -33,7 +33,7 @@ export class ImageListModal {
                 <figure>
                     {this.modalImages.map(img)}
 
-                    <figcaption>{this.title}</figcaption>
+                    <figcaption>{this.caption}</figcaption>
                 </figure>
             </div>
         </div>
