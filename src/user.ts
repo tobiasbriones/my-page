@@ -98,9 +98,6 @@ export interface Gallery {
 export class AppUserRepository {
     private static readonly FILE_NAME = Env.userFile as string;
 
-    constructor() {
-    }
-
     async get(): Promise<User> {
         const res = await fetch(AppUserRepository.FILE_NAME);
         return await res.json();
