@@ -10,7 +10,7 @@
     "title": "Mathematical Software Engineer",
     "photo": "https://raw.githubusercontent.com/tobiasbriones/my-page/static/tobiasbriones.png",
     "cv": {
-      "abstract": "I'm a leading mathematical software engineer and founder of Math.Software. I work with computational mathematical models and strong software engineering foundations optimizing for functional programming.",
+      "abstract": "I'm a mathematical software engineer and founder of MathSoftware, leading an approach to modern mathematics by working with computational mathematical models and strong software engineering foundations optimizing for functional programming.",
       "sections": [
         {
           "sectionName": "Work Experience",
@@ -20,12 +20,12 @@
               "company": "Truora, Inc",
               "place": "Full-Time Remote/Colombia",
               "date": "Jul 2022 - Feb 2023",
-              "description": "I performed SWE and ML roles for combating digital fraud on ID documents, adhering to the Y-Combinator Startup culture, where I:",
+              "description": "I performed SWE and ML roles to combat digital fraud on ID documents, adhering to the Y-Combinator startup culture.",
               "items": [
-                "Expanded document support using **Golang**, and **Python** extending to more document variants and two new countries for business expansion.",
-                "Experimented with potential techniques, analyzed metrics, and processed datasets with **OpenCV**, **Tensorflow**, and **PyTorch**.",
-                "Learned new ML/DL skills quickly for fraud and object detection, developed in-house tools, and assisted colleagues.",
-                "Utilized **DVC**, **AWS**, **Paperspace**, **Jira (Scrum)** (1-week sprints), and **Bitbucket**."
+                "Expanded document support using **Golang**, **Python**, and **AWS**, increasing existing coverage and extending to two new countries.",
+                "Helped maintain fraud detection above 90% and FPR below 2%. Delivered 5 object detection models for extracting ID fields.",
+                "Measured, processed datasets, fine-tuned, and experimented, with **OpenCV**, **TensorFlow**, **PyTorch**, and **DVC**.",
+                "Learned new ML/DL skills quickly, developed in-house tools, and assisted colleagues. **Jira** (**Scrum** 1-week sprints), and **Bitbucket**."
               ],
               "footer": ""
             },
@@ -34,14 +34,14 @@
               "company": "PL Intelligent Solutions",
               "place": "Remote/Honduras",
               "date": "May 2021 - Jun 2022",
-              "description": "I contributed to ML and DS research while developing the company website and ERP web apps. I completed a Mexican scholarship for my activities involving **Python**, **Deepnote**, **Tailwind CSS**, and **Vue.js**."
+              "description": "I contributed to ML/DS research and analytical client reports while developing the company website and ERP web apps. I completed a Mexican scholarship for my activities involving **Python**, **Vue.js**, **Tailwind CSS**, **SQL**, **Azure**, and **Trello (Scrum)**."
             },
             {
               "title": "Engineering Intern",
               "company": "GO IT Solutions",
               "place": "Remote/Honduras",
               "date": "Jan 2021 - Apr 2021",
-              "description": "I built a full backend API using **Nest.js** and **AWS** for a production-ready tourism application (Virtravl) and assisted the team with operations, the **MySQL** database, and the **Vue.js** frontend."
+              "description": "I built a full backend API using **Nest.js** and **AWS** for a production-ready tourism application (Virtravl) with authentication and assisted the team with operations, the **MySQL** database, and the **Vue.js** frontend."
             }
           ]
         },
@@ -51,7 +51,7 @@
             {
               "title": "MathSwe",
               "date": "2021 - present",
-              "description": "I continuously apply my mathematical and engineering background to modernize mathematics.",
+              "description": "I continually apply my mathematical and engineering expertise to modernize mathematics, upholding rigorous standards.",
               "items": [
                 "[Math.Software (MSW)](https://math.software).",
                 "[MathSoftware.Engineer](https://mathsoftware.engineer).",
