@@ -1,3 +1,59 @@
 :host {
     display: block;
 }
+
+figcaption {
+    width: 10rem;
+    padding: 0.5rem 0;
+    margin: auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 0 0 0.5rem 0.5rem;
+    text-align: center;
+    font-weight: bold;
+    color: var(--heading-color);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
+    gap: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 1rem 1rem 0 0;
+    border-bottom: none;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border: 1px solid #e0e0e0;
+    border-radius: 1rem;
+    align-self: center;
+}
+
+.gallery > img {
+    cursor: pointer;
+}
+
+.gallery + figcaption {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.gallery img:hover {
+    border: none;
+    transform: scale(1.05);
+}
+
+.honor-caption-icon {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url("assets/icon/md/military-tech.svg");
+    background-size: cover;
+}

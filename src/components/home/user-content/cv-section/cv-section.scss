@@ -33,13 +33,11 @@ figure img {
     transition: transform 0.3s ease;
 }
 
-figure > img,
-.gallery > img {
+figure > img {
     cursor: pointer;
 }
 
-figure > img,
-.gallery {
+figure > img {
     border: 1px solid #e0e0e0;
     border-radius: 1rem 1rem 0 0;
     border-bottom: none;
@@ -60,31 +58,9 @@ figcaption {
     color: var(--heading-color);
 }
 
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
-    gap: 1rem;
-}
-
-.gallery img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-    border: 1px solid #e0e0e0;
-    border-radius: 1rem;
-    align-self: center;
-}
-
-figure img:hover,
-.gallery img:hover {
+figure img:hover {
     border: none;
     transform: scale(1.05);
-}
-
-.gallery + figcaption {
-    width: 100%;
 }
 
 .cv-section h3 {
@@ -124,21 +100,6 @@ figure img:hover,
 
 .experience-meta > div {
     padding: 0.125rem 0;
-}
-
-.gallery + figcaption {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.25rem;
-}
-
-.honor-caption-icon {
-    display: inline-block;
-    width: 1.5rem;
-    height: 1.5rem;
-    background-image: url("assets/icon/md/military-tech.svg");
-    background-size: cover;
 }
 
 @media (min-width: 600px) {
