@@ -1,6 +1,6 @@
 import { Component, h, Host, Prop } from "@stencil/core";
-import { emptyEngineering, Engineering } from "../../../../user";
 import { parseMarkdown } from "../../../../markdown/markdown";
+import { emptyEngineering, Engineering } from "../../../../user";
 
 @Component({
     tag: "me-user-engineering",
@@ -20,7 +20,15 @@ export class UserEngineering {
 
                 { this.engineering
                       .sections
-                      .map(({ name, icon, abstract, items, conclusion }) =>
+                      .map(({
+                                name,
+                                icon,
+                                abstract,
+                                link,
+                                items,
+                                gallery,
+                                conclusion,
+                            }) =>
                           <div>
                               <h2>{ name }</h2>
 
@@ -30,7 +38,23 @@ export class UserEngineering {
 
                               <p>{ abstract }</p>
 
+                              <p>
+                                  <a
+                                      rel="noreferrer"
+                                      target="_blank"
+                                      href={ link.url }
+                                  >
+                                      { link.title }
+                                  </a>
+                              </p>
+
                               <me-user-list items={ items } />
+
+                              { gallery &&
+                                <me-gallery-view
+                                    gallery={ gallery }
+                                    size="big"
+                                /> }
 
                               <p>{ parseMarkdown(conclusion) }</p>
                           </div>) }
