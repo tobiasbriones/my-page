@@ -19,6 +19,8 @@ export namespace Components {
         "entries": CvEntry[];
         "name": string;
     }
+    interface MeGalleryView {
+    }
     interface MeHome {
     }
     interface MeIam {
@@ -80,6 +82,12 @@ declare global {
     var HTMLMeCvSectionElement: {
         prototype: HTMLMeCvSectionElement;
         new (): HTMLMeCvSectionElement;
+    };
+    interface HTMLMeGalleryViewElement extends Components.MeGalleryView, HTMLStencilElement {
+    }
+    var HTMLMeGalleryViewElement: {
+        prototype: HTMLMeGalleryViewElement;
+        new (): HTMLMeGalleryViewElement;
     };
     interface HTMLMeHomeElement extends Components.MeHome, HTMLStencilElement {
     }
@@ -174,6 +182,7 @@ declare global {
     interface HTMLElementTagNameMap {
         "me-contact-info": HTMLMeContactInfoElement;
         "me-cv-section": HTMLMeCvSectionElement;
+        "me-gallery-view": HTMLMeGalleryViewElement;
         "me-home": HTMLMeHomeElement;
         "me-iam": HTMLMeIamElement;
         "me-image-list-modal": HTMLMeImageListModalElement;
@@ -201,6 +210,8 @@ declare namespace LocalJSX {
     interface MeCvSection {
         "entries"?: CvEntry[];
         "name"?: string;
+    }
+    interface MeGalleryView {
     }
     interface MeHome {
     }
@@ -259,6 +270,7 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "me-contact-info": MeContactInfo;
         "me-cv-section": MeCvSection;
+        "me-gallery-view": MeGalleryView;
         "me-home": MeHome;
         "me-iam": MeIam;
         "me-image-list-modal": MeImageListModal;
@@ -282,6 +294,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "me-contact-info": LocalJSX.MeContactInfo & JSXBase.HTMLAttributes<HTMLMeContactInfoElement>;
             "me-cv-section": LocalJSX.MeCvSection & JSXBase.HTMLAttributes<HTMLMeCvSectionElement>;
+            "me-gallery-view": LocalJSX.MeGalleryView & JSXBase.HTMLAttributes<HTMLMeGalleryViewElement>;
             "me-home": LocalJSX.MeHome & JSXBase.HTMLAttributes<HTMLMeHomeElement>;
             "me-iam": LocalJSX.MeIam & JSXBase.HTMLAttributes<HTMLMeIamElement>;
             "me-image-list-modal": LocalJSX.MeImageListModal & JSXBase.HTMLAttributes<HTMLMeImageListModalElement>;
