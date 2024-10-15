@@ -26,6 +26,10 @@ figcaption {
     border-bottom: none;
 }
 
+figure:has(.gallery.big) {
+    margin: 1rem 0;
+}
+
 .gallery.big {
     width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
@@ -78,7 +82,7 @@ figcaption {
 @media (min-width: 600px) {
     .gallery.big {
         grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        gap: 2rem;
         border: 1px solid #e0e0e0;
         border-radius: 1rem 1rem 0 0;
         border-bottom: none;
