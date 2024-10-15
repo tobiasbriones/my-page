@@ -50,6 +50,7 @@ export interface EngSection {
     icon: string;
     abstract: string;
     items: string[];
+    gallery: Gallery | undefined;
     conclusion: string;
 }
 
@@ -136,6 +137,7 @@ export const emptyEngSection: EngSection = {
     icon: "",
     abstract: "",
     items: [],
+    gallery: undefined,
     conclusion: "",
 };
 
