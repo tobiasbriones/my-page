@@ -1,142 +1,170 @@
 {
-  "contact": {
-    "email": "tbriones@mathswe.com",
-    "phone": "(+504) 94838074",
-    "location": "Honduras, San Pedro Sula",
-    "linkedInUser": "tobiasbriones"
-  },
-  "profile": {
-    "name": "Tobias Briones",
-    "title": "Mathematical Software Engineer",
-    "photo": "https://raw.githubusercontent.com/tobiasbriones/my-page/static/tobiasbriones.png",
-    "cv": {
-      "abstract": "I'm a mathematical software engineer and founder of MathSoftware, leading an approach to modern mathematics by working with computational mathematical models and strong software engineering foundations optimizing for functional programming.",
-      "sections": [
-        {
-          "sectionName": "Work Experience",
-          "entries": [
-            {
-              "title": "Software Engineer",
-              "company": "Truora, Inc",
-              "place": "Full-Time Remote/Colombia",
-              "date": "Jul 2022 - Feb 2023",
-              "description": "I performed SWE and ML roles to combat digital fraud on ID documents, adhering to the Y-Combinator startup culture.",
-              "items": [
-                "Expanded document support using **Golang**, **Python**, and **AWS**, increasing existing coverage and extending to two new countries.",
-                "Helped maintain fraud detection above 90% and FPR below 2%. Delivered 5 object detection models for extracting ID fields.",
-                "Measured, processed datasets, fine-tuned, and experimented, with **OpenCV**, **TensorFlow**, **PyTorch**, and **DVC**.",
-                "Learned new ML/DL skills quickly, developed in-house tools, and assisted colleagues. **Jira** (**Scrum** 1-week sprints), and **Bitbucket**."
-              ],
-              "footer": ""
-            },
-            {
-              "title": "Mathematics, Engineering Intern",
-              "company": "PL Intelligent Solutions",
-              "place": "Remote/Honduras",
-              "date": "May 2021 - Jun 2022",
-              "description": "I contributed to ML/DS research and analytical client reports while developing the company website and ERP web apps. I completed a Mexican scholarship for my activities involving **Python**, **Vue.js**, **Tailwind CSS**, **SQL**, **Azure**, and **Trello (Scrum)**."
-            },
-            {
-              "title": "Engineering Intern",
-              "company": "GO IT Solutions",
-              "place": "Remote/Honduras",
-              "date": "Jan 2021 - Apr 2021",
-              "description": "I built a full backend API using **Nest.js** and **AWS** for a production-ready tourism application (Virtravl) with authentication and assisted the team with operations, the **MySQL** database, and the **Vue.js** frontend."
-            }
-          ]
-        },
-        {
-          "sectionName": "Projects",
-          "entries": [
-            {
-              "title": "MathSwe",
-              "date": "2021 - present",
-              "description": "I continually apply my mathematical and engineering expertise to modernize mathematics, upholding rigorous standards.",
-              "items": [
-                "[Math.Software (MSW)](https://math.software).",
-                "[MathSoftware.Engineer](https://mathsoftware.engineer).",
-                "[MathSwe.Com](https://mathswe.com)."
-              ],
-              "footer": ""
-            }
-          ]
-        },
-        {
-          "sectionName": "Education",
-          "entries": [
-            {
-              "title": "Mathematics with Computer Science Orientation, Licentiate",
-              "date": "2016 - 2021, Grad Jul 2024. Magna Cum Laude (92%)",
-              "company": "Universidad Nacional Autónoma de Honduras",
-              "description": "",
-              "image": {
-                "title": "Mathematics Degree",
-                "first": {
-                  "title": "Front",
-                  "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/static/edu/unah/math-degree-front_1200dpi-resized.jpg"
-                },
-                "second": {
-                  "title": "Back",
-                  "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/static/edu/unah/math-degree-back_1200dpi-resized.jpg"
-                }
-              },
-              "gallery": {
-                "title": "Math and Engineering Honors",
-                "images": [
-                  {
-                    "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/static/edu/unah/MM-Highest-Honor-Grades-2018_300dpi.jpg",
-                    "title": "Career's Highest Honor Grades 2018"
-                  },
-                  {
-                    "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/static/edu/unah/IS-Highest-Honor-Grades-2017_300dpi.jpg",
-                    "title": "Career's Highest Honor Grades 2017"
-                  },
-                  {
-                    "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/static/edu/unah/IS-Honor-Grades-2019_300dpi.jpg",
-                    "title": "Honor Grades 2018"
-                  },
-                  {
-                    "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/static/edu/unah/IS-Honor-Grades-2018_300dpi.jpg",
-                    "title": "Honor Grades 2017"
-                  },
-                  {
-                    "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/static/edu/unah/IS-Honor-Grades-2017_300dpi.jpg",
-                    "title": "Honor Grades 2016"
-                  }
-                ]
-              }
-            },
-            {
-              "title": "Systems Engineering",
-              "place": "2015 - 2022",
-              "date": "44/55 classes approved",
-              "company": "Universidad Nacional Autónoma de Honduras",
-              "description": ""
-            }
-          ]
-        }
-      ]
+    "contact": {
+        "email": "tbriones@mathswe.com",
+        "phone": "(+504) 94838074",
+        "location": "Honduras, San Pedro Sula",
+        "linkedInUser": "tobiasbriones"
     },
-    "language": {
-      "firstClass": [
-      ],
-      "secondClass": [
-      ],
-      "others": [
-      ],
-      "naturalLanguages": [
-        "English",
-        "Spanish (native)",
-        "French (beginner)"
-      ]
-    }
-  },
-  "internships": [
-  ],
-  "courses": [
-  ],
-  "honors": [
-  ],
-  "interests": [
-  ]
+    "profile": {
+        "name": "Tobias Briones",
+        "title": "Mathematical Software Engineer",
+        "photo": "https://raw.githubusercontent.com/tobiasbriones/my-page/static/tobiasbriones.png",
+        "cv": {
+            "abstract": "I'm a mathematical software engineer and founder of MathSoftware, leading an approach to modern mathematics by working with computational mathematical models and strong software engineering foundations optimizing for functional programming.",
+            "sections": [
+                {
+                    "sectionName": "Work Experience",
+                    "entries": [
+                        {
+                            "title": "Software Engineer",
+                            "company": "Truora, Inc",
+                            "place": "Full-Time Remote/Colombia",
+                            "date": "Jul 2022 - Feb 2023",
+                            "description": "I performed SWE and ML roles to combat digital fraud on ID documents, adhering to the Y-Combinator startup culture.",
+                            "items": [
+                                "Expanded document support using **Golang**, **Python**, and **AWS**, increasing existing coverage and extending to two new countries.",
+                                "Helped maintain fraud detection above 90% and FPR below 2%. Delivered 5 object detection models for extracting ID fields.",
+                                "Measured, processed datasets, fine-tuned, and experimented, with **OpenCV**, **TensorFlow**, **PyTorch**, and **DVC**.",
+                                "Learned new ML/DL skills quickly, developed in-house tools, and assisted colleagues. **Jira** (**Scrum** 1-week sprints), and **Bitbucket**."
+                            ],
+                            "footer": ""
+                        },
+                        {
+                            "title": "Mathematics, Engineering Intern",
+                            "company": "PL Intelligent Solutions",
+                            "place": "Remote/Honduras",
+                            "date": "May 2021 - Jun 2022",
+                            "description": "I contributed to ML/DS research and analytical client reports while developing the company website and ERP web apps. I completed a Mexican scholarship for my activities involving **Python**, **Vue.js**, **Tailwind CSS**, **SQL**, **Azure**, and **Trello (Scrum)**."
+                        },
+                        {
+                            "title": "Engineering Intern",
+                            "company": "GO IT Solutions",
+                            "place": "Remote/Honduras",
+                            "date": "Jan 2021 - Apr 2021",
+                            "description": "I built a full backend API using **Nest.js** and **AWS** for a production-ready tourism application (Virtravl) with authentication and assisted the team with operations, the **MySQL** database, and the **Vue.js** frontend."
+                        }
+                    ]
+                },
+                {
+                    "sectionName": "Projects",
+                    "entries": [
+                        {
+                            "title": "MathSwe",
+                            "date": "2021 - present",
+                            "description": "I continually apply my mathematical and engineering expertise to modernize mathematics, upholding rigorous standards.",
+                            "items": [ ],
+                            "footer": ""
+                        },
+                        {
+                            "title": "Math.Software",
+                            "date": "",
+                            "description": "",
+                            "items": [
+                                "[Texsydo](https://tsd.math.software): Builds my technical web articles and model visualizations, in **Kotlin** (CLIs), **JavaFX + Canvas**, **React + TS**, and **LaTeX**.",
+                                "[Repsymo](https://rsm.math.software): Solves math models (OR) with granular representations I originally built to lecture, using **Angular + TS + Canvas** (PWA).",
+                                "[System Ops](https://ops.math.software): Automates Linux software Ops (install, config), streamlining VM/WS setup and accelerating staff onboarding with a **Rust** CLI."
+                            ],
+                            "footer": ""
+                        },
+                        {
+                            "title": "MathSoftware.Engineer",
+                            "date": "",
+                            "description": "",
+                            "items": [
+                                "[MathSoftware.Engineer](https://mathsoftware.engineer): Publishes essential works where I study, research, develop, and publish articles and PR/Release blogs.",
+                                "[Slides](https://blog.mathsoftware.engineer/building-slides-from-screenshots-app-in-javafx): Enhances communication by converting code to presentations. Authored a granular blog on its development with **JavaFX** and **OCR**.",
+                                "[My Page](https://me.mathsoftware.engineer): Shows a web version of my CV with the remaining details about me with **Stencil.js** (PWA)."
+                            ],
+                            "footer": ""
+                        },
+                        {
+                            "title": "MathSwe.Com",
+                            "date": "",
+                            "description": "",
+                            "items": [
+                                "[MathSwe.Com](https://mathswe.com): I undertake business concepts to support my OSS (forthcoming). **React**, **Jira**, **IntelliJ IDEA Ultimate**.",
+                                "[MathSwe Legal](https://github.com/mathswe/legal): I designed a GDPR-compliant Cookie Consent using **React** and **Rust**. Legal docs like privacy go here allowing MathSwe operations."
+                            ],
+                            "footer": ""
+                        }
+                    ]
+                },
+                {
+                    "sectionName": "Education",
+                    "entries": [
+                        {
+                            "title": "Mathematics with Computer Science Orientation, Licentiate",
+                            "date": "2016 - 2021, Grad Jul 2024. Magna Cum Laude (92%)",
+                            "company": "Universidad Nacional Autónoma de Honduras",
+                            "description": "",
+                            "image": {
+                                "title": "Mathematics Degree",
+                                "first": {
+                                    "title": "Front",
+                                    "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/static/edu/unah/math-degree-front_1200dpi-resized.jpg"
+                                },
+                                "second": {
+                                    "title": "Back",
+                                    "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/static/edu/unah/math-degree-back_1200dpi-resized.jpg"
+                                }
+                            },
+                            "gallery": {
+                                "title": "Math and Engineering Honors",
+                                "images": [
+                                    {
+                                        "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/static/edu/unah/MM-Highest-Honor-Grades-2018_300dpi.jpg",
+                                        "title": "Career's Highest Honor Grades 2018"
+                                    },
+                                    {
+                                        "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/static/edu/unah/IS-Highest-Honor-Grades-2017_300dpi.jpg",
+                                        "title": "Career's Highest Honor Grades 2017"
+                                    },
+                                    {
+                                        "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/static/edu/unah/IS-Honor-Grades-2019_300dpi.jpg",
+                                        "title": "Honor Grades 2018"
+                                    },
+                                    {
+                                        "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/static/edu/unah/IS-Honor-Grades-2018_300dpi.jpg",
+                                        "title": "Honor Grades 2017"
+                                    },
+                                    {
+                                        "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/static/edu/unah/IS-Honor-Grades-2017_300dpi.jpg",
+                                        "title": "Honor Grades 2016"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Systems Engineering",
+                            "place": "2015 - 2022",
+                            "date": "44/55 classes approved",
+                            "company": "Universidad Nacional Autónoma de Honduras",
+                            "description": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "language": {
+            "firstClass": [
+            ],
+            "secondClass": [
+            ],
+            "others": [
+            ],
+            "naturalLanguages": [
+                "English",
+                "Spanish (native)",
+                "French (beginner)"
+            ]
+        }
+    },
+    "internships": [
+    ],
+    "courses": [
+    ],
+    "honors": [
+    ],
+    "interests": [
+    ]
 }
