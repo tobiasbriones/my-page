@@ -6,6 +6,7 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { CvEntry, Engineering, Focus, Gallery, Image, Profile, User } from "./user";
+import { PreviewSize } from "./components/gallery-view/gallery-view";
 import { ModalImage } from "./components/image-modal/modal-image";
 import { Item } from "./components/nav/nav-item";
 export namespace Components {
@@ -21,6 +22,7 @@ export namespace Components {
     }
     interface MeGalleryView {
         "gallery": Gallery;
+        "size": PreviewSize;
     }
     interface MeHome {
     }
@@ -214,6 +216,7 @@ declare namespace LocalJSX {
     }
     interface MeGalleryView {
         "gallery"?: Gallery;
+        "size"?: PreviewSize;
     }
     interface MeHome {
     }

@@ -1,3 +1,7 @@
+/* Copyright (c) 2024 Tobias Briones. All rights reserved. */
+/* SPDX-License-Identifier: MIT */
+/* This file is part of https://github.com/tobiasbriones/my-page. */
+
 :host {
     display: block;
 }
@@ -20,6 +24,19 @@ figcaption {
     border: 1px solid #e0e0e0;
     border-radius: 1rem 1rem 0 0;
     border-bottom: none;
+}
+
+.gallery.big {
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    gap: 1rem;
+    border: none;
+}
+
+.gallery.big + figcaption {
+    border-left: none;
+    border-right: none;
+    border-top: none;
 }
 
 .gallery img {
@@ -56,4 +73,18 @@ figcaption {
     height: 1.5rem;
     background-image: url("assets/icon/md/military-tech.svg");
     background-size: cover;
+}
+
+@media (min-width: 600px) {
+    .gallery.big {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        border: 1px solid #e0e0e0;
+        border-radius: 1rem 1rem 0 0;
+        border-bottom: none;
+    }
+
+    .gallery.big + figcaption {
+        border: 1px solid #e0e0e0;
+    }
 }

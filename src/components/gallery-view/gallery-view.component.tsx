@@ -1,4 +1,9 @@
+// Copyright (c) 2024 Tobias Briones. All rights reserved.
+// SPDX-License-Identifier: MIT
+// This file is part of https://github.com/tobiasbriones/my-page.
+
 import { Component, h, Host, Prop, State } from "@stencil/core";
+import { PreviewSize } from "./gallery-view";
 import { Gallery } from "../../user";
 import { ModalImage } from "../image-modal/modal-image";
 
@@ -13,6 +18,9 @@ export class GalleryView {
         title: "",
         images: [],
     };
+
+    @Prop()
+    size: PreviewSize = "small";
 
     @State()
     modalImage: ModalImage | undefined = undefined;
@@ -58,11 +66,13 @@ export class GalleryView {
             updateImage(idx);
         };
 
+        const className = `gallery ${ this.size }`;
+
         return (
             <Host>
                 <div>
                     <figure>
-                        <div class="gallery">
+                        <div class={ className }>
                             { images.map(({ src, title }, idx) =>
                                 <img
                                     src={ src }
