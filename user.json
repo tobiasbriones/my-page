@@ -373,6 +373,50 @@
                     ]
                 },
                 "conclusion": "Slides EP enhances communication by converting code to presentations. I authored a granular blog on its development."
+            },
+            {
+                "name": "My Page",
+                "icon": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/main/src/assets/icon/icon.png",
+                "abstract": "Brief personal landing page for a nice and colorful professional and personal index, resume or portfolio.",
+                "items": [
+                    "Supports a responsive web CV format.",
+                    "Expands profile details with an engineering portfolio of projects.",
+                    "**Stencil.js + TS**."
+                ],
+                "link": {
+                    "title": "Tobias Briones | My Page",
+                    "url": "https://me.mathsoftware.engineer"
+                },
+                "conclusion": "My Page shows a web version of my CV with the remaining details about me."
+            },
+            {
+                "name": "MathSwe Cookie Consent and Legal",
+                "icon": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/cookies/cookie-solid.svg",
+                "abstract": "The Cookie Consent service enables advanced cookie compliance to MathSwe websites and web apps. Although cookie usage will be minimal, the study and validation of its design is crucial to comply with the most demanding regulations like the GDPR. Its initial release provides the endpoint for the cookie banners to finish the compliance process by storing consent proofs.",
+                "items": [
+                    "Compliant with the GDPR (see Cookie Consent v0.1.0 release notes).",
+                    "Consent proof system as a microservice with unique user IDs.",
+                    "Customization pane with complete options beyond the banner.",
+                    "**React + TS**, **Rust**."
+                ],
+                "link": {
+                    "title": "MathSwe Legal (the frontend is currently in /mathswe.com)",
+                    "url": "https://github.com/mathswe/legal"
+                },
+                "gallery": {
+                    "title": "Cookie Consent",
+                    "images": [
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/cookies/saving-new-consent.png",
+                            "title": "Saving a new Consent"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/cookies/effective-consent-on-the-customization-pane.png",
+                            "title": "Customization Pane"
+                        }
+                    ]
+                },
+                "conclusion": "I designed a GDPR-compliant Cookie Consent. Legal docs like privacy go here allowing MathSwe operations."
             }
         ]
     },
