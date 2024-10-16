@@ -159,8 +159,223 @@
             ]
         }
     },
-    "internships": [
-    ],
+    "engineering": {
+        "sections": [
+            {
+                "name": "Texsydo",
+                "icon": "https://avatars.githubusercontent.com/u/180496718?v=4",
+                "abstract": "Complex domains like mathematics, functional programming (FP), and engineering demand clear communication but are frequently challenging to present, leading to a loss of funding, support, or engagement. Texsydo aims to comply with MathSwe efficiency standards for formal and productive communication by expanding FP to documentation domains.",
+                "items": [
+                    "Creates, builds, serves, and deploys my technical articles.",
+                    "Provides domain-aware tools, like Smart Dictionaries.",
+                    "Automates the standard cover images for PR and Release blogs.",
+                    "Renders mathematical model visualizations.",
+                    "Can provide experimental APIs to draw step-by-step specs and art.",
+                    "**Kotlin** (CLIs), **JavaFX + Canvas**, **React + TS**, and **LaTeX**."
+                ],
+                "link": {
+                    "title": "Tsd.Math.Software",
+                    "url": "https://tsd.math.software"
+                },
+                "gallery": {
+                    "title": "Texsydo Web and FX",
+                    "images": [
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/tsd/creating-a-new-article.png",
+                            "title": "Creating a New Article"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/tsd/building-an-in--article-project.png",
+                            "title": "Building an In-Article Project"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/tsd/deploying-an-article.png",
+                            "title": "Deploying an Article"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/tsd/domain-dictionary.png",
+                            "title": "Domain Dictionary"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/tsd/automatic-cover-image-for-development-workflow.png",
+                            "title": "Automatic Cover Image for Development Workflow"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/tsd/pr-cover-in-mathswe-ops.png",
+                            "title": "PR Cover in MathSwe Ops"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/tsd/release-cover-in-mathswe-legal.png",
+                            "title": "Release Cover in MathSwe Legal"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/tsd/rendering-engineering-specifications-and-art.png",
+                            "title": "Rendering Engineering Specifications and Art"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/tsd/rendering-mathematical-visualizations.png",
+                            "title": "Rendering Mathematical Visualizations"
+                        }
+                    ]
+                },
+                "conclusion": "Texsydo builds my technical web articles and model visualizations."
+            },
+            {
+                "name": "Repsymo",
+                "icon": "https://github.com/repsymo.png",
+                "abstract": "Repsymo is an applied mathematical software aiming to solve domain-specific models with granular representation standards.",
+                "items": [
+                    "Solves the Machine Replacement, Workforce, and Investment OR models.",
+                    "Solves the Decision Making under Uncertainty model.",
+                    "Renders the solutions trees and provides the steps and model conclusion to optimize the problem.",
+                    "**Angular + TS + HTML Canvas** PWA."
+                ],
+                "link": {
+                    "title": "Rsm.Math.Software",
+                    "url": "https://rsm.math.software"
+                },
+                "gallery": {
+                    "title": "Repsymo",
+                    "images": [
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/rsm/machiner-replacement-problem.png",
+                            "title": "Machine Replacement Problem"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/rsm/machine-replacement-solutions.png",
+                            "title": "Machine Replacement Solutions"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/rsm/workforce-model.jpeg",
+                            "title": "Workforce Model"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/rsm/investment-problem.png",
+                            "title": "Investment Problem"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/rsm/investment-solution.png",
+                            "title": "Investment Solution"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/rsm/uncertainty-problem.png",
+                            "title": "Uncertainty Problem"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/rsm/uncertainty-solution.png",
+                            "title": "Uncertainty Solution"
+                        }
+                    ]
+                },
+                "conclusion": "Repsymo solves math models (OR) with granular representations I originally built to lecture at the university."
+            },
+            {
+                "name": "MathSwe Ops",
+                "icon": "https://avatars.githubusercontent.com/u/173226745?v=4",
+                "abstract": "While mathematical software requires a DSL (Domain Specific Language) to be engineering grade, these formalities require non-mathematical Special Operations to reach production.",
+                "items": [
+                    "The **MathSwe System Ops** CLI provides a software images to automate installation, uninstallation, reinstallation, and configuration.",
+                    "The System CLI is written in **Rust** available on **Linux**.",
+                    "The **MathSwe Services** Web API currently provides documentation badges for README.md files (release and project name)",
+                    "Services is a **Node.js TS** app on **Cloudflare Workers**."
+                ],
+                "link": {
+                    "title": "Ops.Math.Software",
+                    "url": "https://ops.math.software"
+                },
+                "gallery": {
+                    "title": "System Ops and Services",
+                    "images": [
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/ms-ops/system-ops.png",
+                            "title": "System Ops"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/ms-ops/automated-software-images.png",
+                            "title": "Automated Software Images"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/ms-ops/release-documentation-badge.png",
+                            "title": "Release Documentation Badges"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/ms-ops/project-documentation-badge.png",
+                            "title": "Project Documentation Badges"
+                        }
+                    ]
+                },
+                "conclusion": "System Ops automates Linux software Ops (install, config), streamlining VM/WS setup and accelerating staff onboarding. The Services API implements endpoints according to demands."
+            },
+            {
+                "name": "Drawing a Tree Article with EP",
+                "icon": "",
+                "abstract": "A detailed design, development, and recursion analysis to draw a tree data structure with HTML Canvas and TypeScript are given from the solution tree feature implemented into the 2DP Repsymo Solver for the machine replacement model from the operations research field.",
+                "items": [
+                    "Introduces the Machine Replacement Model and incipient solution tree I initially built.",
+                    "Details the development of the solutions tree.",
+                    "Analyses recursion, memoization and rendering order.",
+                    "Provides the EP source code and live deployment.",
+                    "**TS**, **HTML Canvas**, **Computer Science**."
+                ],
+                "link": {
+                    "title": "Drawing a Tree on Canvas with XY Coordinates",
+                    "url": "https://mathsoftware.engineer/drawing-a-tree-on-canvas-with-xy-coordinates"
+                },
+                "conclusion": "I took the solutions tree of my works on the machine replacement model and Repsymo to author a formal article on it with a step-by-step development, EP source code, and live deployment."
+            },
+            {
+                "name": "Slides App with Blog and EP",
+                "icon": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/ep.png",
+                "abstract": "Efficient and quality engineering communication is a daily challenge for creating value such as specs, documentation, content, or visualizations, which are essential for professional and educative standards, which I started materializing in JavaFX via graphical slides for building domain-specific presentations based on screenshots, code snippets, and basic shapes, resulting in a blog with example project providing an in-depth development and documentation with advanced JavaFX and AI features for automation to conquer the set goals.",
+                "items": [
+                    "Supports building presentations from Code Snippets, CodeShots (screenshot of code), and Screenshots.",
+                    "Supports captions and drawing shapes on slides.",
+                    "Provides automated text selection via OCR AI.",
+                    "Provides autosaving.",
+                    "Permits importing images via drag-and-drop.",
+                    "Utilizes a master-view-detail desktop and reactive GUI.",
+                    "Supports HD and FHD resolutions",
+                    "Supports syntax highlighting for many languages for Code Snippet slides.",
+                    "Granular step-by-step blog of my development with EP source code.",
+                    "**Java + JavaFX**, **Tesseract OCR**"
+                ],
+                "link": {
+                    "title": "Building Slides from Screenshots App in JavaFX",
+                    "url": "https://blog.mathsoftware.engineer/building-slides-from-screenshots-app-in-javafx"
+                },
+                "gallery": {
+                    "title": "Slide Example Project",
+                    "images": [
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/slides/code-snippet-slide.png",
+                            "title": "Code Snippet Slide"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/slides/drawing-shapes.png",
+                            "title": "Drawing Shapes"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/slides/slide.png",
+                            "title": "Slide"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/slides/code-snippet-_-fibonacci-sequence.png",
+                            "title": "Code Snippet: Fibonacci Sequence"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/slides/codeshot-_-inspecting-video-rendering-race-condition.png",
+                            "title": "CodeShot: Inspecting Race Condition"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/slides/ai-_-text-selected-via-ocr.png",
+                            "title": "AI: Text Selected via OCR"
+                        }
+                    ]
+                },
+                "conclusion": "Slides EP enhances communication by converting code to presentations. I authored a granular blog on its development."
+            }
+        ]
+    },
     "courses": [
     ],
     "honors": [
