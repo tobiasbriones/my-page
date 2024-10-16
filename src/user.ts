@@ -50,7 +50,14 @@ export interface EngSection {
     icon: string;
     abstract: string;
     items: string[];
+    link: Link;
+    gallery: Gallery | undefined;
     conclusion: string;
+}
+
+export interface Link {
+    title: string;
+    url: string;
 }
 
 export interface Cv {
@@ -136,6 +143,11 @@ export const emptyEngSection: EngSection = {
     icon: "",
     abstract: "",
     items: [],
+    link: {
+        title: "",
+        url: "",
+    },
+    gallery: undefined,
     conclusion: "",
 };
 

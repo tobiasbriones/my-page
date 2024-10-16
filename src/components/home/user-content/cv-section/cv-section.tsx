@@ -3,8 +3,8 @@
 // This file is part of https://github.com/tobiasbriones/my-page.
 
 import { Component, h, Host, Prop, State } from "@stencil/core";
-import { CvEntry, Gallery, Image, MainImage } from "../../../../user";
 import { parseMarkdown } from "../../../../markdown/markdown";
+import { CvEntry, Gallery, Image, MainImage } from "../../../../user";
 import { ModalImage } from "../../../image-modal/modal-image";
 
 @Component({
@@ -82,7 +82,7 @@ export class CvSection {
 
         return <div>
             { image && this.renderMainImage(image) }
-            { gallery && this.renderGallery(gallery) }
+            { gallery && <me-gallery-view gallery={ gallery } /> }
         </div>;
     }
 
@@ -113,66 +113,6 @@ export class CvSection {
                 caption={ title }
                 modalImages={ this.modalImageList }
                 onClose={ onClose } />
-        </div>;
-    }
-
-    private renderGallery({ title, images }: Gallery) {
-        const onOpen = (src: string, title: string, index?: number) => {
-            this.modalImage = { image: { src, title }, index };
-        };
-
-        const honorIcon = <span class="honor-caption-icon"></span>;
-
-        const galleryTitle = (title: string) => title
-            .includes("Honors")
-            ? <slot>{ title } { honorIcon }</slot>
-            : title;
-
-        const updateImage = (idx: number | undefined) => {
-            if (idx !== undefined) {
-                this.modalImage = {
-                    image: images[idx],
-                    index: idx,
-                };
-            }
-        };
-
-        const onClose = () => {
-            this.modalImage = undefined;
-        };
-
-        const onPrevious = ({ detail }: CustomEvent<ModalImage>) => {
-            const idx = detail.index ? detail.index - 1 : undefined;
-
-            updateImage(idx);
-        };
-
-        const onNext = ({ detail }: CustomEvent<ModalImage>) => {
-            const idx = detail.index !== undefined ? detail.index + 1 : undefined;
-
-            updateImage(idx);
-        };
-
-        return <div>
-            <figure>
-                <div class="gallery">
-                    { images.map(({ src, title }, idx) =>
-                        <img
-                            src={ src }
-                            alt={ title }
-                            onClick={ () => onOpen(src, title, idx) } />,
-                    ) }
-                </div>
-
-                <figcaption>{ galleryTitle(title) }</figcaption>
-            </figure>
-
-            <me-image-modal
-                modalImage={ this.modalImage }
-                size={ images.length }
-                onClose={ onClose }
-                onPrevious={ onPrevious }
-                onNext={ onNext } />
         </div>;
     }
 
