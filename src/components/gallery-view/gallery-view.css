@@ -71,6 +71,13 @@ figure:has(.gallery.big) {
     transform: scale(1.05);
 }
 
+.item-caption {
+    margin-top: 0.5rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.75rem;
+}
+
 .honor-caption-icon {
     display: inline-block;
     width: 1.5rem;

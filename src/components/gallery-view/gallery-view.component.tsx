@@ -3,9 +3,9 @@
 // This file is part of https://github.com/tobiasbriones/my-page.
 
 import { Component, h, Host, Prop, State } from "@stencil/core";
-import { PreviewSize } from "./gallery-view";
-import { Gallery } from "../../user";
+import { Gallery, Image } from "../../user";
 import { ModalImage } from "../image-modal/modal-image";
+import { PreviewSize } from "./gallery-view";
 
 @Component({
     tag: "me-gallery-view",
@@ -66,6 +66,26 @@ export class GalleryView {
             updateImage(idx);
         };
 
+        const newItem = ({ src, title }: Image, idx: number) =>
+            <div>
+                <img
+                    src={ src }
+                    alt={ title }
+                    onClick={ () => onOpen(
+                        src,
+                        title,
+                        idx,
+                    ) }
+                />
+
+                { this.size === "big"
+                  ? <div class="item-caption">
+                      { title }
+                  </div>
+                : <slot></slot>
+                }
+            </div>;
+
         const className = `gallery ${ this.size }`;
 
         return (
@@ -73,13 +93,7 @@ export class GalleryView {
                 <div>
                     <figure>
                         <div class={ className }>
-                            { images.map(({ src, title }, idx) =>
-                                <img
-                                    src={ src }
-                                    alt={ title }
-                                    onClick={ () => onOpen(src, title, idx) }
-                                />,
-                            ) }
+                            { images.map(newItem) }
                         </div>
 
                         <figcaption>{ galleryTitle(title) }</figcaption>
