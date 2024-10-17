@@ -417,6 +417,419 @@
                     ]
                 },
                 "conclusion": "I designed a GDPR-compliant Cookie Consent. Legal docs like privacy go here allowing MathSwe operations."
+            },
+
+            {
+                "name": "Distributed Text File System",
+                "icon": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/cp.png",
+                "abstract": "Implementation of a server/client application in Java RMI and JavaFX to manage concurrent connections for managing a file system that accepts operations on users' text files.",
+                "items": [
+                    "Provides desktop client to work on local files with real time server.",
+                    "Provides file operations and push/pull with invalidation logic.",
+                    "Provides a distributed RMI server on Linux containers to handle client files.",
+                    "Clients communicate with the Registry container and this with the distributed Server container.",
+                    "**Java + JavaFX + RMI + Gradle**, **Linux Containers**."
+                ],
+                "link": {
+                    "title": "CP: Distributed Text File System",
+                    "url": "https://github.com/tobiasbriones/distributed-text-file-system---cp"
+                },
+                "gallery": {
+                    "title": "DTFS",
+                    "images": [
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/dtfs/client-and-fs-files.png",
+                            "title": "Client and FS Files"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/dtfs/concurrent-clients-on-the-same-file.png",
+                            "title": "Concurrent Clients on the Same File"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/dtfs/deployment-architecture.svg",
+                            "title": "Deployment Architecture"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/dtfs/lxc-list-and-registry.png",
+                            "title": "LXC List and Registry"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/dtfs/lxc-list-and-fs.png",
+                            "title": "LXC List and FS"
+                        }
+                    ]
+                },
+                "conclusion": "DTFS implements distributed and efficient RMI text file server operations on Linux Containers with desktop clients."
+            },
+            {
+                "name": "TCP File System",
+                "icon": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/ep.png",
+                "abstract": "Go File System server that broadcasts to Android clients.",
+                "items": [
+                    "Provides a file system that streams to Android clients.",
+                    "Implements the Go server based on a FSM model.",
+                    "Provides an admin web client.",
+                    "**Go**, **Android + Kotlin**, **Vue.js**."
+                ],
+                "link": {
+                    "title": "",
+                    "url": "https://github.com/tobiasbriones/ep-tcp-file-system"
+                },
+                "gallery": {
+                    "title": "TCP File System",
+                    "images": [
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/tcp-fs/tcp-fs-basic-flow.svg",
+                            "title": "TCP FS Basic Flow"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/tcp-fs/tcp-fs-process-state-diagram.svg",
+                            "title": "TCP FS Process State Machine"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/tcp-fs/tcp-fs-uml-sequence-diagram.svg",
+                            "title": "TCP FS UML Sequence Diagrams"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/tcp-fs/ws-proxy.svg",
+                            "title": "WS Proxy"
+                        }
+                    ]
+                },
+                "conclusion": "The system implements a raw TCP protocol to stream files to an Android client and a high-level WebSocket proxy with an admin web app."
+            },
+            {
+                "name": "Dungeon MST",
+                "icon": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/dungeon-mst/icon.png",
+                "abstract": "Dungeon game implementing a MST algorithm to generate the random dungeons. ",
+                "items": [
+                    "Implements a web game server that generates matches with a **Minimum Spanning Tree (MST)** algorithm.",
+                    "Handles concurrent users.",
+                    "Provides a desktop 2D video game client that connects to the server.",
+                    "**Go**, **Computer Science**, **AWS**."
+                ],
+                "link": {
+                    "title": "Dungeon MST",
+                    "url": "https://github.com/tobiasbriones/dungeon-mst"
+                },
+                "gallery": {
+                    "title": "",
+                    "images": [
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/dungeon-mst/running-the-game.png",
+                            "title": "Running the Game"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/dungeon-mst/concurrent-players.png",
+                            "title": "Concurrent Players"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/dungeon-mst/concurrent-matches.png",
+                            "title": "Concurrent Matches"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/dungeon-mst/testing-connections.png",
+                            "title": "Testing Connections"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/dungeon-mst/generating-many-dungeons.png",
+                            "title": "Generating many Dungeons"
+                        }
+                    ]
+                },
+                "conclusion": "Implements a game server with an MST algorithm to generate matches of a dungeon 2D game without cycles."
+            },
+            {
+                "name": "Losnot in Paradise",
+                "icon": "https://raw.githubusercontent.com/tobiasbriones/losnot-in-paradise/refs/heads/main/assets/icon.png",
+                "abstract": "A video game in which our friend LOS is lost in a weird jungle of a weird exoplanet and while you help him to face all kinds of obstacles I am responsible for providing an AI algorithm to tell LOS how to play and get out of there in his spacecraft!. ",
+                "items": [
+                    "Provides a desktop platformer video game to survive in a world of obstacles.",
+                    "Implements and experiments with a **Genetic Algorithm** AI to play alone.",
+                    "Implements a in-house 2D game framework **Gencesk**.",
+                    "**Java**, **AI for Games**"
+                ],
+                "link": {
+                    "title": "Losnot in Paradise",
+                    "url": "https://github.com/tobiasbriones/losnot-in-paradise"
+                },
+                "gallery": {
+                    "title": "",
+                    "images": [
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/lostnot-in-paradise/lostnot-in-paradise-game.png",
+                            "title": "Losnot in Paradise Game"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/lostnot-in-paradise/ai-screenshot-1.png",
+                            "title": "AI Screenshot"
+                        }
+                    ]
+                },
+                "conclusion": "The 2D desktop video game implements an open world scene, AI with a genetic algorithm, and in-house game framework."
+            },
+            {
+                "name": "PicRT Express",
+                "icon": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/picrt-express/icon.svg",
+                "abstract": "UWP app for educational purposes in Software Engineering and Applied Mathematics which edits and applies transformations to pictures. Two objectives are targeted: 1) The use of native code to perform large demanding operations. 2) The application of applied math into image processing. ",
+                "items": [
+                    "Provides image processing techniques as a Windows app.",
+                    "**C#**, **C++**, and **OpenCV**."
+                ],
+                "link": {
+                    "title": "PicRT Express",
+                    "url": "https://github.com/tobiasbriones/picrt-express-windows"
+                },
+                "gallery": {
+                    "title": "PicRT Express",
+                    "images": [
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/picrt-express/picrt-express.jpg",
+                            "title": "PicRT Express"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/picrt-express/image-processing.jpg",
+                            "title": "Image Processing"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/picrt-express/about-picrt-express.jpg",
+                            "title": "About PicRT Express"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/picrt-express/brochure.png",
+                            "title": "Brochure"
+                        }
+                    ]
+                },
+                "conclusion": "PicRT Express is an UWP app implementing image processing techniques."
+            },
+            {
+                "name": "Machine Replacement Model",
+                "icon": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/ep.png",
+                "abstract": "Solving Operations Research's machine maintenance/replacement models as a sample made in pure JS, CSS and Bootstrap with the DOM APIs for rendering the HTMLElement components.",
+                "items": [
+                    "Solves the Machine Replacement Model.",
+                    "Gave origin to the 2DP Repsymo Solver.",
+                    "**JS**, **HTML**, and **CSS**."
+                ],
+                "link": {
+                    "title": "EP: Machine Replacement Model",
+                    "url": "https://github.com/tobiasbriones/machine-replacement-model---ep"
+                },
+                "gallery": {
+                    "title": "MRM",
+                    "images": [
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/mrm/mrm.png",
+                            "title": "MRM"
+                        }
+                    ]
+                },
+                "conclusion": "MRM is a webapp that implements the initial version of my equipment replacement model before Repsymo."
+            },
+            {
+                "name": "Cryptosystems",
+                "icon": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/ep.png",
+                "abstract": "Implementation of cryptosystem algorithms.",
+                "items": [
+                    "Implements classic algorithms: Affine, Shift, Substitution, and Vigenere.",
+                    "**Go**, **Computer Science**."
+                ],
+                "link": {
+                    "title": "EP: Cryptosystems",
+                    "url": "https://github.com/tobiasbriones/ep-cryptosystems"
+                },
+                "conclusion": "The program implements classic cryptographic algorithms."
+            },
+            {
+                "name": "POSLANS",
+                "icon": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/poslans/ic_poslans.png",
+                "abstract": "General purpose-student system targeted for universities. ",
+                "items": [
+                    "**Sections Manager**, a standalone desktop app that streamlines opening new course sections each term.",
+                    "Imports and exports data from Excel and history.",
+                    "Provides GUI editor.",
+                    "Allows to start a new term.",
+                    "Open and manages sections with class, professor, classroom, time, and days.",
+                    "Detects section overlaps",
+                    "Shows reports of academic load, history, sections opened per class, and filters.",
+                    "Displays a classroom availability graphic with time from 7:00-20:00 as rows and week day per classroom columns.",
+                    "**My University**, a desktop app with database that provides support to career or university admins.",
+                    "Provides admin login, current term access, term history, professors, students, campuses, and careers.",
+                    "Implements a Windows program to install the desktop apps.",
+                    "**Java + Swing**, **MySQL**, **SQLite**, **C#**, and **Excel**."
+                ],
+                "link": {
+                    "title": "POSLANS",
+                    "url": "https://github.com/tobiasbriones/poslans"
+                },
+                "gallery": {
+                    "title": "",
+                    "images": [
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/poslans/sm-welcome.png",
+                            "title": "SM Welcome"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/poslans/sm-university-name.png",
+                            "title": "SM University Name"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/poslans/sm-open-new-section.png",
+                            "title": "SM Open new Section"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/poslans/sm-sections-opened.png",
+                            "title": "SM Sections Opened"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/poslans/sm-professor-loads.png",
+                            "title": "SM Professor Loads"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/poslans/sm-filter-sections.png",
+                            "title": "SM Filter Sections"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/poslans/sm-overlap.png",
+                            "title": "SM Overlaps"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/poslans/sm-career-data-edit.png",
+                            "title": "SM Career Data Edit"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/poslans/sm-import-sections.png",
+                            "title": "SM Import Sections"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/poslans/sm-sections-opened-per-class.png",
+                            "title": "SM Sections Opened per Class"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/poslans/sm-classroom-availability.png",
+                            "title": "SM Classroom Availability"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/poslans/mu-login-window.png",
+                            "title": "MU Login Window"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/poslans/mu-main-window.png",
+                            "title": "MU Main Window"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/poslans/mu-edit-campus.png",
+                            "title": "MU Edit Campus"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/poslans/mu-student-data-management.png",
+                            "title": "MU Student Data Management"
+                        }
+                    ]
+                },
+                "conclusion": "POSLANS is a desktop student system with admin login and features and a sections management app."
+            },
+            {
+                "name": "Coniestica",
+                "icon": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/ep.png",
+                "abstract": "Simple front-end website made in pure JS for a fictitious company called Coniestica.",
+                "items": [
+                    "Shows the main page, Clients, Services, and About sections.",
+                    "Displays a loading animation",
+                    "Supports page config for Spanish and English.",
+                    "Shows a rich background with a parallax effect.",
+                    "**HTML**, **JS**, and **CSS**."
+                ],
+                "link": {
+                    "title": "Coniestica Website",
+                    "url": "https://coniestica.ep.dev.mathsoftware.engineer"
+                },
+                "gallery": {
+                    "title": "Coniestica",
+                    "images": [
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/coniestica/coniestica.png",
+                            "title": "Coniestica"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/coniestica/coniestica-mission.png",
+                            "title": "Coniestica Mission"
+                        }
+                    ]
+                },
+                "conclusion": "Coniestica is a website for a fictional company with navigation and a parallax background."
+            },
+            {
+                "name": "Video Studio",
+                "icon": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/ep.png",
+                "abstract": "Web app that allows a user to load a video and apply basic transformations to it.",
+                "items": [
+                    "Allows video drag-and-drop and player.",
+                    "Provides the transformations Scale, Rotate, Perspective.",
+                    "Sets overflow, and video dimensions.",
+                    "Gives a screenshot capture button.",
+                    "**JS**, **HTML**, and **CSS**."
+                ],
+                "link": {
+                    "title": "EP: Video Studio",
+                    "url": "https://github.com/tobiasbriones/ep-video-studio"
+                },
+                "gallery": {
+                    "title": "Video Studio",
+                    "images": [
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/video-studio/video-studio.png",
+                            "title": "Video Studio"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/video-studio/transoformations.png",
+                            "title": "Transformations"
+                        }
+                    ]
+                },
+                "conclusion": "Video Studio is a web app that implements CSS video transformations."
+            },
+            {
+                "name": "Agricultural Soil Sampling for Data Analysis",
+                "icon": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/cp.png",
+                "abstract": "Final B.Math career course consisting of a research project about agricultural soil sampling modeling for applying data analysis efficiently to agricultural soils.",
+                "items": [
+                    "Provides the research paper I wrote to graduate with its required methodology sections.",
+                    "Develops a theoretical framework on sampling focusing on the Simple Random Sampling (SRS), Virtual Sampling on Python, and Physical Sampling (real life process).",
+                    "Provides a real-world Proposed Process MVP to analyze soil sampling with synthetic data.",
+                    "**Academic Research**, **Sampling Statistics**, **Software Engineering**, and **LaTeX**."
+                ],
+                "link": {
+                    "title": "Thesis",
+                    "url": "https://github.com/tobiasbriones/cp-unah-mm700-agricultural-soil-sampling-for-data-analysis"
+                },
+                "gallery": {
+                    "title": "Soil Virtual Sampling",
+                    "images": [
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/soil-sampling/virtual-sampling.png",
+                            "title": "Virtual Sampling"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/soil-sampling/stratum-filter.png",
+                            "title": "Stratum Filter"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/soil-sampling/simulation-of-the-virtual-sampling.png",
+                            "title": "Simulation of the Virtual Sampling"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/soil-sampling/comparing-the-physical--and-virtual-sampling.png",
+                            "title": "Comparing the Physical and Virtual Sampling"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/soil-sampling/sistematic-sampling.png",
+                            "title": "Systematic Sampling"
+                        }
+                    ]
+                },
+                "conclusion": "The soil sampling research proposes a virtual sampling MVP API in Python as a methodology to model and analyze strata with homogeneous classes or varieties."
             }
         ]
     },
