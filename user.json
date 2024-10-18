@@ -421,7 +421,7 @@
 
             {
                 "name": "Distributed Text File System",
-                "icon": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/cp.png",
+                "icon": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/cp.svg",
                 "abstract": "Implementation of a server/client application in Java RMI and JavaFX to manage concurrent connections for managing a file system that accepts operations on users' text files.",
                 "items": [
                     "Provides desktop client to work on local files with real time server.",
@@ -554,14 +554,14 @@
                     "url": "https://github.com/tobiasbriones/losnot-in-paradise"
                 },
                 "gallery": {
-                    "title": "",
+                    "title": "Losnot Game with AI",
                     "images": [
                         {
-                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/lostnot-in-paradise/lostnot-in-paradise-game.png",
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/losnot-in-paradise/lostnot-in-paradise-game.png",
                             "title": "Losnot in Paradise Game"
                         },
                         {
-                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/lostnot-in-paradise/ai-screenshot-1.png",
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/losnot-in-paradise/ai-screenshot-1.png",
                             "title": "AI Screenshot"
                         }
                     ]
@@ -643,7 +643,7 @@
             },
             {
                 "name": "POSLANS",
-                "icon": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/poslans/ic_poslans.png",
+                "icon": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/poslans/ic_poslans.png",
                 "abstract": "General purpose-student system targeted for universities. ",
                 "items": [
                     "**Sections Manager**, a standalone desktop app that streamlines opening new course sections each term.",
@@ -792,7 +792,7 @@
             },
             {
                 "name": "Agricultural Soil Sampling for Data Analysis",
-                "icon": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/cp.png",
+                "icon": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/cp.svg",
                 "abstract": "Final B.Math career course consisting of a research project about agricultural soil sampling modeling for applying data analysis efficiently to agricultural soils.",
                 "items": [
                     "Provides the research paper I wrote to graduate with its required methodology sections.",
