@@ -69,9 +69,9 @@
                         {
                             "title": "MathSoftware.Engineer",
                             "date": "",
-                            "description": "",
+                            "description": "It contains essential works where I study, research, develop, and publish articles and PR/Release blogs.",
                             "items": [
-                                "[MathSoftware.Engineer](https://mathsoftware.engineer): Publishes essential works where I study, research, develop, and publish articles and PR/Release blogs.",
+                                "[Drawing a Tree](https://mathsoftware.engineer/drawing-a-tree-on-canvas-with-xy-coordinates): Authored a formal article on solutions tree analysis with a step-by-step development in **TS** and **HTML Canvas**.",
                                 "[Slides](https://blog.mathsoftware.engineer/building-slides-from-screenshots-app-in-javafx): Enhances communication by converting code to presentations. Authored a granular blog on its development with **JavaFX** and **OCR**.",
                                 "[My Page](https://me.mathsoftware.engineer): Shows a web version of my CV with the remaining details about me with **Stencil.js** (PWA)."
                             ],
