@@ -4,7 +4,7 @@
 
 import { Component, h, State } from "@stencil/core";
 import { Item } from "../nav/nav-item";
-import { getNavItems } from "./user-nav-data";
+import { getNavItemByHash, getNavItems } from "./user-nav-data";
 
 const ITEMS = getNavItems();
 
@@ -25,6 +25,30 @@ export class MenuNav {
                 onItemClick={ (e: CustomEvent<Item>) => this.onNavItemClick(e) }
             />
         );
+    }
+
+    componentWillLoad() {
+        window.addEventListener(
+            "hashchange",
+            () => this.handleHashChange.apply(this),
+        );
+    }
+
+    disconnectedCallback() {
+        window.removeEventListener(
+            "hashchange",
+            () => this.handleHashChange.apply(this),
+        );
+    }
+
+    componentDidLoad() {
+        this.handleHashChange();
+    }
+
+    handleHashChange() {
+        const hash = window.location.hash.replace("#", "");
+
+        this.selectedItem = getNavItemByHash(hash);
     }
 
     onNavItemClick({ detail }: CustomEvent<Item>) {

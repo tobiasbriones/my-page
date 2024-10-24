@@ -54,6 +54,10 @@ export class UserPage {
         );
     }
 
+    componentDidLoad() {
+        this.handleHashChange();
+    }
+
     handleHashChange() {
         this.selectedItem = this.getNavItemFromWindowHash();
     }
