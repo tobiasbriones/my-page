@@ -13,8 +13,8 @@ h4 {
     text-align: start;
 }
 
-p {
-    margin: 0 0 0.5rem;
+.experience-header + div > p {
+    margin: 0.5rem 0;
 }
 
 figure {
@@ -74,7 +74,6 @@ figure img:hover {
 
 .experience-header {
     display: flex;
-    margin-bottom: 0.5rem;
     flex-direction: row;
     gap: 0.5rem;
 }
