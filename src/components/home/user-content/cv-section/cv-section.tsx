@@ -66,7 +66,7 @@ export class CvSection {
 
                 <me-user-list items={ items } />
 
-                { footer.length > 0 && <p>{ parseMarkdown(footer) }</p> }
+                { footer?.length > 0 && <p>{ parseMarkdown(footer) }</p> }
 
                 { this.renderImages(image, gallery) }
             </div>
