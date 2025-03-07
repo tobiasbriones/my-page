@@ -61,11 +61,12 @@ export class CvSection {
             </div>
 
             <div>
-                <p>{ parseMarkdown(description) }</p>
+                { description.length > 0 &&
+                  <p>{ parseMarkdown(description) }</p> }
 
                 <me-user-list items={ items } />
 
-                <p>{ parseMarkdown(footer) }</p>
+                { footer.length > 0 && <p>{ parseMarkdown(footer) }</p> }
 
                 { this.renderImages(image, gallery) }
             </div>
@@ -86,7 +87,7 @@ export class CvSection {
         </div>;
     }
 
-    private renderMainImage({ title, first, second }: MainImage) {
+    private renderMainImage({title, first, second}: MainImage) {
         const onOpen = () => {
             if (second === undefined) {
                 this.modalImageList = [first];
@@ -105,20 +106,28 @@ export class CvSection {
                 <img
                     src={ first.src }
                     alt={ `${ title }_${ first.title }` }
-                    onClick={ () => onOpen() } />
+                    onClick={ () => onOpen() }
+                />
                 <figcaption>{ title }</figcaption>
             </figure>
 
             <me-image-list-modal
                 caption={ title }
                 modalImages={ this.modalImageList }
-                onClose={ onClose } />
+                onClose={ onClose }
+            />
         </div>;
     }
 
-    private renderMeta(place: string, date: string) {
+    private renderMeta(
+        place: string,
+        date: string,
+    ) {
         const shortTextLength = 20;
-        const wideMeta = place.length > shortTextLength || date.length > shortTextLength;
+        const wideMeta = place.length
+                         > shortTextLength
+                         || date.length
+                         > shortTextLength;
         const classes = `experience-meta ${ wideMeta ? "wide" : "" }`;
 
         return (
