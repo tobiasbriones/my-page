@@ -502,7 +502,7 @@
                         }
                     ]
                 },
-                "conclusion": "I designed a GDPR-compliant Cookie Consent. Legal docs like privacy go here allowing MathSwe operations."
+                "conclusion": "The Vehicle Registry system is a fullstack modern web app with robust backend standards encompassing code coverage, FP, and error log handling for doing CRUD operations. Furthermore, it presents a vehicle log business model as its application domain."
             },
             {
                 "name": "Distributed Text File System",
