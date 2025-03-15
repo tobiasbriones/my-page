@@ -418,7 +418,92 @@
                 },
                 "conclusion": "I designed a GDPR-compliant Cookie Consent. Legal docs like privacy go here allowing MathSwe operations."
             },
-
+            {
+                "name": "Vehicle Registry",
+                "icon": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/ep.png",
+                "abstract": "Backend API, Database, and Frontend client for a vehicle registration web app that logs entrance and leave.",
+                "items": [
+                    "CRUD endpoints for **logs**, vehicles, and drivers.",
+                    "Landing page with CTA for clients and modern design.",
+                    "Relational database design.",
+                    "Full documentation, backend 90%+ test coverage, and environment variables.",
+                    "**TypeScript**, **Express.js**, **React**, **PostgreSQL**, **Markdown**."
+                ],
+                "link": {
+                    "title": "Vehicle Registry Web",
+                    "url": "https://github.com/tobiasbriones/vehicle-registry-web"
+                },
+                "gallery": {
+                    "title": "Vehicle Registry",
+                    "images": [
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/vehicle-registry/adding-a-new-driver-with-validation.png",
+                            "title": "Adding A New Driver With Validation"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/vehicle-registry/filtering-logs-by-date.png",
+                            "title": "Filtering Logs By Date"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/vehicle-registry/adding-a-new-log.png",
+                            "title": "Adding A New Log"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/vehicle-registry/landing-page-cta.png",
+                            "title": "Landing Page CTA"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/vehicle-registry/adding-a-new-vehicle-with-validation.png",
+                            "title": "Adding A New Vehicle With Validation"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/vehicle-registry/landing-page-footer.png",
+                            "title": "Landing Page Footer"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/vehicle-registry/delete-confirm-dialog.png",
+                            "title": "Delete Confirm Dialog"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/vehicle-registry/drivers-crud.png",
+                            "title": "Drivers CRUD"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/vehicle-registry/mileage-validation.png",
+                            "title": "Mileage Validation"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/vehicle-registry/editing-vehicles.png",
+                            "title": "Editing Vehicles"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/vehicle-registry/robust-validation.png",
+                            "title": "Robust Validation"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/vehicle-registry/event-validation.png",
+                            "title": "Event Validation"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/vehicle-registry/vehicle-logs.png",
+                            "title": "Vehicle Logs"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/vehicle-registry/filtering-logs-by-date-and-driver.png",
+                            "title": "Filtering Logs By Date And Driver"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/vehicle-registry/filtering-logs-by-date-driver-and-vehicle.png",
+                            "title": "Filtering Logs By Date Driver And Vehicle"
+                        },
+                        {
+                            "src": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/vehicle-registry/vehicles-crud.png",
+                            "title": "Vehicles CRUD"
+                        }
+                    ]
+                },
+                "conclusion": "I designed a GDPR-compliant Cookie Consent. Legal docs like privacy go here allowing MathSwe operations."
+            },
             {
                 "name": "Distributed Text File System",
                 "icon": "https://raw.githubusercontent.com/tobiasbriones/my-page/refs/heads/static/eng/cp.svg",
